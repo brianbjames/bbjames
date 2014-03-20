@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Downloads</title>
+<!-- TemplateEndEditable -->
+<style type="text/css">
+<!--
+.style1 {font-size: 36px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style8 {font-family: "Bauhaus 93";
+	font-size: 36px;
+	color: #A4D008;
+}
+body,td,th {
+	color: #F65390;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+a:link {
+	color: #F42271;
+}
+body {
+	background-color: #D1F846;
+}
+a:visited {
+	color: #D80B58;
+}
+-->
+</style>
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+</head>
+
+<body>
+<p class="style1"><span class="style8">downloads</span></p>
+<p><img name="P4" width="990" height="91" src="../P4.jpg"
+onmouseover="document.P4.src='P3.jpg';"
+onmouseout="document.P4.src='P4.jpg';" var i = new Image();
+i.src="P3.jpg"; /></p>
+<p><a href="../DashboardCollider.zip"><img src="../DashIcon.png" width="78" height="82" border="0" /><br />
+</a><a href="../FeldmanSays.wdgt"></a><a href="../FeldmanSays.zip"></a><a href="../DashboardCollider.zip"></a><a href="../DashboardCollider.zip">DashboardCollider</a><br />
+Launch SuperCollider Audio Software from the Dashboard as well as get connected to various SuperCollider related resources. <br />
+This widget also has the ability to be dragged onto the desktop to be used right along side SuperCollider.</p>
+<p>Version 1.0, sp030<br />
+  By Brian B. James<br />
+  Released: March 4, 2007<br />
+  Latest Build: March 7, 2007 <br />
+  .zip Filesize: 278 KB<br />
+  <a href="http://www.apple.com/downloads/dashboard/music/dashboardcollider.html">http://www.apple.com/downloads/dashboard/music/dashboardcollider.html</a></p>
+<p>Mac OS X 10.4 Tiger is required  as well as <a href="http://sourceforge.net/project/showfiles.php?group_id=54622">SuperCollider</a> software. If you&rsquo;re using Safari, click the download link. When the widget download is complete, show Dashboard, click the Plus sign to display the Widget Bar and click the widget&rsquo;s icon in the Widget Bar to open it. If you&rsquo;re using a browser other than Safari, click the download link. When the widget download is complete, unarchive it and place it in /Library/Widgets/ in your home folder. show Dashboard, click the Plus sign to display the Widget Bar and click the widget&rsquo;s icon in the Widget Bar to open it.</p>
+<p>SuperCollider notes: This widget will only work 100% correctly if your SuperCollider application resides in the &quot;SuperCollider_f&quot; folder which should live in the Applications folder of the startup disc (I'm working on fixing this).<br />
+  DashboardCollider is Freeware, &copy; 2007 Brian B. James. Some code,  &copy; 2005 Apple Computer, Inc.</p>
+<p>&nbsp;</p>
+<p><a href="../Duchamp.zip"><img src="../duchampIcon.png" width="78" height="82" /><br />
+</a><a href="../DuchampSpeak.wdgt"></a><a href="../Duchamp.zip"></a><a href="../Duchamp.zip">DuchampSpeak</a><br />
+Daily Quotes by Artist Marcel Duchamp </p>
+<p>Version 1.2, sp029<br />
+  By Brian B. James<br />
+  Released: February 26, 2007<br />
+  Latest Build: March 22, 2007 <br />
+  .zip Filesize: 280 KB<br />
+  <a href="http://www.apple.com/downloads/dashboard/justforfun/duchampspeak.html">http://www.apple.com/downloads/dashboard/justforfun/duchampspeak.html</a></p>
+<p>Mac OS X 10.4 Tiger is required. If you&rsquo;re using Safari, click the download link. When the widget download is complete, show Dashboard, click the Plus sign to display the Widget Bar and click the widget&rsquo;s icon in the Widget Bar to open it. If you&rsquo;re using a browser other than Safari, click the download link. When the widget download is complete, unarchive it and place it in /Library/Widgets/ in your home folder. show Dashboard, click the Plus sign to display the Widget Bar and click the widget&rsquo;s icon in the Widget Bar to open it.<br />
+  DuchampSpeak is Freeware, &copy; 2007 Brian B. James. Some code,  &copy; 2005 Apple Computer, Inc.</p>
+<p>&nbsp;</p>
+<p><a href="../Feldman.zip"><img src="../Icon.png" width="78" height="82" border="0" /><br />
+</a><a href="../FeldmanSays.wdgt"></a><a href="../Feldman.zip"></a><a href="../Feldman.zip">FeldmanSays</a><br />
+An Array of Daily Quotes by Composer Morton Feldman</p>
+<p>Do you follow the music of the New York School? Do you follow the art of the New York Abstract Expressionists? If you said yes to either, this is the widget for you. FeldmanSays supplies you with a thought by composer Morton Feldman everytime you start your computer.</p>
+<p>Version 1.2, sp028<br />
+  By Brian B. James<br />
+  Released: February 2, 2007<br />
+  Latest Build: March 22, 2007 <br />
+  .zip Filesize: 880 KB<br />
+  <a href="http://www.apple.com/downloads/dashboard/music/feldmansays.html">http://www.apple.com/downloads/dashboard/music/feldmansays.html</a></p>
+<p>Mac OS X 10.4 Tiger is required. If you&rsquo;re using Safari, click the download link. When the widget download is complete, show Dashboard, click the Plus sign to display the Widget Bar and click the widget&rsquo;s icon in the Widget Bar to open it. If you&rsquo;re using a browser other than Safari, click the download link. When the widget download is complete, unarchive it and place it in /Library/Widgets/ in your home folder. show Dashboard, click the Plus sign to display the Widget Bar and click the widget&rsquo;s icon in the Widget Bar to open it.<br />
+  FeldmanSays is Freeware, &copy; 2007 Brian B. James. Some code,  &copy; 2005 Apple Computer, Inc.</p>
+<p>&nbsp;</p>
+<p><a href="../Cage.zip"><img src="../cageIcon.jpg" width="78" height="82" border="0" /><br />
+  </a><a href="../Cage.zip">iCage</a><br />
+Daily Quotes by Composer John Cage</p>
+<p>Version 1.2, sp010 <br />
+  By Brian B. James<br />
+  Released: January 19, 2007<br />
+  Latest Build: March 22, 2007 <br />
+  .zip Filesize: 172 KB<br />
+<a href="http://www.apple.com/downloads/dashboard/music/icage.html">http://www.apple.com/downloads/dashboard/music/icage.html</a></p>
+<p>Mac OS X 10.4 Tiger is required. If you&rsquo;re using Safari, click the download link. When the widget download is complete, show Dashboard, click the Plus sign to display the Widget Bar and click the widget&rsquo;s icon in the Widget Bar to open it. If you&rsquo;re using a browser other than Safari, click the download link. When the widget download is complete, unarchive it and place it in /Library/Widgets/ in your home folder. show Dashboard, click the Plus sign to display the Widget Bar and click the widget&rsquo;s icon in the Widget Bar to open it.<br />
+iCage is Freeware, &copy; 2007 Brian B. James. Some code,  &copy; 2005 Apple Computer, Inc.</p>
+<p>&nbsp;</p>
+<p><a href="../SartreSpeak.zip"><img src="../SartreIcon.png" width="78" height="82" border="0" /><br />
+</a><a href="../SartreSpeak.zip">SartreSpeak</a><br />
+Daily Quotes by Jean-Paul Sartre</p>
+<p>Version 1.1, sp031<br />
+  By Brian B. James<br />
+  Released: March 23, 2007<br />
+  Latest Build: March 23, 2007 <br />
+.zip Filesize: 248 KB</p>
+<p>Mac OS X 10.4 Tiger is required. If you&rsquo;re using Safari, click the download link. When the widget download is complete, show Dashboard, click the Plus sign to display the Widget Bar and click the widget&rsquo;s icon in the Widget Bar to open it. If you&rsquo;re using a browser other than Safari, click the download link. When the widget download is complete, unarchive it and place it in /Library/Widgets/ in your home folder. show Dashboard, click the Plus sign to display the Widget Bar and click the widget&rsquo;s icon in the Widget Bar to open it.<br />
+  SartreSpeak is Freeware, &copy; 2007 Brian B. James. Some code,  &copy; 2005 Apple Computer, Inc.</p>
+<p>&nbsp;</p>
+<p><a href="../index.html">home</a><br />
+</p>
+</body>
+</html>

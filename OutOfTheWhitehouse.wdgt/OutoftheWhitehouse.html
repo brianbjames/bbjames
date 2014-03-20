@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <style type="text/css" title="AppleStyle">
+        @import "OutoftheWhitehouse.css";
+    </style>
+    <script type="text/javascript" src="AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleScrollbar.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleScrollArea.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleSlider.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/ApplePrivate.js" charset="utf-8"></script>
+    <script type="text/javascript" src="iCal.js" charset="utf-8"></script>
+    <script type="text/javascript" src="OutoftheWhitehouse.js" charset="utf-8"></script>
+    <script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
+</head>
+<body onload="load();" style="height: 122px; ">
+	<div id="front">
+		<img id="frontImg" src="Images/front.png" alt="">
+		<div class="info" id="info" apple-default-image-visibility="hidden" onclick="event.stopPropagation(); event.preventDefault();">
+			<script type="text/javascript">AppleCreateInfoButton('info', 'front', 'white', 'black', 'showBack');</script>
+		</div>
+		
+    	<div id="timer">
+    		<div id="time-display-background">
+                <img src="Images/roundedsquare.png" theme="yes" style="display: block; left: 0px; top: -1px; " id="roundedrect0">
+    	   </div>
+
+            <div id="countdown-time">
+                <div id="remaining-days" apple-default-image-visibility="hidden">0</div>
+                <div id="remaining-hours" apple-default-image-visibility="hidden">00</div>
+                <div id="remaining-minutes" apple-default-image-visibility="hidden">00</div>
+                <div id="remaining-seconds" apple-default-image-visibility="hidden">00</div>
+                <div id="timer-colons" apple-default-image-visibility="hidden">
+                    <div id="colon1">:</div>
+                    <div id="colon2">:</div>
+                    <div id="colon3">:</div>
+                </div>
+            </div>
+    
+            <div id="countdown-label">
+                <div id="label-days">DAYS</div>
+                <div id="label-hours">HOURS</div>
+                <div id="label-minutes">MIN</div>
+            <div id="label-seconds">SEC</div>
+            </div>
+                <div id="event-label">Time Until George W. Bush is Out of the White House</div>
+            </div>
+        </div>
+	
+    <div id="back">
+	   <img id="backImg" src="Images/back.png" alt="">
+    	<img class="backDevelopedWith" src="Images/DevelopedWith.png" alt="Created with Dashcode">
+        <div id="done">
+        	<script type="text/javascript">AppleCreateGlassButton('done', 'Done', true, 'showFront');</script>
+        </div>
+    <div id="text">by: bbjames.com</div>
+	
+    </div>
+    
+    <div id="apple-initValues">
+        <div id="apple-init-countdownTarget">05 Nov 2008 00:00:00 PST</div>
+        <div id="apple-init-showLeadingZeros">1</div>
+        <div id="apple-init-reachedActionIndex">0</div>
+        <div id="apple-init-blinkSeparators">1</div>
+        <div id="apple-init-doAction">1</div>
+        <div id="apple-init-zeroAction">alert("Bush Out of Office")</div>
+        <div id="apple-init-ical-url"></div>
+    </div>
+</body>
+</html>

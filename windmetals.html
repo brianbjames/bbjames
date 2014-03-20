@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Windmetals</title>
+<style type="text/css">
+<!--
+.style1 {font-family: Monaco}
+.style2 {font-family: Monaco; font-size: 9px; }
+-->
+</style>
+</head>
+
+<body>
+<p class="style2"><br />
+  // windmetals, by brian b. james</p>
+<p class="style2">(<br />
+  var w, f, d, values, server, id, isOn = false, b1, b2;</p>
+<p class="style2">SynthDef(&quot;windmetals&quot;, {			// windmetals<br />
+  var trig, so, p, n, exc, x, base, range;<br />
+  n = 6;<br />
+  base = exprand(60,70);<br />
+  range = rrand(500.0,8000.0);<br />
+  exc = BrownNoise.ar([0.007,0.007]) * max(0, LFNoise1.kr(exprand(0.03,0.04), 0.05, 				0.05));<br />
+  so = (Klank.ar(`[Array.fill(n, {linrand(range)+base}),nil,Array.fill(n, {rrand				(0.1,2.0)})], exc) * 0.3).softclip;<br />
+  Out.ar(0, so) <br />
+  }).writeDefFile;<br />
+  Server.local.sendMsg(&quot;/d_load&quot;, &quot;synthdefs/windmetals.scsyndef&quot;);</p>
+<p class="style2">values = IdentityDictionary.new;<br />
+  server = Server.local;</p>
+<p class="style2">id = 2001;<br />
+  w = SCWindow(&quot;windmetals&quot;, Rect(512, 164, 180, 80));<br />
+  w.view.decorator = d = FlowLayout(w.view.bounds);</p>
+<p class="style2">b1 = SCButton(w, Rect(0,0, 50, 50));<br />
+  b1.states = [[&quot;Load&quot;, Color.black, Color.green]];<br />
+  b1.action = { arg view; <br />
+  server.sendMsg(&quot;/d_load&quot;, &quot;synthdefs/windmetals.scsyndef&quot;);<br />
+  };<br />
+  b1.enabled = server.serverRunning;</p>
+<p class="style2">b2 = SCButton(w, Rect(0,0, 100, 50));<br />
+  b2.states = [<br />
+  [&quot;windmetals&quot;, Color.black, Color.green],<br />
+  [&quot;windmetals stop&quot;, Color.white, Color.red],<br />
+  ];<br />
+  b2.action = { arg view; <br />
+  var msg;<br />
+  if (view.value == 1, {<br />
+  isOn = true;<br />
+  msg = [&quot;/s_new&quot;, &quot;windmetals&quot;, 2001, 1, 0];<br />
+  values.keysValuesDo({ arg key, value; <br />
+  msg = msg.addAll([key, value]); <br />
+  });<br />
+  server.performList(\sendMsg, msg); <br />
+  },{<br />
+  isOn = false;<br />
+  server.sendMsg(&quot;/n_free&quot;, 2001); <br />
+  });<br />
+  };<br />
+  b2.enabled = server.serverRunning;<br />
+  d.nextLine;</p>
+<p class="style2">a = SimpleController(server);<br />
+  f = { arg server; <br />
+  b1.enabled = server.serverRunning;<br />
+  b2.enabled = server.serverRunning;<br />
+  if (server.serverRunning.not, { b2.value = 0 });<br />
+  };<br />
+  a.put(\serverRunning, f);<br />
+  w.onClose = { <br />
+  if (isOn, { server.sendMsg(&quot;/n_free&quot;, 2001) });<br />
+  a.remove;<br />
+  };</p>
+<p class="style2">w.front;<br />
+  )</p>
+<p class="style1">&nbsp;</p>
+</body>
+</html>

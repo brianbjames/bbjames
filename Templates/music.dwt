@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Music</title>
+<!-- TemplateEndEditable -->
+<style type="text/css">
+<!--
+body {
+	background-color: #C0E7FA;
+}
+.style1 {font-size: 36px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style4 {font-size: 16px; font-family: Arial, Helvetica, sans-serif; }
+.style8 {font-family: "Bauhaus 93";
+	font-size: 36px;
+	color: #13B8EC;
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #00528E;
+}
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #003333;
+}
+.style9 {font-size: 12px; font-family: Arial, Helvetica, sans-serif; }
+.style10 {font-size: 12px}
+a:link {
+	color: #006AA5;
+}
+a:visited {
+	color: #0092CB;
+}
+-->
+</style>
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+</head>
+
+<body>
+<p class="style1"><span class="style8">music</span></p>
+<p><span class="style1"><img name="P6" width="990" height="91" src="../P6.jpg"
+onmouseover="document.P6.src='P5.jpg';"
+onmouseout="document.P6.src='P6.jpg';" var i = new Image();
+i.src="P5.jpg"; /><br />
+  <a href="../0_32.mp3">0:32<br />
+</a></span>fall 2006<br />
+<a href="../Algortreestudyfinal.mp3">Algortreestudyfinal</a><br />
+fall 2006<br />
+<a href="../TheCar.mp3">The Car<br />
+</a>spring 2004<br />
+<a href="../088.mp3">etude 8</a><br />
+summer 2005<br />
+<a href="../leftBounce.mp3">leftBounce</a><br />
+spring 2007<br />
+<a href="../longgranular.mp3">longgranular</a><br />
+fall 2006<br />
+<a href="../OneMinute.mp3">OneMinute</a><br />
+fall 2006<br />
+<a href="../Perky.mp3">Perky</a><br />
+ spring 2007
+ <br />
+ <a href="../SplitPersonalitiesI.2(James Mix B).mp3">SplitPersonalitiesI.2(James Mix B)</a><br />
+16-track analog with severiano martinez and ryan tallman, mills ccm, spring 2007
+<br />
+<a href="../treestudy2.mp3">treestudy2</a><br />
+fall 2006</p>
+<p>for much more music check the links for each release at the <a href="../discography.html">discography</a> page </p>
+<p class="style4"><span class="style10"><a href="../index.html">home</a></span></p>
+</body>
+</html>

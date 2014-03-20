@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>Brian B. James</title>      
+<script language="javascript" src="http://www.bbjames.com/init.js"></script>
+<script language="javascript" src="http://www.bbjames.com/processing.js"></script>
+
+
+
+<!--
+<script type="text/javascript" language="JavaScript">
+// hide content script
+function HideContent(d) {
+if(d.length < 1) { return; }
+document.getElementById(d).style.display = "none";
+}
+function ShowContent(d) {
+if(d.length < 1) { return; }
+document.getElementById(d).style.display = "block";
+}
+function ReverseContentDisplay(d) {
+if(d.length < 1) { return; }
+if(document.getElementById(d).style.display == "none") { document.getElementById(d).style.display = "block"; }
+else { document.getElementById(d).style.display = "none"; }
+}
+</script>-->
+
+<style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	left:50px;
+	top:75px;
+	width:275px;
+	height:41px;
+	z-index:1;
+}
+.style1 {font-family: Arial, Helvetica, sans-serif}
+.style3 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #47454A;
+	font-size: 24px;
+}
+a:link {
+	color: #47454A;
+}
+a:visited {
+	color: #ACACAE;
+}
+a:hover {
+	color: #E0D2CB;
+}
+a:active {
+	color: #EDEDED;
+}
+.style5 {color: #E0D2CB}
+#Layer2 {
+	position:absolute;
+	left:400px;
+	top:91px;
+	width:150px;
+	height:134px;
+	z-index:2;
+}
+.style34 {font-family: Arial, Helvetica, sans-serif; color: #E0D2CB; }
+-->
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /></head>
+<body>
+
+<div class="style1" id="Layer1">
+  <p><span class="style3"><a href="discography.html" target="_blank">audio</a> <a href="http://www.soundpressrecords.com" target="_blank">soundpressrecords</a><br />
+      <span class="style5">brian b. james</span></span></p>
+  <p><span class="style34">download my most recent audio art:</span><br />
+      <a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?id=316831201&amp;s=143441" target="_blank">open in itunes</a> <br />
+    <a href="http://www.soundpressrecords.com/seitan.html" target="_blank"><img src="Seitan.jpg" alt="Seitan" width="375" height="375" border="0" /></a><br />
+      <embed src="Telecom.mp3" width="200" height="32" autostart="True" hidden="true" loop="True"></embed>
+    </p>
+</div>
+<script type="application/processing">
+//
+
+// background
+int numSegments = 100;  
+float[] x = new float[numSegments];  
+float[] y = new float[numSegments];  
+float[] angle = new float[numSegments];  
+float segLength = 14;  
+float targetX, targetY;
+float ballX = 50;  
+float ballY = 50;  
+int ballXDirection = random(46);
+int ballYDirection = random(57);
+//int ballXDirection = 4;  
+//int ballYDirection = -6;
+
+// snake
+float[] xSnake = new float[20];  
+float[] ySnake = new float[20];  
+float snakeSegLength = 20;    
+
+void setup() {  
+	size(1800, 1400);
+	//frameRate(120);
+	smooth();
+	
+	int r1 = random(200);
+	r1 = r1+200;
+	int r2 = random(200);
+	r2 = r2+200;
+	int r3 = random(398);
+	r3 = r3+200;
+	//int r4 = random(50);
+	
+	colorMode(RGB,r1,r2,r3,200);  
+	//ps = new ParticleSystem(1,new Vector3D(width/5,height/5,0));  
+	//smooth();   
+	strokeWeight(20.0);  
+	stroke(60, 100);  
+	//noFill();  
+	x[x.length-4] = width/92;     // Set base x-coordinate  
+	y[x.length-4] = height/92;  // Set base y-coordinate  
+}  
+  
+void draw() {  
+	 background(19);  
+	 //ps.run();  
+	 //ps.addParticle();
+	
+	// snake
+	dragSegment(0, mouseX - 8, mouseY - 8);  
+	for(int iSnake=0; iSnake < xSnake.length-1; iSnake++) {  
+	  dragSegment(iSnake+1, xSnake[iSnake], ySnake[iSnake]);  
+	}
+	
+	 strokeWeight(600);
+	  
+	 ballX = ballX + 1.0 * ballXDirection;  
+	 ballY = ballY + 0.8 * ballYDirection;  
+	 if(ballX > width-25 || ballX < 25) {  
+	   ballXDirection *= -1;   
+	 }  
+	 if(ballY > height-25 || ballY < 25) {  
+	   ballYDirection *= -1;   
+	 }  
+		
+	 //ellipse(ballX, ballY, 30, 30); 
+	 
+	int randomBall = random(8);
+	int randomBall2 = random(8);
+	int randomColor = random(500);
+	int randomColor2 = random(500);
+	int randomColor3 = random(900);
+	int randomColor4 = random(75);
+	
+	triangle(ballX, ballY/PI, ballX*PI, ballX+PI, PI, PI/9);
+	fill(randomColor+randomBall, randomColor3, PI);
+	triangle(ballX, ballY, ballY+randomBall, randomBall2+ballY, PI/2, PI);
+	fill(randomColor+randomBall2, randomColor3, PI);
+	triangle(ballX, ballY, randomColor4-randomBall, randomColor4, PI*randomColor2, randomColor4);
+	fill(randomColor, randomColor3, randomColor2);
+	triangle(ballX, ballY, randomColor4+randomBall2, randomColor2, TWO_PI-PI/2, PI+randomColor2);
+	fill(randomColor2, randomColor2-randomBall2, 0);
+   
+	 reachSegment(0, ballX, ballY);  
+	 for(int i=1; i<numSegments; i++) {  
+	   reachSegment(i, targetX, targetY);  
+	 }  
+	 for(int i=x.length-1; i>=1; i--) {  
+	   positionSegment(i, i-1);    
+	 }   
+	 for(int i=0; i<x.length; i++) {  
+	   segment(x[i], y[i], angle[i], (i+1)*2);   
+	 }  
+}  
+
+// background
+void positionSegment(int a, int b) {  
+  x[b] = x[a] + cos(angle[a]) * segLength;  
+  y[b] = y[a] + sin(angle[a]) * segLength;   
+}  
+  
+void reachSegment(int i, float xin, float yin) {  
+  float dx = xin - x[i];  
+  float dy = yin - y[i];  
+  angle[i] = atan2(dy, dx);    
+  targetX = xin - cos(angle[i]) * segLength;  
+  targetY = yin - sin(angle[i]) * segLength;  
+}  
+  
+void segment(float x, float y, float a, float sw) {  
+  strokeWeight(sw);  
+  pushMatrix();  
+  translate(x, y);  
+  rotate(a);  
+  line(0, 0, segLength, 0);  
+  popMatrix();  
+}
+
+// snake
+void dragSegment(int iSnake, float xinSnake, float yinSnake) {  
+  float dxSnake = xinSnake - xSnake[iSnake];  
+  float dySnake = yinSnake - ySnake[iSnake];  
+  float angleSnake = atan2(dySnake, dxSnake);    
+  xSnake[iSnake] = xinSnake - cos(angleSnake) * snakeSegLength;  
+  ySnake[iSnake] = yinSnake - sin(angleSnake) * snakeSegLength;  
+  //stroke(23, 79, 4, 220);  
+    
+  pushMatrix();  
+  translate(xSnake[iSnake], ySnake[iSnake]);  
+  rotate(angleSnake);  
+    
+  color c;  
+    
+int random1 = random(700);
+
+	if ( iSnake % 3 == 1 )  
+	c = color(random1+100, random1+53, random1+29, random1);  
+		else if ( iSnake % 3 == 2 )  
+			c = color(random1+8, random1-36, random1-48, random1-23);  
+		else  
+			c = color(random1-53, random1+29, random1-5, random1-48);  
+
+	stroke( c );  
+	strokeWeight(10);  
+	
+	line(random1-500, random1-400, random1-300, random1-200);  
+
+	if ( iSnake == xSnake.length - 1 )  
+	{  
+	fill( c );  
+	noStroke();  
+	beginShape(TRIANGLES);  
+	vertex(0, 5);  
+	vertex(-2 * snakeSegLength, 0);  
+	vertex(0, -5);  
+	endShape();  
+	}  
+
+	if ( iSnake == 0 )  
+	{  
+	// stroke(0, 255);  
+	noStroke();  
+	fill(0, 255);  
+	ellipse(snakeSegLength, -2, 3, 3);  
+	ellipse(snakeSegLength, 2, 3, 3);  
+	//point(snakeSegLength, -2);  
+	//point(snakeSegLength, 2);  
+	}  
+
+	popMatrix();  
+}
+
+
+//
+</script><canvas width="1800px" height="1400px" style="position:absolute; left: 0px; top: 0px;"></canvas>
+
+
+
+<!--Google Tracking Script-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-12749059-1");
+pageTracker._setDomainName("none");
+pageTracker._setAllowLinker(true);
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

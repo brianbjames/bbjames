@@ -1,0 +1,943 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Cloudpanamp</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFFF;
+}
+.style1 {
+	font-family: Monaco;
+	font-size: 12px;
+}
+-->
+</style></head>
+
+<body>
+<span class="style1">//20 cloudFunc pan amp, by brian b. james<br />
+//this is a mix of code by Brad Garton, Chris Brown</span>
+<p class="style1">s.boot<br />
+  (<br />
+  var w,cpan1=0,panRng1=1,panslide1,pantext1,cpan2=0,panRng2=1,panslide2,cpan3=0,panRng3=1,panslide3,cpan4=0,panRng4=1,panslide4,cpan5=0,panRng5=1,panslide5,cpan6=0,panRng6=1,panslide6,cpan7=0,panRng7=1,panslide7,cpan8=0,panRng8=1,panslide8,cpan9=0,panRng9=1,panslide9,cpan10=0,panRng10=1,panslide10,cpan1b=0,panRng1b=1,panslide1b,cpan2b=0,panRng2b=1,panslide2b,cpan3b=0,panRng3b=1,panslide3b,cpan4b=0,panRng4b=1,panslide4b,cpan5b=0,panRng5b=1,panslide5b,cpan6b=0,panRng6b=1,panslide6b,cpan7b=0,panRng7b=1,panslide7b,cpan8b=0,panRng8b=1,panslide8b,cpan9b=0,panRng9b=1,panslide9b,cpan10b=0,panRng10b=1,panslide10b,cloudFunc1,cloudBtn1,freqSlider1,freqSldText1,cloudFunc2,cloudBtn2,freqSlider2,freqSldText2,cloudFunc3,cloudBtn3,freqSlider3,freqSldText3,cloudFunc4,cloudBtn4,freqSlider4,freqSldText4,cloudFunc5,cloudBtn5,freqSlider5,freqSldText5,cloudFunc6,cloudBtn6,freqSlider6,freqSldText6,cloudFunc7,cloudBtn7,freqSlider7,freqSldText7,cloudFunc8,cloudBtn8,freqSlider8,freqSldText8,cloudFunc9,cloudBtn9,freqSlider9,freqSldText9,cloudFunc10,cloudBtn10,freqSlider10,freqSldText10,cloudFunc1b,cloudBtn1b,freqSlider1b,freqSldText1b,cloudFunc2b,cloudBtn2b,freqSlider2b,freqSldText2b,cloudFunc3b,cloudBtn3b,freqSlider3b,freqSldText3b,cloudFunc4b,cloudBtn4b,freqSlider4b,freqSldText4b,cloudFunc5b,cloudBtn5b,freqSlider5b,freqSldText5b,cloudFunc6b,cloudBtn6b,freqSlider6b,freqSldText6b,cloudFunc7b,cloudBtn7b,freqSlider7b,freqSldText7b,cloudFunc8b,cloudBtn8b,freqSlider8b,freqSldText8b,cloudFunc9b,cloudBtn9b,freqSlider9b,freqSldText9b,cloudFunc10b,cloudBtn10b,freqSlider10b,freqSldText10b,ampRng1=0.1,camp1=0.1,ampslide1,amptext1,ampRng2=0.1,camp2=0.1,ampslide2,amptext2,ampRng3=0.1,camp3=0.1,ampslide3,amptext3,ampRng4=0.1,camp4=0.1,ampslide4,amptext4,ampRng5=0.1,camp5=0.1,ampslide5,amptext5,ampRng6=0.1,camp6=0.1,ampslide6,amptext6,ampRng7=0.1,camp7=0.1,ampslide7,amptext7,ampRng8=0.1,camp8=0.1,ampslide8,amptext8,ampRng9=0.1,camp9=0.1,ampslide9,amptext9,ampRng10=0.1,camp10=0.1,ampslide10,amptext10,ampRng1b=0.1,camp1b=0.1,ampslide1b,amptext1b,ampRng2b=0.1,camp2b=0.1,ampslide2b,amptext2b,ampRng3b=0.1,camp3b=0.1,ampslide3b,amptext3b,ampRng4b=0.1,camp4b=0.1,ampslide4b,amptext4b,ampRng5b=0.1,camp5b=0.1,ampslide5b,amptext5b,ampRng6b=0.1,camp6b=0.1,ampslide6b,amptext6b,ampRng7b=0.1,camp7b=0.1,ampslide7b,amptext7b,ampRng8b=0.1,camp8b=0.1,ampslide8b,amptext8b,ampRng9b=0.1,camp9b=0.1,ampslide9b,amptext9b,ampRng10b=0.1,camp10b=0.1,ampslide10b,amptext10b;</p>
+<p class="style1">//cloudFunc's 1-10, 1b-10b</p>
+<p class="style1">// this Function will be used, and reused, to create new granular clouds<br />
+  cloudFunc1 = { // each cloud generated will have its own unique variables<br />
+  var cloudDuration=0.025, startTime,freq,dur,amp,density,<br />
+  lofreq,hifreq,lodur=0.05,hidur=0.5,loamp=0.1,hiamp=0.2;<br />
+  startTime = thisThread.seconds;	// this gets the seconds since SC startup<br />
+  density = rrand(0.1,8); <br />
+  // use this kind of code to get values from an SCRangeSlider<br />
+  lofreq = [40,4000,\exp].asSpec.map(freqSlider1.lo);<br />
+  hifreq =  [40,4000,\exp].asSpec.map(freqSlider1.hi); <br />
+  //  the first function after &quot;while&quot; is a test; if true, the next function executes -- once it fails, the Routine ends<br />
+  while({ thisThread.seconds  &lt; (startTime+cloudDuration) },{ <br />
+  freq=rrand(lofreq,hifreq);<br />
+  dur = rrand(lodur,hidur);<br />
+  amp = rrand(loamp,hiamp);<br />
+  Synth(&quot;granSin&quot;,[		// replace with your own granular Synth<br />
+  &quot;freq&quot;,freq,<br />
+  &quot;dur&quot;, dur,<br />
+  \pan,cpan1+rrand(panRng1.neg,panRng1).max(-1.0),<br />
+  \amp,camp1+rrand(ampRng1.neg,ampRng1)]);<br />
+  (dur/density).wait;<br />
+  }); <br />
+  };</p>
+<p class="style1">cloudFunc2 = { <br />
+  var cloudDuration=0.25, startTime,freq,dur,amp,density,<br />
+  lofreq,hifreq,lodur=0.05,hidur=0.5,loamp=0.1,hiamp=0.2;<br />
+  startTime = thisThread.seconds; <br />
+  density = rrand(0.1,8); <br />
+  <br />
+  lofreq = [40,4000,\exp].asSpec.map(freqSlider2.lo);<br />
+  hifreq =  [40,4000,\exp].asSpec.map(freqSlider2.hi); <br />
+  <br />
+  while({ thisThread.seconds  &lt; (startTime+cloudDuration) },{ <br />
+  freq=rrand(lofreq,hifreq);<br />
+  dur = rrand(lodur,hidur);<br />
+  amp = rrand(loamp,hiamp);<br />
+  Synth(&quot;granSin&quot;,[ <br />
+  &quot;freq&quot;,freq,<br />
+  &quot;dur&quot;, dur,<br />
+  \pan,cpan2+rrand(panRng2.neg,panRng2).max(-1.0),<br />
+  \amp,camp2+rrand(ampRng2.neg,ampRng2)]);<br />
+  (dur/density).wait; <br />
+  }); <br />
+  };</p>
+<p class="style1">cloudFunc3 = { <br />
+  var cloudDuration=0.5, startTime,freq,dur,amp,density,<br />
+  lofreq,hifreq,lodur=0.05,hidur=0.5,loamp=0.1,hiamp=0.2;<br />
+  startTime = thisThread.seconds; <br />
+  density = rrand(0.1,8); <br />
+  <br />
+  lofreq = [40,4000,\exp].asSpec.map(freqSlider3.lo);<br />
+  hifreq =  [40,4000,\exp].asSpec.map(freqSlider3.hi); <br />
+  <br />
+  while({ thisThread.seconds  &lt; (startTime+cloudDuration) },{ <br />
+  freq=rrand(lofreq,hifreq);<br />
+  dur = rrand(lodur,hidur);<br />
+  amp = rrand(loamp,hiamp);<br />
+  Synth(&quot;granSin&quot;,[ <br />
+  &quot;freq&quot;,freq,<br />
+  &quot;dur&quot;, dur,<br />
+  \pan,cpan3+rrand(panRng3.neg,panRng3).max(-1.0),<br />
+  \amp,camp3+rrand(ampRng3.neg,ampRng3)]);<br />
+  (dur/density).wait; <br />
+  }); <br />
+  };</p>
+<p class="style1">cloudFunc4 = { <br />
+  var cloudDuration=1, startTime,freq,dur,amp,density,<br />
+  lofreq,hifreq,lodur=0.05,hidur=0.5,loamp=0.1,hiamp=0.2;<br />
+  startTime = thisThread.seconds; <br />
+  density = rrand(0.1,8); <br />
+  <br />
+  lofreq = [40,4000,\exp].asSpec.map(freqSlider4.lo);<br />
+  hifreq =  [40,4000,\exp].asSpec.map(freqSlider4.hi); <br />
+  <br />
+  while({ thisThread.seconds  &lt; (startTime+cloudDuration) },{ <br />
+  freq=rrand(lofreq,hifreq);<br />
+  dur = rrand(lodur,hidur);<br />
+  amp = rrand(loamp,hiamp);<br />
+  Synth(&quot;granSin&quot;,[ <br />
+  &quot;freq&quot;,freq,<br />
+  &quot;dur&quot;, dur,<br />
+  \pan,cpan4+rrand(panRng4.neg,panRng4).max(-1.0),<br />
+  \amp,camp4+rrand(ampRng4.neg,ampRng4)]);<br />
+  (dur/density).wait; <br />
+  }); <br />
+  };</p>
+<p class="style1">cloudFunc5 = { <br />
+  var cloudDuration=2, startTime,freq,dur,amp,density,<br />
+  lofreq,hifreq,lodur=0.05,hidur=0.5,loamp=0.1,hiamp=0.2;<br />
+  startTime = thisThread.seconds; <br />
+  density = rrand(0.1,8); <br />
+  <br />
+  lofreq = [40,4000,\exp].asSpec.map(freqSlider5.lo);<br />
+  hifreq =  [40,4000,\exp].asSpec.map(freqSlider5.hi); <br />
+  <br />
+  while({ thisThread.seconds  &lt; (startTime+cloudDuration) },{ <br />
+  freq=rrand(lofreq,hifreq);<br />
+  dur = rrand(lodur,hidur);<br />
+  amp = rrand(loamp,hiamp);<br />
+  Synth(&quot;granSin&quot;,[ <br />
+  &quot;freq&quot;,freq,<br />
+  &quot;dur&quot;, dur,<br />
+  \pan,cpan5+rrand(panRng5.neg,panRng5).max(-1.0),<br />
+  \amp,camp5+rrand(ampRng5.neg,ampRng5)]);<br />
+  (dur/density).wait; <br />
+  }); <br />
+  };<br />
+</p>
+<p class="style1">cloudFunc6 = { <br />
+  var cloudDuration=4, startTime,freq,dur,amp,density,<br />
+  lofreq,hifreq,lodur=0.05,hidur=0.5,loamp=0.1,hiamp=0.2;<br />
+  startTime = thisThread.seconds; <br />
+  density = rrand(0.1,8); <br />
+  <br />
+  lofreq = [40,4000,\exp].asSpec.map(freqSlider6.lo);<br />
+  hifreq =  [40,4000,\exp].asSpec.map(freqSlider6.hi); <br />
+  <br />
+  while({ thisThread.seconds  &lt; (startTime+cloudDuration) },{ <br />
+  freq=rrand(lofreq,hifreq);<br />
+  dur = rrand(lodur,hidur);<br />
+  amp = rrand(loamp,hiamp);<br />
+  Synth(&quot;granSin&quot;,[ <br />
+  &quot;freq&quot;,freq,<br />
+  &quot;dur&quot;, dur,<br />
+  \pan,cpan6+rrand(panRng6.neg,panRng6).max(-1.0),<br />
+  \amp,camp6+rrand(ampRng6.neg,ampRng6)]);<br />
+  (dur/density).wait; <br />
+  }); <br />
+  };</p>
+<p class="style1">cloudFunc7 = { <br />
+  var cloudDuration=8, startTime,freq,dur,amp,density,<br />
+  lofreq,hifreq,lodur=0.05,hidur=0.5,loamp=0.1,hiamp=0.2;<br />
+  startTime = thisThread.seconds; <br />
+  density = rrand(0.1,8); <br />
+  <br />
+  lofreq = [40,4000,\exp].asSpec.map(freqSlider7.lo);<br />
+  hifreq =  [40,4000,\exp].asSpec.map(freqSlider7.hi); <br />
+  <br />
+  while({ thisThread.seconds  &lt; (startTime+cloudDuration) },{ <br />
+  freq=rrand(lofreq,hifreq);<br />
+  dur = rrand(lodur,hidur);<br />
+  amp = rrand(loamp,hiamp);<br />
+  Synth(&quot;granSin&quot;,[ <br />
+  &quot;freq&quot;,freq,<br />
+  &quot;dur&quot;, dur,<br />
+  \pan,cpan7+rrand(panRng7.neg,panRng7).max(-1.0),<br />
+  \amp,camp7+rrand(ampRng7.neg,ampRng7)]);<br />
+  (dur/density).wait; <br />
+  }); <br />
+  };</p>
+<p class="style1">cloudFunc8 = { <br />
+  var cloudDuration=16, startTime,freq,dur,amp,density,<br />
+  lofreq,hifreq,lodur=0.05,hidur=0.5,loamp=0.1,hiamp=0.2;<br />
+  startTime = thisThread.seconds; <br />
+  density = rrand(0.1,8); <br />
+  <br />
+  lofreq = [40,4000,\exp].asSpec.map(freqSlider8.lo);<br />
+  hifreq =  [40,4000,\exp].asSpec.map(freqSlider8.hi); <br />
+  <br />
+  while({ thisThread.seconds  &lt; (startTime+cloudDuration) },{ <br />
+  freq=rrand(lofreq,hifreq);<br />
+  dur = rrand(lodur,hidur);<br />
+  amp = rrand(loamp,hiamp);<br />
+  Synth(&quot;granSin&quot;,[ <br />
+  &quot;freq&quot;,freq,<br />
+  &quot;dur&quot;, dur,<br />
+  \pan,cpan8+rrand(panRng8.neg,panRng8).max(-1.0),<br />
+  \amp,camp8+rrand(ampRng8.neg,ampRng8)]);<br />
+  (dur/density).wait; <br />
+  }); <br />
+  };</p>
+<p class="style1">cloudFunc9 = { <br />
+  var cloudDuration=32, startTime,freq,dur,amp,density,<br />
+  lofreq,hifreq,lodur=0.05,hidur=0.5,loamp=0.1,hiamp=0.2;<br />
+  startTime = thisThread.seconds; <br />
+  density = rrand(0.1,8); <br />
+  <br />
+  lofreq = [40,4000,\exp].asSpec.map(freqSlider9.lo);<br />
+  hifreq =  [40,4000,\exp].asSpec.map(freqSlider9.hi); <br />
+  <br />
+  while({ thisThread.seconds  &lt; (startTime+cloudDuration) },{ <br />
+  freq=rrand(lofreq,hifreq);<br />
+  dur = rrand(lodur,hidur);<br />
+  amp = rrand(loamp,hiamp);<br />
+  Synth(&quot;granSin&quot;,[ <br />
+  &quot;freq&quot;,freq,<br />
+  &quot;dur&quot;, dur,<br />
+  \pan,cpan9+rrand(panRng9.neg,panRng9).max(-1.0),<br />
+  \amp,camp9+rrand(ampRng9.neg,ampRng9)]);<br />
+  (dur/density).wait; <br />
+  }); <br />
+  };</p>
+<p class="style1">cloudFunc10 = { <br />
+  var cloudDuration=64, startTime,freq,dur,amp,density,<br />
+  lofreq,hifreq,lodur=0.05,hidur=0.5,loamp=0.1,hiamp=0.2;<br />
+  startTime = thisThread.seconds; <br />
+  density = rrand(0.1,8); <br />
+  <br />
+  lofreq = [40,4000,\exp].asSpec.map(freqSlider10.lo);<br />
+  hifreq =  [40,4000,\exp].asSpec.map(freqSlider10.hi); <br />
+  <br />
+  while({ thisThread.seconds  &lt; (startTime+cloudDuration) },{ <br />
+  freq=rrand(lofreq,hifreq);<br />
+  dur = rrand(lodur,hidur);<br />
+  amp = rrand(loamp,hiamp);<br />
+  Synth(&quot;granSin&quot;,[ <br />
+  &quot;freq&quot;,freq,<br />
+  &quot;dur&quot;, dur,<br />
+  \pan,cpan10+rrand(panRng10.neg,panRng10).max(-1.0),<br />
+  \amp,camp10+rrand(ampRng10.neg,ampRng10)]);<br />
+  (dur/density).wait; <br />
+  }); <br />
+  };<br />
+</p>
+<p class="style1">cloudFunc1b = { <br />
+  var cloudDuration=128, startTime,freq,dur,amp,density,<br />
+  lofreq,hifreq,lodur=0.05,hidur=0.5,loamp=0.1,hiamp=0.2;<br />
+  startTime = thisThread.seconds; <br />
+  density = rrand(0.1,8); <br />
+  <br />
+  lofreq = [40,4000,\exp].asSpec.map(freqSlider1b.lo);<br />
+  hifreq =  [40,4000,\exp].asSpec.map(freqSlider1b.hi); <br />
+  <br />
+  while({ thisThread.seconds  &lt; (startTime+cloudDuration) },{ <br />
+  freq=rrand(lofreq,hifreq);<br />
+  dur = rrand(lodur,hidur);<br />
+  amp = rrand(loamp,hiamp);<br />
+  Synth(&quot;granSin&quot;,[ <br />
+  &quot;freq&quot;,freq,<br />
+  &quot;dur&quot;, dur,<br />
+  \pan,cpan1b+rrand(panRng1b.neg,panRng1b).max(-1.0),<br />
+  \amp,camp1b+rrand(ampRng1b.neg,ampRng1b)]);<br />
+  (dur/density).wait; <br />
+  }); <br />
+  };</p>
+<p class="style1">cloudFunc2b = { <br />
+  var cloudDuration=256, startTime,freq,dur,amp,density,<br />
+  lofreq,hifreq,lodur=0.05,hidur=0.5,loamp=0.1,hiamp=0.2;<br />
+  startTime = thisThread.seconds; <br />
+  density = rrand(0.1,8); <br />
+  <br />
+  lofreq = [40,4000,\exp].asSpec.map(freqSlider2b.lo);<br />
+  hifreq =  [40,4000,\exp].asSpec.map(freqSlider2b.hi); <br />
+  <br />
+  while({ thisThread.seconds  &lt; (startTime+cloudDuration) },{ <br />
+  freq=rrand(lofreq,hifreq);<br />
+  dur = rrand(lodur,hidur);<br />
+  amp = rrand(loamp,hiamp);<br />
+  Synth(&quot;granSin&quot;,[ <br />
+  &quot;freq&quot;,freq,<br />
+  &quot;dur&quot;, dur,<br />
+  \pan,cpan2b+rrand(panRng2b.neg,panRng2b).max(-1.0),<br />
+  \amp,camp2b+rrand(ampRng2b.neg,ampRng2b)]);<br />
+  (dur/density).wait; <br />
+  }); <br />
+  };</p>
+<p class="style1">cloudFunc3b = { <br />
+  var cloudDuration=512, startTime,freq,dur,amp,density,<br />
+  lofreq,hifreq,lodur=0.05,hidur=0.5,loamp=0.1,hiamp=0.2;<br />
+  startTime = thisThread.seconds; <br />
+  density = rrand(0.1,8); <br />
+  <br />
+  lofreq = [40,4000,\exp].asSpec.map(freqSlider3b.lo);<br />
+  hifreq =  [40,4000,\exp].asSpec.map(freqSlider3b.hi); <br />
+  <br />
+  while({ thisThread.seconds  &lt; (startTime+cloudDuration) },{ <br />
+  freq=rrand(lofreq,hifreq);<br />
+  dur = rrand(lodur,hidur);<br />
+  amp = rrand(loamp,hiamp);<br />
+  Synth(&quot;granSin&quot;,[ <br />
+  &quot;freq&quot;,freq,<br />
+  &quot;dur&quot;, dur,<br />
+  \pan,cpan3b+rrand(panRng3b.neg,panRng3b).max(-1.0),<br />
+  \amp,camp3b+rrand(ampRng3b.neg,ampRng3b)]);<br />
+  (dur/density).wait; <br />
+  }); <br />
+  };</p>
+<p class="style1">cloudFunc4b = { <br />
+  var cloudDuration=1024, startTime,freq,dur,amp,density,<br />
+  lofreq,hifreq,lodur=0.05,hidur=0.5,loamp=0.1,hiamp=0.2;<br />
+  startTime = thisThread.seconds; <br />
+  density = rrand(0.1,8); <br />
+  <br />
+  lofreq = [40,4000,\exp].asSpec.map(freqSlider4b.lo);<br />
+  hifreq =  [40,4000,\exp].asSpec.map(freqSlider4b.hi); <br />
+  <br />
+  while({ thisThread.seconds  &lt; (startTime+cloudDuration) },{ <br />
+  freq=rrand(lofreq,hifreq);<br />
+  dur = rrand(lodur,hidur);<br />
+  amp = rrand(loamp,hiamp);<br />
+  Synth(&quot;granSin&quot;,[ <br />
+  &quot;freq&quot;,freq,<br />
+  &quot;dur&quot;, dur,<br />
+  \pan,cpan4b+rrand(panRng4b.neg,panRng4b).max(-1.0),<br />
+  \amp,camp4b+rrand(ampRng4b.neg,ampRng4b)]);<br />
+  (dur/density).wait; <br />
+  }); <br />
+  };</p>
+<p class="style1">cloudFunc5b = { <br />
+  var cloudDuration=2048, startTime,freq,dur,amp,density,<br />
+  lofreq,hifreq,lodur=0.05,hidur=0.5,loamp=0.1,hiamp=0.2;<br />
+  startTime = thisThread.seconds; <br />
+  density = rrand(0.1,8); <br />
+  <br />
+  lofreq = [40,4000,\exp].asSpec.map(freqSlider5b.lo);<br />
+  hifreq =  [40,4000,\exp].asSpec.map(freqSlider5b.hi); <br />
+  <br />
+  while({ thisThread.seconds  &lt; (startTime+cloudDuration) },{ <br />
+  freq=rrand(lofreq,hifreq);<br />
+  dur = rrand(lodur,hidur);<br />
+  amp = rrand(loamp,hiamp);<br />
+  Synth(&quot;granSin&quot;,[ <br />
+  &quot;freq&quot;,freq,<br />
+  &quot;dur&quot;, dur,<br />
+  \pan,cpan5b+rrand(panRng5b.neg,panRng5b).max(-1.0),<br />
+  \amp,camp5b+rrand(ampRng5b.neg,ampRng5b)]);<br />
+  (dur/density).wait; <br />
+  }); <br />
+  };<br />
+</p>
+<p class="style1">cloudFunc6b = { <br />
+  var cloudDuration=4096, startTime,freq,dur,amp,density,<br />
+  lofreq,hifreq,lodur=0.05,hidur=0.5,loamp=0.1,hiamp=0.2;<br />
+  startTime = thisThread.seconds; <br />
+  density = rrand(0.1,8); <br />
+  <br />
+  lofreq = [40,4000,\exp].asSpec.map(freqSlider6b.lo);<br />
+  hifreq =  [40,4000,\exp].asSpec.map(freqSlider6b.hi); <br />
+  <br />
+  while({ thisThread.seconds  &lt; (startTime+cloudDuration) },{ <br />
+  freq=rrand(lofreq,hifreq);<br />
+  dur = rrand(lodur,hidur);<br />
+  amp = rrand(loamp,hiamp);<br />
+  Synth(&quot;granSin&quot;,[ <br />
+  &quot;freq&quot;,freq,<br />
+  &quot;dur&quot;, dur,<br />
+  \pan,cpan6b+rrand(panRng6b.neg,panRng6b).max(-1.0),<br />
+  \amp,camp6b+rrand(ampRng6b.neg,ampRng6b)]);<br />
+  (dur/density).wait; <br />
+  }); <br />
+  };</p>
+<p class="style1">cloudFunc7b = { <br />
+  var cloudDuration=8192, startTime,freq,dur,amp,density,<br />
+  lofreq,hifreq,lodur=0.05,hidur=0.5,loamp=0.1,hiamp=0.2;<br />
+  startTime = thisThread.seconds; <br />
+  density = rrand(0.1,8); <br />
+  <br />
+  lofreq = [40,4000,\exp].asSpec.map(freqSlider7b.lo);<br />
+  hifreq =  [40,4000,\exp].asSpec.map(freqSlider7b.hi); <br />
+  <br />
+  while({ thisThread.seconds  &lt; (startTime+cloudDuration) },{ <br />
+  freq=rrand(lofreq,hifreq);<br />
+  dur = rrand(lodur,hidur);<br />
+  amp = rrand(loamp,hiamp);<br />
+  Synth(&quot;granSin&quot;,[ <br />
+  &quot;freq&quot;,freq,<br />
+  &quot;dur&quot;, dur,<br />
+  \pan,cpan7b+rrand(panRng7b.neg,panRng7b).max(-1.0),<br />
+  \amp,camp7b+rrand(ampRng7b.neg,ampRng7b)]);<br />
+  (dur/density).wait; <br />
+  }); <br />
+  };</p>
+<p class="style1">cloudFunc8b = { <br />
+  var cloudDuration=16384, startTime,freq,dur,amp,density,<br />
+  lofreq,hifreq,lodur=0.05,hidur=0.5,loamp=0.1,hiamp=0.2;<br />
+  startTime = thisThread.seconds; <br />
+  density = rrand(0.1,8); <br />
+  <br />
+  lofreq = [40,4000,\exp].asSpec.map(freqSlider8b.lo);<br />
+  hifreq =  [40,4000,\exp].asSpec.map(freqSlider8b.hi); <br />
+  <br />
+  while({ thisThread.seconds  &lt; (startTime+cloudDuration) },{ <br />
+  freq=rrand(lofreq,hifreq);<br />
+  dur = rrand(lodur,hidur);<br />
+  amp = rrand(loamp,hiamp);<br />
+  Synth(&quot;granSin&quot;,[ <br />
+  &quot;freq&quot;,freq,<br />
+  &quot;dur&quot;, dur,<br />
+  \pan,cpan8b+rrand(panRng8b.neg,panRng8b).max(-1.0),<br />
+  \amp,camp8b+rrand(ampRng8b.neg,ampRng8b)]);<br />
+  (dur/density).wait; <br />
+  }); <br />
+  };</p>
+<p class="style1">cloudFunc9b = { <br />
+  var cloudDuration=32768, startTime,freq,dur,amp,density,<br />
+  lofreq,hifreq,lodur=0.05,hidur=0.5,loamp=0.1,hiamp=0.2;<br />
+  startTime = thisThread.seconds; <br />
+  density = rrand(0.1,8); <br />
+  <br />
+  lofreq = [40,4000,\exp].asSpec.map(freqSlider9b.lo);<br />
+  hifreq =  [40,4000,\exp].asSpec.map(freqSlider9b.hi); <br />
+  <br />
+  while({ thisThread.seconds  &lt; (startTime+cloudDuration) },{ <br />
+  freq=rrand(lofreq,hifreq);<br />
+  dur = rrand(lodur,hidur);<br />
+  amp = rrand(loamp,hiamp);<br />
+  Synth(&quot;granSin&quot;,[ <br />
+  &quot;freq&quot;,freq,<br />
+  &quot;dur&quot;, dur,<br />
+  \pan,cpan9b+rrand(panRng9b.neg,panRng9b).max(-1.0),<br />
+  \amp,camp9b+rrand(ampRng9b.neg,ampRng9b)]);<br />
+  (dur/density).wait; <br />
+  }); <br />
+  };</p>
+<p class="style1">cloudFunc10b = { <br />
+  var cloudDuration=65536, startTime,freq,dur,amp,density,<br />
+  lofreq,hifreq,lodur=0.05,hidur=0.5,loamp=0.1,hiamp=0.2;<br />
+  startTime = thisThread.seconds; <br />
+  density = rrand(0.1,8); <br />
+  <br />
+  lofreq = [40,4000,\exp].asSpec.map(freqSlider10b.lo);<br />
+  hifreq =  [40,4000,\exp].asSpec.map(freqSlider10b.hi); <br />
+  <br />
+  while({ thisThread.seconds  &lt; (startTime+cloudDuration) },{ <br />
+  freq=rrand(lofreq,hifreq);<br />
+  dur = rrand(lodur,hidur);<br />
+  amp = rrand(loamp,hiamp);<br />
+  Synth(&quot;granSin&quot;,[ <br />
+  &quot;freq&quot;,freq,<br />
+  &quot;dur&quot;, dur,<br />
+  \pan,cpan10b+rrand(panRng10b.neg,panRng10b).max(-1.0),<br />
+  \amp,camp10b+rrand(ampRng10b.neg,ampRng10b)]);<br />
+  (dur/density).wait; <br />
+  }); <br />
+  };</p>
+<p class="style1">//GUI</p>
+<p class="style1">w = SCWindow(&quot;cloud pan amp&quot;, Rect(10, 400, 430, 440));<br />
+  w.front;</p>
+<p class="style1">// the beginnings of a GUI to control all cloud parameters -- here, just controls to start the cloud, and to control its frequency range -- extend this to other parameters<br />
+  cloudBtn1 = SCButton(w, Rect(10,10, 80, 20)); //Rect(inLeft, inTop, inWidth, inHeight)<br />
+  cloudBtn1.states = [<br />
+  [&quot;0.025 sec&quot;, Color.black, Color.new(0.0, 0.5, 0.9)]];<br />
+  cloudBtn1.action = { arg view;<br />
+  // create a Routine using cloudFunc<br />
+  Routine(cloudFunc1).play(AppClock); // AppClock allows GUI interaction<br />
+  };<br />
+  freqSlider1= SCRangeSlider(w, Rect(100,10, 100,20)).lo_(0.1).hi_(0.2);</p>
+<p class="style1">freqSldText1 = SCStaticText(w, Rect(100,410, 90,20));<br />
+  freqSldText1.font = Font(&quot;Helvetica&quot;, 10);<br />
+  freqSldText1.stringColor = Color.blue;<br />
+  freqSldText1.align = \left;<br />
+  freqSldText1.string = &quot;grain freq&quot;; <br />
+  <br />
+  pantext1 = SCStaticText(w, Rect(210,410, 90,20)); <br />
+  pantext1.font = Font(&quot;Helvetica&quot;, 10);<br />
+  pantext1.stringColor = Color.blue;<br />
+  pantext1.align = \left;<br />
+  pantext1.string = &quot;stereo variance&quot;;<br />
+  <br />
+  panslide1 = SCRangeSlider(w, Rect(210,10, 100,20));<br />
+  panslide1.lo = -1.0;<br />
+  panslide1.hi = 1.0;<br />
+  panslide1.action = { arg slider;<br />
+  cpan1 = \pan.asSpec<br />
+  .map(((panslide1.hi - panslide1.lo)*0.5)+panslide1.lo);<br />
+  panRng1 = cpan1-\pan.asSpec.map(panslide1.lo);<br />
+  };<br />
+  <br />
+  amptext1 = SCStaticText(w, Rect(320,410, 90,20));<br />
+  amptext1.font = Font(&quot;Helvetica&quot;, 10);<br />
+  amptext1.stringColor = Color.blue;<br />
+  amptext1.align = \left;<br />
+  amptext1.string = &quot;amp variance&quot;;<br />
+  <br />
+  ampslide1 = SCRangeSlider(w, Rect(320,10, 100,20));<br />
+  ampslide1.lo = 0.1;<br />
+  ampslide1.hi = 0.3;<br />
+  ampslide1.action = { arg slider;<br />
+  camp1 = \amp.asSpec.map(((ampslide1.hi - ampslide1.lo)*0.5)+ampslide1.lo);<br />
+  ampRng1 = camp1-(\amp.asSpec.map(ampslide1.lo));<br />
+  };<br />
+</p>
+<p class="style1">cloudBtn2 = SCButton(w, Rect(10,30, 80, 20));<br />
+  cloudBtn2.states = [<br />
+  [&quot;0.25 sec&quot;, Color.black, Color.new(0.0, 0.5, 0.9)]];<br />
+  cloudBtn2.action = { arg view;<br />
+  <br />
+  Routine(cloudFunc2).play(AppClock); <br />
+  };<br />
+  freqSlider2 = SCRangeSlider(w, Rect(100,30, 100,20)).lo_(0.1).hi_(0.2);</p>
+<p class="style1">panslide2 = SCRangeSlider(w, Rect(210,30, 100,20));<br />
+  panslide2.lo = -1.0;<br />
+  panslide2.hi = 1.0;<br />
+  panslide2.action = { arg slider;<br />
+  cpan2 = \pan.asSpec<br />
+  .map(((panslide2.hi - panslide2.lo)*0.5)+panslide2.lo);<br />
+  panRng2 = cpan2-\pan.asSpec.map(panslide2.lo);<br />
+  };<br />
+  <br />
+  ampslide2 = SCRangeSlider(w, Rect(320,30, 100,20));<br />
+  ampslide2.lo = 0.1;<br />
+  ampslide2.hi = 0.3;<br />
+  ampslide2.action = { arg slider;<br />
+  camp2 = \amp.asSpec.map(((ampslide2.hi - ampslide2.lo)*0.5)+ampslide2.lo);<br />
+  ampRng2 = camp2-(\amp.asSpec.map(ampslide2.lo));<br />
+  };<br />
+</p>
+<p class="style1">cloudBtn3 = SCButton(w, Rect(10,50, 80, 20));<br />
+  cloudBtn3.states = [<br />
+  [&quot;0.5 sec&quot;, Color.black, Color.new(0.0, 0.5, 0.9)]];<br />
+  cloudBtn3.action = { arg view;<br />
+  <br />
+  Routine(cloudFunc3).play(AppClock); <br />
+  };<br />
+  freqSlider3= SCRangeSlider(w, Rect(100,50, 100,20)).lo_(0.1).hi_(0.2);</p>
+<p class="style1">panslide3 = SCRangeSlider(w, Rect(210,50, 100,20));<br />
+  panslide3.lo = -1.0;<br />
+  panslide3.hi = 1.0;<br />
+  panslide3.action = { arg slider;<br />
+  cpan3 = \pan.asSpec<br />
+  .map(((panslide3.hi - panslide3.lo)*0.5)+panslide3.lo);<br />
+  panRng3 = cpan3-\pan.asSpec.map(panslide3.lo);<br />
+  };</p>
+<p class="style1">ampslide3 = SCRangeSlider(w, Rect(320,50, 100,20));<br />
+  ampslide3.lo = 0.1;<br />
+  ampslide3.hi = 0.3;<br />
+  ampslide3.action = { arg slider;<br />
+  camp3 = \amp.asSpec.map(((ampslide3.hi - ampslide3.lo)*0.5)+ampslide3.lo);<br />
+  ampRng3 = camp3-(\amp.asSpec.map(ampslide3.lo));<br />
+  };<br />
+</p>
+<p class="style1">cloudBtn4 = SCButton(w, Rect(10,70, 80, 20));<br />
+  cloudBtn4.states = [<br />
+  [&quot;1 sec&quot;, Color.black, Color.new(0.0, 0.5, 0.9)]];<br />
+  cloudBtn4.action = { arg view;<br />
+  <br />
+  Routine(cloudFunc4).play(AppClock); <br />
+  };<br />
+  freqSlider4= SCRangeSlider(w, Rect(100,70, 100,20)).lo_(0.1).hi_(0.2);</p>
+<p class="style1">panslide4 = SCRangeSlider(w, Rect(210,70, 100,20));<br />
+  panslide4.lo = -1.0;<br />
+  panslide4.hi = 1.0;<br />
+  panslide4.action = { arg slider;<br />
+  cpan4 = \pan.asSpec<br />
+  .map(((panslide4.hi - panslide4.lo)*0.5)+panslide4.lo);<br />
+  panRng4 = cpan4-\pan.asSpec.map(panslide4.lo);<br />
+  };</p>
+<p class="style1">ampslide4 = SCRangeSlider(w, Rect(320,70, 100,20));<br />
+  ampslide4.lo = 0.1;<br />
+  ampslide4.hi = 0.3;<br />
+  ampslide4.action = { arg slider;<br />
+  camp4 = \amp.asSpec.map(((ampslide4.hi - ampslide4.lo)*0.5)+ampslide4.lo);<br />
+  ampRng4 = camp4-(\amp.asSpec.map(ampslide4.lo));<br />
+  };</p>
+<p class="style1">cloudBtn5 = SCButton(w, Rect(10,90, 80, 20));<br />
+  cloudBtn5.states = [<br />
+  [&quot;2 sec&quot;, Color.black, Color.new(0.0, 0.5, 0.9)]];<br />
+  cloudBtn5.action = { arg view;<br />
+  <br />
+  Routine(cloudFunc5).play(AppClock); <br />
+  };<br />
+  freqSlider5= SCRangeSlider(w, Rect(100,90, 100,20)).lo_(0.1).hi_(0.2);</p>
+<p class="style1">panslide5 = SCRangeSlider(w, Rect(210,90, 100,20));<br />
+  panslide5.lo = -1.0;<br />
+  panslide5.hi = 1.0;<br />
+  panslide5.action = { arg slider;<br />
+  cpan5 = \pan.asSpec<br />
+  .map(((panslide5.hi - panslide5.lo)*0.5)+panslide5.lo);<br />
+  panRng5 = cpan5-\pan.asSpec.map(panslide5.lo);<br />
+  };<br />
+  <br />
+  ampslide5 = SCRangeSlider(w, Rect(320,90, 100,20));<br />
+  ampslide5.lo = 0.1;<br />
+  ampslide5.hi = 0.3;<br />
+  ampslide5.action = { arg slider;<br />
+  camp5 = \amp.asSpec.map(((ampslide5.hi - ampslide5.lo)*0.5)+ampslide5.lo);<br />
+  ampRng5 = camp5-(\amp.asSpec.map(ampslide5.lo));<br />
+  };<br />
+</p>
+<p class="style1">cloudBtn6 = SCButton(w, Rect(10,110, 80, 20));<br />
+  cloudBtn6.states = [<br />
+  [&quot;4 sec&quot;, Color.black, Color.new(0.0, 0.5, 0.9)]];<br />
+  cloudBtn6.action = { arg view;<br />
+  <br />
+  Routine(cloudFunc6).play(AppClock); <br />
+  };<br />
+  freqSlider6= SCRangeSlider(w, Rect(100,110, 100,20)).lo_(0.1).hi_(0.2);</p>
+<p class="style1">panslide6 = SCRangeSlider(w, Rect(210,110, 100,20));<br />
+  panslide6.lo = -1.0;<br />
+  panslide6.hi = 1.0;<br />
+  panslide6.action = { arg slider;<br />
+  cpan6 = \pan.asSpec<br />
+  .map(((panslide6.hi - panslide6.lo)*0.5)+panslide6.lo);<br />
+  panRng6 = cpan6-\pan.asSpec.map(panslide6.lo);<br />
+  };</p>
+<p class="style1">ampslide6 = SCRangeSlider(w, Rect(320,110, 100,20));<br />
+  ampslide6.lo = 0.1;<br />
+  ampslide6.hi = 0.3;<br />
+  ampslide6.action = { arg slider;<br />
+  camp6 = \amp.asSpec.map(((ampslide6.hi - ampslide6.lo)*0.5)+ampslide6.lo);<br />
+  ampRng6 = camp6-(\amp.asSpec.map(ampslide6.lo));<br />
+  };</p>
+<p class="style1">cloudBtn7 = SCButton(w, Rect(10,130, 80, 20));<br />
+  cloudBtn7.states = [<br />
+  [&quot;8 sec&quot;, Color.black, Color.new(0.0, 0.5, 0.9)]];<br />
+  cloudBtn7.action = { arg view;<br />
+  <br />
+  Routine(cloudFunc7).play(AppClock); <br />
+  };<br />
+  freqSlider7 = SCRangeSlider(w, Rect(100,130, 100,20)).lo_(0.1).hi_(0.2);</p>
+<p class="style1">panslide7 = SCRangeSlider(w, Rect(210,130, 100,20));<br />
+  panslide7.lo = -1.0;<br />
+  panslide7.hi = 1.0;<br />
+  panslide7.action = { arg slider;<br />
+  cpan7 = \pan.asSpec<br />
+  .map(((panslide7.hi - panslide7.lo)*0.5)+panslide7.lo);<br />
+  panRng7 = cpan7-\pan.asSpec.map(panslide7.lo);<br />
+  };</p>
+<p class="style1">ampslide7 = SCRangeSlider(w, Rect(320,130, 100,20));<br />
+  ampslide7.lo = 0.1;<br />
+  ampslide7.hi = 0.3;<br />
+  ampslide7.action = { arg slider;<br />
+  camp7 = \amp.asSpec.map(((ampslide7.hi - ampslide7.lo)*0.5)+ampslide7.lo);<br />
+  ampRng7 = camp7-(\amp.asSpec.map(ampslide7.lo));<br />
+  };</p>
+<p class="style1">cloudBtn8 = SCButton(w, Rect(10,150, 80, 20));<br />
+  cloudBtn8.states = [<br />
+  [&quot;16 sec&quot;, Color.black, Color.new(0.0, 0.5, 0.9)]];<br />
+  cloudBtn8.action = { arg view;<br />
+  <br />
+  Routine(cloudFunc8).play(AppClock); <br />
+  };<br />
+  freqSlider8= SCRangeSlider(w, Rect(100,150, 100,20)).lo_(0.1).hi_(0.2);</p>
+<p class="style1">panslide8 = SCRangeSlider(w, Rect(210,150, 100,20));<br />
+  panslide8.lo = -1.0;<br />
+  panslide8.hi = 1.0;<br />
+  panslide8.action = { arg slider;<br />
+  cpan8 = \pan.asSpec<br />
+  .map(((panslide8.hi - panslide8.lo)*0.5)+panslide8.lo);<br />
+  panRng8 = cpan8-\pan.asSpec.map(panslide8.lo);<br />
+  };</p>
+<p class="style1">ampslide8 = SCRangeSlider(w, Rect(320,150, 100,20));<br />
+  ampslide8.lo = 0.1;<br />
+  ampslide8.hi = 0.3;<br />
+  ampslide8.action = { arg slider;<br />
+  camp8 = \amp.asSpec.map(((ampslide8.hi - ampslide8.lo)*0.5)+ampslide8.lo);<br />
+  ampRng8 = camp8-(\amp.asSpec.map(ampslide8.lo));<br />
+  };</p>
+<p class="style1">cloudBtn9 = SCButton(w, Rect(10,170, 80, 20));<br />
+  cloudBtn9.states = [<br />
+  [&quot;32 sec&quot;, Color.black, Color.new(0.0, 0.5, 0.9)]];<br />
+  cloudBtn9.action = { arg view;<br />
+  <br />
+  Routine(cloudFunc9).play(AppClock); <br />
+  };<br />
+  freqSlider9= SCRangeSlider(w, Rect(100,170, 100,20)).lo_(0.1).hi_(0.2);</p>
+<p class="style1">panslide9 = SCRangeSlider(w, Rect(210,170, 100,20));<br />
+  panslide9.lo = -1.0;<br />
+  panslide9.hi = 1.0;<br />
+  panslide9.action = { arg slider;<br />
+  cpan9 = \pan.asSpec<br />
+  .map(((panslide9.hi - panslide9.lo)*0.5)+panslide9.lo);<br />
+  panRng9 = cpan9-\pan.asSpec.map(panslide9.lo);<br />
+  };</p>
+<p class="style1">ampslide9 = SCRangeSlider(w, Rect(320,170, 100,20));<br />
+  ampslide9.lo = 0.1;<br />
+  ampslide9.hi = 0.3;<br />
+  ampslide9.action = { arg slider;<br />
+  camp9 = \amp.asSpec.map(((ampslide9.hi - ampslide9.lo)*0.5)+ampslide9.lo);<br />
+  ampRng9 = camp9-(\amp.asSpec.map(ampslide9.lo));<br />
+  };</p>
+<p class="style1">cloudBtn10 = SCButton(w, Rect(10,190, 80, 20));<br />
+  cloudBtn10.states = [<br />
+  [&quot;64 sec&quot;, Color.black, Color.new(0.0, 0.5, 0.9)]];<br />
+  cloudBtn10.action = { arg view;<br />
+  <br />
+  Routine(cloudFunc10).play(AppClock); <br />
+  };<br />
+  freqSlider10= SCRangeSlider(w, Rect(100,190, 100,20)).lo_(0.1).hi_(0.2);</p>
+<p class="style1">panslide10 = SCRangeSlider(w, Rect(210,190, 100,20));<br />
+  panslide10.lo = -1.0;<br />
+  panslide10.hi = 1.0;<br />
+  panslide10.action = { arg slider;<br />
+  cpan10 = \pan.asSpec<br />
+  .map(((panslide10.hi - panslide10.lo)*0.5)+panslide10.lo);<br />
+  panRng10 = cpan10-\pan.asSpec.map(panslide10.lo);<br />
+  };<br />
+  <br />
+  ampslide10 = SCRangeSlider(w, Rect(320,190, 100,20));<br />
+  ampslide10.lo = 0.1;<br />
+  ampslide10.hi = 0.3;<br />
+  ampslide10.action = { arg slider;<br />
+  camp10 = \amp.asSpec.map(((ampslide10.hi - ampslide10.lo)*0.5)+ampslide10.lo);<br />
+  ampRng10 = camp10-(\amp.asSpec.map(ampslide10.lo));<br />
+  };</p>
+<p class="style1">cloudBtn1b = SCButton(w, Rect(10,210, 80, 20));<br />
+  cloudBtn1b.states = [<br />
+  [&quot;128 sec&quot;, Color.black, Color.new(0.0, 0.5, 0.9)]];<br />
+  cloudBtn1b.action = { arg view;<br />
+  <br />
+  Routine(cloudFunc1b).play(AppClock); <br />
+  };<br />
+  freqSlider1b= SCRangeSlider(w, Rect(100,210, 100,20)).lo_(0.1).hi_(0.2);</p>
+<p class="style1">panslide1b = SCRangeSlider(w, Rect(210,210, 100,20));<br />
+  panslide1b.lo = -1.0;<br />
+  panslide1b.hi = 1.0;<br />
+  panslide1b.action = { arg slider;<br />
+  cpan1b = \pan.asSpec<br />
+  .map(((panslide1b.hi - panslide1b.lo)*0.5)+panslide1b.lo);<br />
+  panRng1b = cpan1b-\pan.asSpec.map(panslide1b.lo);<br />
+  };</p>
+<p class="style1">ampslide1b = SCRangeSlider(w, Rect(320,210, 100,20));<br />
+  ampslide1b.lo = 0.1;<br />
+  ampslide1b.hi = 0.3;<br />
+  ampslide1b.action = { arg slider;<br />
+  camp1b = \amp.asSpec.map(((ampslide1b.hi - ampslide1b.lo)*0.5)+ampslide1b.lo);<br />
+  ampRng1b = camp1b-(\amp.asSpec.map(ampslide1b.lo));<br />
+  };</p>
+<p class="style1">cloudBtn2b = SCButton(w, Rect(10,230, 80, 20));<br />
+  cloudBtn2b.states = [<br />
+  [&quot;256 sec&quot;, Color.black, Color.new(0.0, 0.5, 0.9)]];<br />
+  cloudBtn2b.action = { arg view;<br />
+  <br />
+  Routine(cloudFunc2b).play(AppClock); <br />
+  };<br />
+  freqSlider2b = SCRangeSlider(w, Rect(100,230, 100,20)).lo_(0.1).hi_(0.2);</p>
+<p class="style1">panslide2b = SCRangeSlider(w, Rect(210,230, 100,20));<br />
+  panslide2b.lo = -1.0;<br />
+  panslide2b.hi = 1.0;<br />
+  panslide2b.action = { arg slider;<br />
+  cpan2b = \pan.asSpec<br />
+  .map(((panslide2b.hi - panslide2b.lo)*0.5)+panslide2b.lo);<br />
+  panRng2b = cpan2b-\pan.asSpec.map(panslide2b.lo);<br />
+  };</p>
+<p class="style1">ampslide2b = SCRangeSlider(w, Rect(320,230, 100,20));<br />
+  ampslide2b.lo = 0.1;<br />
+  ampslide2b.hi = 0.3;<br />
+  ampslide2b.action = { arg slider;<br />
+  camp2b = \amp.asSpec.map(((ampslide2b.hi - ampslide2b.lo)*0.5)+ampslide2b.lo);<br />
+  ampRng2b = camp2b-(\amp.asSpec.map(ampslide2b.lo));<br />
+  };</p>
+<p class="style1">cloudBtn3b = SCButton(w, Rect(10,250, 80, 20));<br />
+  cloudBtn3b.states = [<br />
+  [&quot;512 sec&quot;, Color.black, Color.new(0.0, 0.5, 0.9)]];<br />
+  cloudBtn3b.action = { arg view;<br />
+  <br />
+  Routine(cloudFunc3b).play(AppClock); <br />
+  };<br />
+  freqSlider3b= SCRangeSlider(w, Rect(100,250, 100,20)).lo_(0.1).hi_(0.2);</p>
+<p class="style1">panslide3b = SCRangeSlider(w, Rect(210,250, 100,20));<br />
+  panslide3b.lo = -1.0;<br />
+  panslide3b.hi = 1.0;<br />
+  panslide3b.action = { arg slider;<br />
+  cpan3b = \pan.asSpec<br />
+  .map(((panslide3b.hi - panslide3b.lo)*0.5)+panslide3b.lo);<br />
+  panRng3b = cpan3b-\pan.asSpec.map(panslide3b.lo);<br />
+  };</p>
+<p class="style1">ampslide3b = SCRangeSlider(w, Rect(320,250, 100,20));<br />
+  ampslide3b.lo = 0.1;<br />
+  ampslide3b.hi = 0.3;<br />
+  ampslide3b.action = { arg slider;<br />
+  camp3b = \amp.asSpec.map(((ampslide3b.hi - ampslide3b.lo)*0.5)+ampslide3b.lo);<br />
+  ampRng3b = camp3b-(\amp.asSpec.map(ampslide3b.lo));<br />
+  };</p>
+<p class="style1">cloudBtn4b = SCButton(w, Rect(10,270, 80, 20));<br />
+  cloudBtn4b.states = [<br />
+  [&quot;1024 sec&quot;, Color.black, Color.new(0.0, 0.5, 0.9)]];<br />
+  cloudBtn4b.action = { arg view;<br />
+  <br />
+  Routine(cloudFunc4b).play(AppClock); <br />
+  };<br />
+  freqSlider4b= SCRangeSlider(w, Rect(100,270, 100,20)).lo_(0.1).hi_(0.2);</p>
+<p class="style1">panslide4b = SCRangeSlider(w, Rect(210,270, 100,20));<br />
+  panslide4b.lo = -1.0;<br />
+  panslide4b.hi = 1.0;<br />
+  panslide4b.action = { arg slider;<br />
+  cpan4b = \pan.asSpec<br />
+  .map(((panslide4b.hi - panslide4b.lo)*0.5)+panslide4b.lo);<br />
+  panRng4b = cpan4b-\pan.asSpec.map(panslide4b.lo);<br />
+  };</p>
+<p class="style1">ampslide4b = SCRangeSlider(w, Rect(320,270, 100,20));<br />
+  ampslide4b.lo = 0.1;<br />
+  ampslide4b.hi = 0.3;<br />
+  ampslide4b.action = { arg slider;<br />
+  camp4b = \amp.asSpec.map(((ampslide4b.hi - ampslide4b.lo)*0.5)+ampslide4b.lo);<br />
+  ampRng4b = camp4b-(\amp.asSpec.map(ampslide4b.lo));<br />
+  };</p>
+<p class="style1">cloudBtn5b = SCButton(w, Rect(10,290, 80, 20));<br />
+  cloudBtn5b.states = [<br />
+  [&quot;2048 sec&quot;, Color.black, Color.new(0.0, 0.5, 0.9)]];<br />
+  cloudBtn5b.action = { arg view;<br />
+  <br />
+  Routine(cloudFunc5b).play(AppClock); <br />
+  };<br />
+  freqSlider5b= SCRangeSlider(w, Rect(100,290, 100,20)).lo_(0.1).hi_(0.2);</p>
+<p class="style1">panslide5b = SCRangeSlider(w, Rect(210,290, 100,20));<br />
+  panslide5b.lo = -1.0;<br />
+  panslide5b.hi = 1.0;<br />
+  panslide5b.action = { arg slider;<br />
+  cpan5b = \pan.asSpec<br />
+  .map(((panslide5b.hi - panslide5b.lo)*0.5)+panslide5b.lo);<br />
+  panRng5b = cpan5b-\pan.asSpec.map(panslide5b.lo);<br />
+  };<br />
+  <br />
+  ampslide5b = SCRangeSlider(w, Rect(320,290, 100,20));<br />
+  ampslide5b.lo = 0.1;<br />
+  ampslide5b.hi = 0.3;<br />
+  ampslide5b.action = { arg slider;<br />
+  camp5b = \amp.asSpec.map(((ampslide5b.hi - ampslide5b.lo)*0.5)+ampslide5b.lo);<br />
+  ampRng5b = camp5b-(\amp.asSpec.map(ampslide5b.lo));<br />
+  };</p>
+<p class="style1">cloudBtn6b = SCButton(w, Rect(10,310, 80, 20));<br />
+  cloudBtn6b.states = [<br />
+  [&quot;4096 sec&quot;, Color.black, Color.new(0.0, 0.5, 0.9)]];<br />
+  cloudBtn6b.action = { arg view;<br />
+  <br />
+  Routine(cloudFunc6b).play(AppClock); <br />
+  };<br />
+  freqSlider6b= SCRangeSlider(w, Rect(100,310, 100,20)).lo_(0.1).hi_(0.2);</p>
+<p class="style1">panslide6b = SCRangeSlider(w, Rect(210,310, 100,20));<br />
+  panslide6b.lo = -1.0;<br />
+  panslide6b.hi = 1.0;<br />
+  panslide6b.action = { arg slider;<br />
+  cpan6b = \pan.asSpec<br />
+  .map(((panslide6b.hi - panslide6b.lo)*0.5)+panslide6b.lo);<br />
+  panRng6b = cpan6b-\pan.asSpec.map(panslide6b.lo);<br />
+  };</p>
+<p class="style1">ampslide6b = SCRangeSlider(w, Rect(320,310, 100,20));<br />
+  ampslide6b.lo = 0.1;<br />
+  ampslide6b.hi = 0.3;<br />
+  ampslide6b.action = { arg slider;<br />
+  camp6b = \amp.asSpec.map(((ampslide6b.hi - ampslide6b.lo)*0.5)+ampslide6b.lo);<br />
+  ampRng6b = camp6b-(\amp.asSpec.map(ampslide6b.lo));<br />
+  };</p>
+<p class="style1">cloudBtn7b = SCButton(w, Rect(10,330, 80, 20));<br />
+  cloudBtn7b.states = [<br />
+  [&quot;8192 sec&quot;, Color.black, Color.new(0.0, 0.5, 0.9)]];<br />
+  cloudBtn7b.action = { arg view;<br />
+  <br />
+  Routine(cloudFunc7b).play(AppClock); <br />
+  };<br />
+  freqSlider7b= SCRangeSlider(w, Rect(100,330, 100,20)).lo_(0.1).hi_(0.2);</p>
+<p class="style1">panslide7b = SCRangeSlider(w, Rect(210,330, 100,20));<br />
+  panslide7b.lo = -1.0;<br />
+  panslide7b.hi = 1.0;<br />
+  panslide7b.action = { arg slider;<br />
+  cpan7b = \pan.asSpec<br />
+  .map(((panslide7b.hi - panslide7b.lo)*0.5)+panslide7b.lo);<br />
+  panRng7b = cpan7b-\pan.asSpec.map(panslide7b.lo);<br />
+  };</p>
+<p class="style1">ampslide7b = SCRangeSlider(w, Rect(320,330, 100,20));<br />
+  ampslide7b.lo = 0.1;<br />
+  ampslide7b.hi = 0.3;<br />
+  ampslide7b.action = { arg slider;<br />
+  camp7b = \amp.asSpec.map(((ampslide7b.hi - ampslide7b.lo)*0.5)+ampslide7b.lo);<br />
+  ampRng7b = camp7b-(\amp.asSpec.map(ampslide7b.lo));<br />
+  };</p>
+<p class="style1">cloudBtn8b = SCButton(w, Rect(10,350, 80, 20));<br />
+  cloudBtn8b.states = [<br />
+  [&quot;16384 sec&quot;, Color.black, Color.new(0.0, 0.5, 0.9)]];<br />
+  cloudBtn8b.action = { arg view;<br />
+  <br />
+  Routine(cloudFunc8b).play(AppClock); <br />
+  };<br />
+  freqSlider8b= SCRangeSlider(w, Rect(100,350, 100,20)).lo_(0.1).hi_(0.2);</p>
+<p class="style1">panslide8b = SCRangeSlider(w, Rect(210,350, 100,20));<br />
+  panslide8b.lo = -1.0;<br />
+  panslide8b.hi = 1.0;<br />
+  panslide8b.action = { arg slider;<br />
+  cpan8b = \pan.asSpec<br />
+  .map(((panslide8b.hi - panslide8b.lo)*0.5)+panslide8b.lo);<br />
+  panRng8b = cpan8b-\pan.asSpec.map(panslide8b.lo);<br />
+  };</p>
+<p class="style1">ampslide8b = SCRangeSlider(w, Rect(320,350, 100,20));<br />
+  ampslide8b.lo = 0.1;<br />
+  ampslide8b.hi = 0.3;<br />
+  ampslide8b.action = { arg slider;<br />
+  camp8b = \amp.asSpec.map(((ampslide8b.hi - ampslide8b.lo)*0.5)+ampslide8b.lo);<br />
+  ampRng8b = camp8b-(\amp.asSpec.map(ampslide8b.lo));<br />
+  };</p>
+<p class="style1">cloudBtn9b = SCButton(w, Rect(10,370, 80, 20));<br />
+  cloudBtn9b.states = [<br />
+  [&quot;32768 sec&quot;, Color.black, Color.new(0.0, 0.5, 0.9)]];<br />
+  cloudBtn9b.action = { arg view;<br />
+  <br />
+  Routine(cloudFunc9b).play(AppClock); <br />
+  };<br />
+  freqSlider9b= SCRangeSlider(w, Rect(100,370, 100,20)).lo_(0.1).hi_(0.2);</p>
+<p class="style1">panslide9b = SCRangeSlider(w, Rect(210,370, 100,20));<br />
+  panslide9b.lo = -1.0;<br />
+  panslide9b.hi = 1.0;<br />
+  panslide9b.action = { arg slider;<br />
+  cpan9b = \pan.asSpec<br />
+  .map(((panslide9b.hi - panslide9b.lo)*0.5)+panslide9b.lo);<br />
+  panRng9b = cpan9b-\pan.asSpec.map(panslide9b.lo);<br />
+  };</p>
+<p class="style1">ampslide9b = SCRangeSlider(w, Rect(320,370, 100,20));<br />
+  ampslide9b.lo = 0.1;<br />
+  ampslide9b.hi = 0.3;<br />
+  ampslide9b.action = { arg slider;<br />
+  camp9b = \amp.asSpec.map(((ampslide9b.hi - ampslide9b.lo)*0.5)+ampslide9b.lo);<br />
+  ampRng9b = camp9b-(\amp.asSpec.map(ampslide9b.lo));<br />
+  };</p>
+<p class="style1">cloudBtn10b = SCButton(w, Rect(10,390, 80, 20));<br />
+  cloudBtn10b.states = [<br />
+  [&quot;65536 sec&quot;, Color.black, Color.new(0.0, 0.5, 0.9)]];<br />
+  cloudBtn10b.action = { arg view;<br />
+  <br />
+  Routine(cloudFunc10b).play(AppClock); <br />
+  };<br />
+  freqSlider10b= SCRangeSlider(w, Rect(100,390, 100,20)).lo_(0.1).hi_(0.2);</p>
+<p class="style1">panslide10b = SCRangeSlider(w, Rect(210,390, 100,20));<br />
+  panslide10b.lo = -1.0;<br />
+  panslide10b.hi = 1.0;<br />
+  panslide10b.action = { arg slider;<br />
+  cpan10b = \pan.asSpec<br />
+  .map(((panslide10b.hi - panslide10b.lo)*0.5)+panslide10b.lo);<br />
+  panRng10b = cpan10b-\pan.asSpec.map(panslide10b.lo);<br />
+  };<br />
+  <br />
+  ampslide10b = SCRangeSlider(w, Rect(320,390, 100,20));<br />
+  ampslide10b.lo = 0.1;<br />
+  ampslide10b.hi = 0.3;<br />
+  ampslide10b.action = { arg slider;<br />
+  camp10b = \amp.asSpec.map(((ampslide10b.hi - ampslide10b.lo)*0.5)+ampslide10b.lo);<br />
+  ampRng10b = camp10b-(\amp.asSpec.map(ampslide10b.lo));<br />
+  };<br />
+  )</p>
+</body>
+</html>

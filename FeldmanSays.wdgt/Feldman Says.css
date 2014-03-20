@@ -1,0 +1,5479 @@
+body {
+	margin: 0px;
+}
+
+#frontimg {
+	position: absolute;
+	display: block;
+}
+
+.info {
+	position: absolute;
+	right: 15px;
+	bottom: 18px;
+	width: 13px;
+	height: 13px;
+}
+
+#back {
+	left: -1px;
+	top: -1px;
+	display: none;
+}
+
+#backimg {
+	position: absolute;
+	display: block;
+}
+
+#done {
+	position: absolute;
+	right: 18px;
+	bottom: 22px;
+}
+
+#hellotext {
+	position: absolute;
+	left: 73px;
+	top: 55px;
+	right: 73px;
+	width: 91px;
+	color: black;
+	font-family: Helvetica Neue Bold;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.backDevelopedWith {
+	position: absolute;
+	top: 69px;
+	left: 53px;
+	right: 53px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#frontimg {
+	width: 238px;
+}
+
+#backimg {
+	width: 238px;
+}
+
+#backimg {
+	height: 274px;
+}
+
+#frontimg {
+	width: 242px;
+}
+
+#backimg {
+	width: 242px;
+}
+
+#backimg {
+	height: 274px;
+}
+
+#frontimg {
+	width: 250px;
+}
+
+#backimg {
+	width: 250px;
+}
+
+#backimg {
+	height: 274px;
+}
+
+#frontimg {
+	width: 254px;
+}
+
+#backimg {
+	width: 254px;
+}
+
+#backimg {
+	height: 274px;
+}
+
+#frontimg {
+	width: 268px;
+}
+
+#frontimg {
+	height: 264px;
+}
+
+#backimg {
+	width: 268px;
+}
+
+#backimg {
+	height: 264px;
+}
+
+#frontimg {
+	width: 292px;
+}
+
+#frontimg {
+	height: 246px;
+}
+
+#backimg {
+	width: 292px;
+}
+
+#backimg {
+	height: 246px;
+}
+
+#frontimg {
+	width: 336px;
+}
+
+#frontimg {
+	height: 216px;
+}
+
+#backimg {
+	width: 336px;
+}
+
+#backimg {
+	height: 216px;
+}
+
+#frontimg {
+	width: 352px;
+}
+
+#frontimg {
+	height: 200px;
+}
+
+#backimg {
+	width: 352px;
+}
+
+#backimg {
+	height: 200px;
+}
+
+#frontimg {
+	width: 358px;
+}
+
+#frontimg {
+	height: 194px;
+}
+
+#backimg {
+	width: 358px;
+}
+
+#backimg {
+	height: 194px;
+}
+
+#frontimg {
+	width: 374px;
+}
+
+#frontimg {
+	height: 188px;
+}
+
+#backimg {
+	width: 374px;
+}
+
+#backimg {
+	height: 188px;
+}
+
+#frontimg {
+	width: 394px;
+}
+
+#frontimg {
+	height: 184px;
+}
+
+#backimg {
+	width: 394px;
+}
+
+#backimg {
+	height: 184px;
+}
+
+#frontimg {
+	width: 408px;
+}
+
+#frontimg {
+	height: 182px;
+}
+
+#backimg {
+	width: 408px;
+}
+
+#backimg {
+	height: 182px;
+}
+
+#frontimg {
+	width: 416px;
+}
+
+#backimg {
+	width: 416px;
+}
+
+#backimg {
+	height: 182px;
+}
+
+#frontimg {
+	width: 424px;
+}
+
+#backimg {
+	width: 424px;
+}
+
+#backimg {
+	height: 182px;
+}
+
+#frontimg {
+	height: 186px;
+}
+
+#backimg {
+	width: 424px;
+}
+
+#backimg {
+	height: 186px;
+}
+
+#frontimg {
+	width: 428px;
+}
+
+#frontimg {
+	height: 192px;
+}
+
+#backimg {
+	width: 428px;
+}
+
+#backimg {
+	height: 192px;
+}
+
+#frontimg {
+	width: 430px;
+}
+
+#frontimg {
+	height: 210px;
+}
+
+#backimg {
+	width: 430px;
+}
+
+#backimg {
+	height: 210px;
+}
+
+#frontimg {
+	width: 432px;
+}
+
+#frontimg {
+	height: 230px;
+}
+
+#backimg {
+	width: 432px;
+}
+
+#backimg {
+	height: 230px;
+}
+
+#frontimg {
+	width: 430px;
+}
+
+#frontimg {
+	height: 244px;
+}
+
+#backimg {
+	width: 430px;
+}
+
+#backimg {
+	height: 244px;
+}
+
+#frontimg {
+	height: 264px;
+}
+
+#backimg {
+	width: 430px;
+}
+
+#backimg {
+	height: 264px;
+}
+
+#frontimg {
+	width: 424px;
+}
+
+#frontimg {
+	height: 286px;
+}
+
+#backimg {
+	width: 424px;
+}
+
+#backimg {
+	height: 286px;
+}
+
+#frontimg {
+	width: 420px;
+}
+
+#frontimg {
+	height: 298px;
+}
+
+#backimg {
+	width: 420px;
+}
+
+#backimg {
+	height: 298px;
+}
+
+#frontimg {
+	height: 300px;
+}
+
+#backimg {
+	width: 420px;
+}
+
+#backimg {
+	height: 300px;
+}
+
+#frontimg {
+	width: 418px;
+}
+
+#backimg {
+	width: 418px;
+}
+
+#backimg {
+	height: 300px;
+}
+
+#frontimg {
+	height: 298px;
+}
+
+#backimg {
+	width: 418px;
+}
+
+#backimg {
+	height: 298px;
+}
+
+#frontimg {
+	width: 422px;
+}
+
+#frontimg {
+	height: 296px;
+}
+
+#backimg {
+	width: 422px;
+}
+
+#backimg {
+	height: 296px;
+}
+
+#frontimg {
+	width: 424px;
+}
+
+#backimg {
+	width: 424px;
+}
+
+#backimg {
+	height: 296px;
+}
+
+#frontimg {
+	width: 422px;
+}
+
+#backimg {
+	width: 422px;
+}
+
+#backimg {
+	height: 296px;
+}
+
+#frontimg {
+	width: 416px;
+}
+
+#backimg {
+	width: 416px;
+}
+
+#backimg {
+	height: 296px;
+}
+
+#frontimg {
+	width: 412px;
+}
+
+#frontimg {
+	height: 294px;
+}
+
+#backimg {
+	width: 412px;
+}
+
+#backimg {
+	height: 294px;
+}
+
+#frontimg {
+	width: 408px;
+}
+
+#backimg {
+	width: 408px;
+}
+
+#backimg {
+	height: 294px;
+}
+
+#frontimg {
+	width: 388px;
+}
+
+#frontimg {
+	height: 300px;
+}
+
+#backimg {
+	width: 388px;
+}
+
+#backimg {
+	height: 300px;
+}
+
+#frontimg {
+	width: 368px;
+}
+
+#frontimg {
+	height: 310px;
+}
+
+#backimg {
+	width: 368px;
+}
+
+#backimg {
+	height: 310px;
+}
+
+#frontimg {
+	width: 330px;
+}
+
+#frontimg {
+	height: 324px;
+}
+
+#backimg {
+	width: 330px;
+}
+
+#backimg {
+	height: 324px;
+}
+
+#frontimg {
+	width: 314px;
+}
+
+#frontimg {
+	height: 326px;
+}
+
+#backimg {
+	width: 314px;
+}
+
+#backimg {
+	height: 326px;
+}
+
+#frontimg {
+	width: 306px;
+}
+
+#frontimg {
+	height: 320px;
+}
+
+#backimg {
+	width: 306px;
+}
+
+#backimg {
+	height: 320px;
+}
+
+#frontimg {
+	width: 282px;
+}
+
+#frontimg {
+	height: 308px;
+}
+
+#backimg {
+	width: 282px;
+}
+
+#backimg {
+	height: 308px;
+}
+
+#frontimg {
+	width: 280px;
+}
+
+#backimg {
+	width: 280px;
+}
+
+#backimg {
+	height: 308px;
+}
+
+#frontimg {
+	width: 282px;
+}
+
+#backimg {
+	width: 282px;
+}
+
+#backimg {
+	height: 308px;
+}
+
+#frontimg {
+	width: 306px;
+}
+
+#frontimg {
+	height: 314px;
+}
+
+#backimg {
+	width: 306px;
+}
+
+#backimg {
+	height: 314px;
+}
+
+#frontimg {
+	width: 322px;
+}
+
+#frontimg {
+	height: 324px;
+}
+
+#backimg {
+	width: 322px;
+}
+
+#backimg {
+	height: 324px;
+}
+
+#frontimg {
+	width: 352px;
+}
+
+#frontimg {
+	height: 336px;
+}
+
+#backimg {
+	width: 352px;
+}
+
+#backimg {
+	height: 336px;
+}
+
+#frontimg {
+	width: 374px;
+}
+
+#backimg {
+	width: 374px;
+}
+
+#backimg {
+	height: 336px;
+}
+
+#frontimg {
+	width: 400px;
+}
+
+#backimg {
+	width: 400px;
+}
+
+#backimg {
+	height: 336px;
+}
+
+#frontimg {
+	width: 410px;
+}
+
+#backimg {
+	width: 410px;
+}
+
+#backimg {
+	height: 336px;
+}
+
+#frontimg {
+	height: 334px;
+}
+
+#backimg {
+	width: 410px;
+}
+
+#backimg {
+	height: 334px;
+}
+
+#frontimg {
+	height: 332px;
+}
+
+#backimg {
+	width: 410px;
+}
+
+#backimg {
+	height: 332px;
+}
+
+#frontimg {
+	height: 330px;
+}
+
+#backimg {
+	width: 410px;
+}
+
+#backimg {
+	height: 330px;
+}
+
+#frontimg {
+	height: 332px;
+}
+
+#backimg {
+	width: 410px;
+}
+
+#backimg {
+	height: 332px;
+}
+
+#frontimg {
+	height: 334px;
+}
+
+#backimg {
+	width: 410px;
+}
+
+#backimg {
+	height: 334px;
+}
+
+#frontimg {
+	height: 336px;
+}
+
+#backimg {
+	width: 410px;
+}
+
+#backimg {
+	height: 336px;
+}
+
+#frontimg {
+	height: 334px;
+}
+
+#backimg {
+	width: 410px;
+}
+
+#backimg {
+	height: 334px;
+}
+
+#frontimg {
+	width: 410px;
+}
+
+#frontimg {
+	height: 332px;
+}
+
+#backimg {
+	width: 410px;
+}
+
+#backimg {
+	height: 332px;
+}
+
+#frontimg {
+	width: 432px;
+}
+
+#frontimg {
+	height: 298px;
+}
+
+#backimg {
+	width: 432px;
+}
+
+#backimg {
+	height: 298px;
+}
+
+#frontimg {
+	width: 500px;
+}
+
+#frontimg {
+	height: 232px;
+}
+
+#backimg {
+	width: 500px;
+}
+
+#backimg {
+	height: 232px;
+}
+
+#frontimg {
+	width: 524px;
+}
+
+#frontimg {
+	height: 210px;
+}
+
+#backimg {
+	width: 524px;
+}
+
+#backimg {
+	height: 210px;
+}
+
+#frontimg {
+	width: 528px;
+}
+
+#frontimg {
+	height: 208px;
+}
+
+#backimg {
+	width: 528px;
+}
+
+#backimg {
+	height: 208px;
+}
+
+#frontimg {
+	height: 214px;
+}
+
+#backimg {
+	width: 528px;
+}
+
+#backimg {
+	height: 214px;
+}
+
+#frontimg {
+	width: 524px;
+}
+
+#frontimg {
+	height: 246px;
+}
+
+#backimg {
+	width: 524px;
+}
+
+#backimg {
+	height: 246px;
+}
+
+#frontimg {
+	width: 520px;
+}
+
+#frontimg {
+	height: 288px;
+}
+
+#backimg {
+	width: 520px;
+}
+
+#backimg {
+	height: 288px;
+}
+
+#frontimg {
+	height: 298px;
+}
+
+#backimg {
+	width: 520px;
+}
+
+#backimg {
+	height: 298px;
+}
+
+#frontimg {
+	height: 304px;
+}
+
+#backimg {
+	width: 520px;
+}
+
+#backimg {
+	height: 304px;
+}
+
+#frontimg {
+	height: 302px;
+}
+
+#backimg {
+	width: 520px;
+}
+
+#backimg {
+	height: 302px;
+}
+
+#frontimg {
+	width: 528px;
+}
+
+#frontimg {
+	height: 294px;
+}
+
+#backimg {
+	width: 528px;
+}
+
+#backimg {
+	height: 294px;
+}
+
+#frontimg {
+	width: 538px;
+}
+
+#frontimg {
+	height: 290px;
+}
+
+#backimg {
+	width: 538px;
+}
+
+#backimg {
+	height: 290px;
+}
+
+#frontimg {
+	width: 544px;
+}
+
+#backimg {
+	width: 544px;
+}
+
+#backimg {
+	height: 290px;
+}
+
+#frontimg {
+	width: 550px;
+}
+
+#frontimg {
+	height: 288px;
+}
+
+#backimg {
+	width: 550px;
+}
+
+#backimg {
+	height: 288px;
+}
+
+#frontimg {
+	width: 562px;
+}
+
+#backimg {
+	width: 562px;
+}
+
+#backimg {
+	height: 288px;
+}
+
+#frontimg {
+	width: 564px;
+}
+
+#frontimg {
+	height: 286px;
+}
+
+#backimg {
+	width: 564px;
+}
+
+#backimg {
+	height: 286px;
+}
+
+#frontimg {
+	height: 288px;
+}
+
+#backimg {
+	width: 564px;
+}
+
+#backimg {
+	height: 288px;
+}
+
+#frontimg {
+	height: 290px;
+}
+
+#backimg {
+	width: 564px;
+}
+
+#backimg {
+	height: 290px;
+}
+
+#frontimg {
+	width: 566px;
+}
+
+#frontimg {
+	height: 294px;
+}
+
+#backimg {
+	width: 566px;
+}
+
+#backimg {
+	height: 294px;
+}
+
+#frontimg {
+	height: 296px;
+}
+
+#backimg {
+	width: 566px;
+}
+
+#backimg {
+	height: 296px;
+}
+
+#frontimg {
+	width: 568px;
+}
+
+#backimg {
+	width: 568px;
+}
+
+#backimg {
+	height: 296px;
+}
+
+#frontimg {
+	width: 570px;
+}
+
+#frontimg {
+	height: 294px;
+}
+
+#backimg {
+	width: 570px;
+}
+
+#backimg {
+	height: 294px;
+}
+
+#frontimg {
+	width: 572px;
+}
+
+#frontimg {
+	height: 292px;
+}
+
+#backimg {
+	width: 572px;
+}
+
+#backimg {
+	height: 292px;
+}
+
+#spantext {
+	position: absolute;
+	color: black;
+	font-family: Helvetica Neue;
+	font-size: 10pt;
+	left: 273px;
+	top: 82px;
+}
+
+#spanbackimg {
+	height: 292px;
+}
+
+#spanbackimg {
+	width: 572px;
+}
+
+#spanfrontimg {
+	height: 292px;
+}
+
+#spanfrontimg {
+	width: 572px;
+}
+
+#spanbackimg {
+	height: 294px;
+}
+
+#spanbackimg {
+	width: 570px;
+}
+
+#spanfrontimg {
+	height: 294px;
+}
+
+#spanfrontimg {
+	width: 570px;
+}
+
+#spanbackimg {
+	height: 296px;
+}
+
+#spanbackimg {
+	width: 568px;
+}
+
+#spanfrontimg {
+	width: 568px;
+}
+
+#spanbackimg {
+	height: 296px;
+}
+
+#spanbackimg {
+	width: 566px;
+}
+
+#spanfrontimg {
+	height: 296px;
+}
+
+#spanbackimg {
+	height: 294px;
+}
+
+#spanbackimg {
+	width: 566px;
+}
+
+#spanfrontimg {
+	height: 294px;
+}
+
+#spanfrontimg {
+	width: 566px;
+}
+
+#spanbackimg {
+	height: 290px;
+}
+
+#spanbackimg {
+	width: 564px;
+}
+
+#spanfrontimg {
+	height: 290px;
+}
+
+#spanbackimg {
+	height: 288px;
+}
+
+#spanbackimg {
+	width: 564px;
+}
+
+#spanfrontimg {
+	height: 288px;
+}
+
+#spanbackimg {
+	height: 286px;
+}
+
+#spanbackimg {
+	width: 564px;
+}
+
+#spanfrontimg {
+	height: 286px;
+}
+
+#spanfrontimg {
+	width: 564px;
+}
+
+#spanbackimg {
+	height: 288px;
+}
+
+#spanbackimg {
+	width: 562px;
+}
+
+#spanfrontimg {
+	width: 562px;
+}
+
+#spanbackimg {
+	height: 288px;
+}
+
+#spanbackimg {
+	width: 550px;
+}
+
+#spanfrontimg {
+	height: 288px;
+}
+
+#spanfrontimg {
+	width: 550px;
+}
+
+#spanbackimg {
+	height: 290px;
+}
+
+#spanbackimg {
+	width: 544px;
+}
+
+#spanfrontimg {
+	width: 544px;
+}
+
+#spanbackimg {
+	height: 290px;
+}
+
+#spanbackimg {
+	width: 538px;
+}
+
+#spanfrontimg {
+	height: 290px;
+}
+
+#spanfrontimg {
+	width: 538px;
+}
+
+#spanbackimg {
+	height: 294px;
+}
+
+#spanbackimg {
+	width: 528px;
+}
+
+#spanfrontimg {
+	height: 294px;
+}
+
+#spanfrontimg {
+	width: 528px;
+}
+
+#spanbackimg {
+	height: 302px;
+}
+
+#spanbackimg {
+	width: 520px;
+}
+
+#spanfrontimg {
+	height: 302px;
+}
+
+#spanbackimg {
+	height: 304px;
+}
+
+#spanbackimg {
+	width: 520px;
+}
+
+#spanfrontimg {
+	height: 304px;
+}
+
+#spanbackimg {
+	height: 298px;
+}
+
+#spanbackimg {
+	width: 520px;
+}
+
+#spanfrontimg {
+	height: 298px;
+}
+
+#spanbackimg {
+	height: 288px;
+}
+
+#spanbackimg {
+	width: 520px;
+}
+
+#spanfrontimg {
+	height: 288px;
+}
+
+#spanfrontimg {
+	width: 520px;
+}
+
+#spanbackimg {
+	height: 246px;
+}
+
+#spanbackimg {
+	width: 524px;
+}
+
+#spanfrontimg {
+	height: 246px;
+}
+
+#spanfrontimg {
+	width: 524px;
+}
+
+#spanbackimg {
+	height: 214px;
+}
+
+#spanbackimg {
+	width: 528px;
+}
+
+#spanfrontimg {
+	height: 214px;
+}
+
+#spanbackimg {
+	height: 208px;
+}
+
+#spanbackimg {
+	width: 528px;
+}
+
+#spanfrontimg {
+	height: 208px;
+}
+
+#spanfrontimg {
+	width: 528px;
+}
+
+#spanbackimg {
+	height: 210px;
+}
+
+#spanbackimg {
+	width: 524px;
+}
+
+#spanfrontimg {
+	height: 210px;
+}
+
+#spanfrontimg {
+	width: 524px;
+}
+
+#spanbackimg {
+	height: 232px;
+}
+
+#spanbackimg {
+	width: 500px;
+}
+
+#spanfrontimg {
+	height: 232px;
+}
+
+#spanfrontimg {
+	width: 500px;
+}
+
+#spanbackimg {
+	height: 298px;
+}
+
+#spanbackimg {
+	width: 432px;
+}
+
+#spanfrontimg {
+	height: 298px;
+}
+
+#spanfrontimg {
+	width: 432px;
+}
+
+#spanbackimg {
+	height: 332px;
+}
+
+#spanbackimg {
+	width: 410px;
+}
+
+#spanfrontimg {
+	height: 332px;
+}
+
+#spanfrontimg {
+	width: 410px;
+}
+
+#spanbackimg {
+	height: 334px;
+}
+
+#spanbackimg {
+	width: 410px;
+}
+
+#spanfrontimg {
+	height: 334px;
+}
+
+#spanbackimg {
+	height: 336px;
+}
+
+#spanbackimg {
+	width: 410px;
+}
+
+#spanfrontimg {
+	height: 336px;
+}
+
+#spanbackimg {
+	height: 334px;
+}
+
+#spanbackimg {
+	width: 410px;
+}
+
+#spanfrontimg {
+	height: 334px;
+}
+
+#spanbackimg {
+	height: 332px;
+}
+
+#spanbackimg {
+	width: 410px;
+}
+
+#spanfrontimg {
+	height: 332px;
+}
+
+#spanbackimg {
+	height: 330px;
+}
+
+#spanbackimg {
+	width: 410px;
+}
+
+#spanfrontimg {
+	height: 330px;
+}
+
+#spanbackimg {
+	height: 332px;
+}
+
+#spanbackimg {
+	width: 410px;
+}
+
+#spanfrontimg {
+	height: 332px;
+}
+
+#spanbackimg {
+	height: 334px;
+}
+
+#spanbackimg {
+	width: 410px;
+}
+
+#spanfrontimg {
+	height: 334px;
+}
+
+#spanbackimg {
+	height: 336px;
+}
+
+#spanbackimg {
+	width: 410px;
+}
+
+#spanfrontimg {
+	width: 410px;
+}
+
+#spanbackimg {
+	height: 336px;
+}
+
+#spanbackimg {
+	width: 400px;
+}
+
+#spanfrontimg {
+	width: 400px;
+}
+
+#spanbackimg {
+	height: 336px;
+}
+
+#spanbackimg {
+	width: 374px;
+}
+
+#spanfrontimg {
+	width: 374px;
+}
+
+#spanbackimg {
+	height: 336px;
+}
+
+#spanbackimg {
+	width: 352px;
+}
+
+#spanfrontimg {
+	height: 336px;
+}
+
+#spanfrontimg {
+	width: 352px;
+}
+
+#spanbackimg {
+	height: 324px;
+}
+
+#spanbackimg {
+	width: 322px;
+}
+
+#spanfrontimg {
+	height: 324px;
+}
+
+#spanfrontimg {
+	width: 322px;
+}
+
+#spanbackimg {
+	height: 314px;
+}
+
+#spanbackimg {
+	width: 306px;
+}
+
+#spanfrontimg {
+	height: 314px;
+}
+
+#spanfrontimg {
+	width: 306px;
+}
+
+#spanbackimg {
+	height: 308px;
+}
+
+#spanbackimg {
+	width: 282px;
+}
+
+#spanfrontimg {
+	width: 282px;
+}
+
+#spanbackimg {
+	height: 308px;
+}
+
+#spanbackimg {
+	width: 280px;
+}
+
+#spanfrontimg {
+	width: 280px;
+}
+
+#spanbackimg {
+	height: 308px;
+}
+
+#spanbackimg {
+	width: 282px;
+}
+
+#spanfrontimg {
+	height: 308px;
+}
+
+#spanfrontimg {
+	width: 282px;
+}
+
+#spanbackimg {
+	height: 320px;
+}
+
+#spanbackimg {
+	width: 306px;
+}
+
+#spanfrontimg {
+	height: 320px;
+}
+
+#spanfrontimg {
+	width: 306px;
+}
+
+#spanbackimg {
+	height: 326px;
+}
+
+#spanbackimg {
+	width: 314px;
+}
+
+#spanfrontimg {
+	height: 326px;
+}
+
+#spanfrontimg {
+	width: 314px;
+}
+
+#spanbackimg {
+	height: 324px;
+}
+
+#spanbackimg {
+	width: 330px;
+}
+
+#spanfrontimg {
+	height: 324px;
+}
+
+#spanfrontimg {
+	width: 330px;
+}
+
+#spanbackimg {
+	height: 310px;
+}
+
+#spanbackimg {
+	width: 368px;
+}
+
+#spanfrontimg {
+	height: 310px;
+}
+
+#spanfrontimg {
+	width: 368px;
+}
+
+#spanbackimg {
+	height: 300px;
+}
+
+#spanbackimg {
+	width: 388px;
+}
+
+#spanfrontimg {
+	height: 300px;
+}
+
+#spanfrontimg {
+	width: 388px;
+}
+
+#spanbackimg {
+	height: 294px;
+}
+
+#spanbackimg {
+	width: 408px;
+}
+
+#spanfrontimg {
+	width: 408px;
+}
+
+#spanbackimg {
+	height: 294px;
+}
+
+#spanbackimg {
+	width: 412px;
+}
+
+#spanfrontimg {
+	height: 294px;
+}
+
+#spanfrontimg {
+	width: 412px;
+}
+
+#spanbackimg {
+	height: 296px;
+}
+
+#spanbackimg {
+	width: 416px;
+}
+
+#spanfrontimg {
+	width: 416px;
+}
+
+#spanbackimg {
+	height: 296px;
+}
+
+#spanbackimg {
+	width: 422px;
+}
+
+#spanfrontimg {
+	width: 422px;
+}
+
+#spanbackimg {
+	height: 296px;
+}
+
+#spanbackimg {
+	width: 424px;
+}
+
+#spanfrontimg {
+	width: 424px;
+}
+
+#spanbackimg {
+	height: 296px;
+}
+
+#spanbackimg {
+	width: 422px;
+}
+
+#spanfrontimg {
+	height: 296px;
+}
+
+#spanfrontimg {
+	width: 422px;
+}
+
+#spanbackimg {
+	height: 298px;
+}
+
+#spanbackimg {
+	width: 418px;
+}
+
+#spanfrontimg {
+	height: 298px;
+}
+
+#spanbackimg {
+	height: 300px;
+}
+
+#spanbackimg {
+	width: 418px;
+}
+
+#spanfrontimg {
+	width: 418px;
+}
+
+#spanbackimg {
+	height: 300px;
+}
+
+#spanbackimg {
+	width: 420px;
+}
+
+#spanfrontimg {
+	height: 300px;
+}
+
+#spanbackimg {
+	height: 298px;
+}
+
+#spanbackimg {
+	width: 420px;
+}
+
+#spanfrontimg {
+	height: 298px;
+}
+
+#spanfrontimg {
+	width: 420px;
+}
+
+#spanbackimg {
+	height: 286px;
+}
+
+#spanbackimg {
+	width: 424px;
+}
+
+#spanfrontimg {
+	height: 286px;
+}
+
+#spanfrontimg {
+	width: 424px;
+}
+
+#spanbackimg {
+	height: 264px;
+}
+
+#spanbackimg {
+	width: 430px;
+}
+
+#spanfrontimg {
+	height: 264px;
+}
+
+#spanbackimg {
+	height: 244px;
+}
+
+#spanbackimg {
+	width: 430px;
+}
+
+#spanfrontimg {
+	height: 244px;
+}
+
+#spanfrontimg {
+	width: 430px;
+}
+
+#spanbackimg {
+	height: 230px;
+}
+
+#spanbackimg {
+	width: 432px;
+}
+
+#spanfrontimg {
+	height: 230px;
+}
+
+#spanfrontimg {
+	width: 432px;
+}
+
+#spanbackimg {
+	height: 210px;
+}
+
+#spanbackimg {
+	width: 430px;
+}
+
+#spanfrontimg {
+	height: 210px;
+}
+
+#spanfrontimg {
+	width: 430px;
+}
+
+#spanbackimg {
+	height: 192px;
+}
+
+#spanbackimg {
+	width: 428px;
+}
+
+#spanfrontimg {
+	height: 192px;
+}
+
+#spanfrontimg {
+	width: 428px;
+}
+
+#spanbackimg {
+	height: 186px;
+}
+
+#spanbackimg {
+	width: 424px;
+}
+
+#spanfrontimg {
+	height: 186px;
+}
+
+#spanbackimg {
+	height: 182px;
+}
+
+#spanbackimg {
+	width: 424px;
+}
+
+#spanfrontimg {
+	width: 424px;
+}
+
+#spanbackimg {
+	height: 182px;
+}
+
+#spanbackimg {
+	width: 416px;
+}
+
+#spanfrontimg {
+	width: 416px;
+}
+
+#spanbackimg {
+	height: 182px;
+}
+
+#spanbackimg {
+	width: 408px;
+}
+
+#spanfrontimg {
+	height: 182px;
+}
+
+#spanfrontimg {
+	width: 408px;
+}
+
+#spanbackimg {
+	height: 184px;
+}
+
+#spanbackimg {
+	width: 394px;
+}
+
+#spanfrontimg {
+	height: 184px;
+}
+
+#spanfrontimg {
+	width: 394px;
+}
+
+#spanbackimg {
+	height: 188px;
+}
+
+#spanbackimg {
+	width: 374px;
+}
+
+#spanfrontimg {
+	height: 188px;
+}
+
+#spanfrontimg {
+	width: 374px;
+}
+
+#spanbackimg {
+	height: 194px;
+}
+
+#spanbackimg {
+	width: 358px;
+}
+
+#spanfrontimg {
+	height: 194px;
+}
+
+#spanfrontimg {
+	width: 358px;
+}
+
+#spanbackimg {
+	height: 200px;
+}
+
+#spanbackimg {
+	width: 352px;
+}
+
+#spanfrontimg {
+	height: 200px;
+}
+
+#spanfrontimg {
+	width: 352px;
+}
+
+#spanbackimg {
+	height: 216px;
+}
+
+#spanbackimg {
+	width: 336px;
+}
+
+#spanfrontimg {
+	height: 216px;
+}
+
+#spanfrontimg {
+	width: 336px;
+}
+
+#spanbackimg {
+	height: 246px;
+}
+
+#spanbackimg {
+	width: 292px;
+}
+
+#spanfrontimg {
+	height: 246px;
+}
+
+#spanfrontimg {
+	width: 292px;
+}
+
+#spanbackimg {
+	height: 264px;
+}
+
+#spanbackimg {
+	width: 268px;
+}
+
+#spanfrontimg {
+	height: 264px;
+}
+
+#spanfrontimg {
+	width: 268px;
+}
+
+#spanbackimg {
+	height: 274px;
+}
+
+#spanbackimg {
+	width: 254px;
+}
+
+#spanfrontimg {
+	width: 254px;
+}
+
+#spanbackimg {
+	height: 274px;
+}
+
+#spanbackimg {
+	width: 250px;
+}
+
+#spanfrontimg {
+	width: 250px;
+}
+
+#spanbackimg {
+	height: 274px;
+}
+
+#spanbackimg {
+	width: 242px;
+}
+
+#spanfrontimg {
+	width: 242px;
+}
+
+#spanbackimg {
+	height: 274px;
+}
+
+#spanbackimg {
+	width: 238px;
+}
+
+#spanfrontimg {
+	width: 238px;
+}
+
+#spanhellotext {
+	position: absolute;
+	left: 73px;
+	top: 55px;
+	right: 73px;
+	width: 91px;
+	color: black;
+	font-family: Helvetica Neue Bold;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+#spandone {
+	position: absolute;
+	right: 18px;
+	bottom: 22px;
+}
+
+#spanbackimg {
+	position: absolute;
+	display: block;
+}
+
+#spanback {
+	display: none;
+}
+
+#spanfrontimg {
+	position: absolute;
+	display: block;
+}
+
+#front {
+	top: 19px;
+	left: -20px;
+	display: block;
+}
+
+#frontimg {
+	width: 572px;
+}
+
+#frontimg {
+	height: 290px;
+}
+
+#backimg {
+	height: 290px;
+}
+
+#frontimg {
+	width: 572px;
+}
+
+#frontimg {
+	height: 288px;
+}
+
+#backimg {
+	width: 572px;
+}
+
+#backimg {
+	height: 288px;
+}
+
+#frontimg {
+	width: 574px;
+}
+
+#frontimg {
+	height: 286px;
+}
+
+#backimg {
+	width: 574px;
+}
+
+#backimg {
+	height: 286px;
+}
+
+#backimg {
+	height: 288px;
+}
+
+#backimg {
+	width: 572px;
+}
+
+#frontimg {
+}
+
+#frontimg {
+}
+
+#frontimg {
+	width: 572px;
+}
+
+#frontimg {
+	height: 288px;
+}
+
+#backimg {
+	background-color: rgb(0, 0, 0);
+}
+
+#backimg {
+	background-color: rgb(0, 0, 0);
+}
+
+#backimg {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#backimg {
+	left: 0px;
+}
+
+#backimg {
+	right: 0px;
+}
+
+#backimg {
+	width: auto;
+}
+
+#backimg {
+	left: 0px;
+}
+
+#backimg {
+	right: 0px;
+}
+
+#backimg {
+	width: auto;
+}
+
+#backimg {
+	left: 0px;
+}
+
+#backimg {
+	right: 0px;
+}
+
+#backimg {
+	width: auto;
+}
+
+#backimg {
+	left: 0px;
+}
+
+#backimg {
+	right: 0px;
+}
+
+#backimg {
+	width: auto;
+}
+
+#backimg {
+	left: 0px;
+}
+
+#backimg {
+	right: 0px;
+}
+
+#backimg {
+	width: auto;
+}
+
+#backimg {
+	left: 0px;
+}
+
+#backimg {
+	right: 0px;
+}
+
+#backimg {
+	width: auto;
+}
+
+#backimg {
+	left: 0px;
+}
+
+#backimg {
+	right: 0px;
+}
+
+#backimg {
+	width: auto;
+}
+
+#backimg {
+	left: 0px;
+}
+
+#backimg {
+	right: 0px;
+}
+
+#backimg {
+	width: auto;
+}
+
+#backimg {
+	right: 0px;
+}
+
+#backimg {
+	margin-left: auto;
+}
+
+#backimg {
+	left: 0px;
+}
+
+#backimg {
+	right: 0px;
+}
+
+#backimg {
+	width: auto;
+}
+
+#backimg {
+	left: 0px;
+}
+
+#backimg {
+	right: 0px;
+}
+
+#backimg {
+	width: auto;
+}
+
+#backimg {
+	left: 0px;
+}
+
+#backimg {
+	right: 0px;
+}
+
+#backimg {
+	width: auto;
+}
+
+#backimg {
+	width: 571px;
+}
+
+#backimg {
+	width: 481px;
+}
+
+#backimg {
+	height: 226px;
+}
+
+#backimg {
+	width: 480px;
+}
+
+#backimg {
+	width: 481px;
+}
+
+#backimg {
+	height: 288px;
+}
+
+#backimg {
+	width: 571px;
+}
+
+#backimg {
+	width: 572px;
+}
+
+#text1 {
+	position: absolute;
+	color: black;
+	font-family: Helvetica Neue;
+	font-size: 29px;
+	text-shadow: rgb(150, 191, 204) 18px 18px 6px;
+	top: 14px;
+	left: 25px;
+}
+
+#span3text2 {
+	position: absolute;
+	color: black;
+	font-family: Helvetica Neue;
+	font-size: 10pt;
+	left: 80px;
+	top: 126px;
+}
+
+#span3span {
+	color: rgb(155, 202, 204);
+	text-shadow: rgb(204, 181, 150) 4px 4px 2px;
+}
+
+#span3text1 {
+	position: absolute;
+	color: black;
+	font-family: Helvetica Neue;
+	font-size: 29px;
+	left: 32px;
+	top: 29px;
+}
+
+#span3backimg {
+	width: 572px;
+}
+
+#span3backimg {
+	width: 571px;
+}
+
+#span3backimg {
+	height: 288px;
+}
+
+#span3backimg {
+	width: 481px;
+}
+
+#span3backimg {
+	width: 480px;
+}
+
+#span3backimg {
+	height: 226px;
+}
+
+#span3backimg {
+	width: 481px;
+}
+
+#span3backimg {
+	width: 571px;
+}
+
+#span3backimg {
+	width: auto;
+}
+
+#span3backimg {
+	right: 0px;
+}
+
+#span3backimg {
+	left: 0px;
+}
+
+#span3backimg {
+	width: auto;
+}
+
+#span3backimg {
+	right: 0px;
+}
+
+#span3backimg {
+	left: 0px;
+}
+
+#span3backimg {
+	width: auto;
+}
+
+#span3backimg {
+	right: 0px;
+}
+
+#span3backimg {
+	left: 0px;
+}
+
+#span3backimg {
+	margin-left: auto;
+}
+
+#span3backimg {
+	right: 0px;
+}
+
+#span3backimg {
+	width: auto;
+}
+
+#span3backimg {
+	right: 0px;
+}
+
+#span3backimg {
+	left: 0px;
+}
+
+#span3backimg {
+	width: auto;
+}
+
+#span3backimg {
+	right: 0px;
+}
+
+#span3backimg {
+	left: 0px;
+}
+
+#span3backimg {
+	width: auto;
+}
+
+#span3backimg {
+	right: 0px;
+}
+
+#span3backimg {
+	left: 0px;
+}
+
+#span3backimg {
+	width: auto;
+}
+
+#span3backimg {
+	right: 0px;
+}
+
+#span3backimg {
+	left: 0px;
+}
+
+#span3backimg {
+	width: auto;
+}
+
+#span3backimg {
+	right: 0px;
+}
+
+#span3backimg {
+	left: 0px;
+}
+
+#span3backimg {
+	width: auto;
+}
+
+#span3backimg {
+	right: 0px;
+}
+
+#span3backimg {
+	left: 0px;
+}
+
+#span3backimg {
+	width: auto;
+}
+
+#span3backimg {
+	right: 0px;
+}
+
+#span3backimg {
+	left: 0px;
+}
+
+#span3backimg {
+	width: auto;
+}
+
+#span3backimg {
+	right: 0px;
+}
+
+#span3backimg {
+	left: 0px;
+}
+
+#span3backimg {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#span3backimg {
+	background-color: rgb(0, 0, 0);
+}
+
+#span3backimg {
+	background-color: rgb(0, 0, 0);
+}
+
+#span3frontimg {
+	height: 288px;
+}
+
+#span3frontimg {
+	width: 572px;
+}
+
+#span3frontimg {
+}
+
+#span3frontimg {
+}
+
+#span3backimg {
+	width: 572px;
+}
+
+#span3backimg {
+	height: 288px;
+}
+
+#span3backimg {
+	height: 286px;
+}
+
+#span3backimg {
+	width: 574px;
+}
+
+#span3frontimg {
+	height: 286px;
+}
+
+#span3frontimg {
+	width: 574px;
+}
+
+#span3backimg {
+	height: 288px;
+}
+
+#span3backimg {
+	width: 572px;
+}
+
+#span3frontimg {
+	height: 288px;
+}
+
+#span3frontimg {
+	width: 572px;
+}
+
+#span3backimg {
+	height: 290px;
+}
+
+#span3frontimg {
+	height: 290px;
+}
+
+#span3frontimg {
+	width: 572px;
+}
+
+#span3front {
+	display: none;
+}
+
+#span3scrollview1 {
+	position: absolute;
+	top: 6px;
+	right: 0px;
+	bottom: 6px;
+	width: 19px;
+	-apple-dashboard-region: dashboard-region(control rectangle    );
+}
+
+#span3scrollview0 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 22px;
+	overflow: hidden;
+}
+
+#span3scrollview {
+	position: absolute;
+	top: 19px;
+	height: 253px;
+	width: 311px;
+	left: 227px;
+}
+
+#span3spanfrontimg {
+	position: absolute;
+	display: block;
+}
+
+#span3spanback {
+	display: none;
+}
+
+#span3spanbackimg {
+	position: absolute;
+	display: block;
+}
+
+#span3spandone {
+	position: absolute;
+	right: 18px;
+	bottom: 22px;
+}
+
+#span3spanhellotext {
+	position: absolute;
+	left: 73px;
+	top: 55px;
+	right: 73px;
+	width: 91px;
+	color: black;
+	font-family: Helvetica Neue Bold;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+#span3spanfrontimg {
+	width: 238px;
+}
+
+#span3spanbackimg {
+	width: 238px;
+}
+
+#span3spanbackimg {
+	height: 274px;
+}
+
+#span3spanfrontimg {
+	width: 242px;
+}
+
+#span3spanbackimg {
+	width: 242px;
+}
+
+#span3spanbackimg {
+	height: 274px;
+}
+
+#span3spanfrontimg {
+	width: 250px;
+}
+
+#span3spanbackimg {
+	width: 250px;
+}
+
+#span3spanbackimg {
+	height: 274px;
+}
+
+#span3spanfrontimg {
+	width: 254px;
+}
+
+#span3spanbackimg {
+	width: 254px;
+}
+
+#span3spanbackimg {
+	height: 274px;
+}
+
+#span3spanfrontimg {
+	width: 268px;
+}
+
+#span3spanfrontimg {
+	height: 264px;
+}
+
+#span3spanbackimg {
+	width: 268px;
+}
+
+#span3spanbackimg {
+	height: 264px;
+}
+
+#span3spanfrontimg {
+	width: 292px;
+}
+
+#span3spanfrontimg {
+	height: 246px;
+}
+
+#span3spanbackimg {
+	width: 292px;
+}
+
+#span3spanbackimg {
+	height: 246px;
+}
+
+#span3spanfrontimg {
+	width: 336px;
+}
+
+#span3spanfrontimg {
+	height: 216px;
+}
+
+#span3spanbackimg {
+	width: 336px;
+}
+
+#span3spanbackimg {
+	height: 216px;
+}
+
+#span3spanfrontimg {
+	width: 352px;
+}
+
+#span3spanfrontimg {
+	height: 200px;
+}
+
+#span3spanbackimg {
+	width: 352px;
+}
+
+#span3spanbackimg {
+	height: 200px;
+}
+
+#span3spanfrontimg {
+	width: 358px;
+}
+
+#span3spanfrontimg {
+	height: 194px;
+}
+
+#span3spanbackimg {
+	width: 358px;
+}
+
+#span3spanbackimg {
+	height: 194px;
+}
+
+#span3spanfrontimg {
+	width: 374px;
+}
+
+#span3spanfrontimg {
+	height: 188px;
+}
+
+#span3spanbackimg {
+	width: 374px;
+}
+
+#span3spanbackimg {
+	height: 188px;
+}
+
+#span3spanfrontimg {
+	width: 394px;
+}
+
+#span3spanfrontimg {
+	height: 184px;
+}
+
+#span3spanbackimg {
+	width: 394px;
+}
+
+#span3spanbackimg {
+	height: 184px;
+}
+
+#span3spanfrontimg {
+	width: 408px;
+}
+
+#span3spanfrontimg {
+	height: 182px;
+}
+
+#span3spanbackimg {
+	width: 408px;
+}
+
+#span3spanbackimg {
+	height: 182px;
+}
+
+#span3spanfrontimg {
+	width: 416px;
+}
+
+#span3spanbackimg {
+	width: 416px;
+}
+
+#span3spanbackimg {
+	height: 182px;
+}
+
+#span3spanfrontimg {
+	width: 424px;
+}
+
+#span3spanbackimg {
+	width: 424px;
+}
+
+#span3spanbackimg {
+	height: 182px;
+}
+
+#span3spanfrontimg {
+	height: 186px;
+}
+
+#span3spanbackimg {
+	width: 424px;
+}
+
+#span3spanbackimg {
+	height: 186px;
+}
+
+#span3spanfrontimg {
+	width: 428px;
+}
+
+#span3spanfrontimg {
+	height: 192px;
+}
+
+#span3spanbackimg {
+	width: 428px;
+}
+
+#span3spanbackimg {
+	height: 192px;
+}
+
+#span3spanfrontimg {
+	width: 430px;
+}
+
+#span3spanfrontimg {
+	height: 210px;
+}
+
+#span3spanbackimg {
+	width: 430px;
+}
+
+#span3spanbackimg {
+	height: 210px;
+}
+
+#span3spanfrontimg {
+	width: 432px;
+}
+
+#span3spanfrontimg {
+	height: 230px;
+}
+
+#span3spanbackimg {
+	width: 432px;
+}
+
+#span3spanbackimg {
+	height: 230px;
+}
+
+#span3spanfrontimg {
+	width: 430px;
+}
+
+#span3spanfrontimg {
+	height: 244px;
+}
+
+#span3spanbackimg {
+	width: 430px;
+}
+
+#span3spanbackimg {
+	height: 244px;
+}
+
+#span3spanfrontimg {
+	height: 264px;
+}
+
+#span3spanbackimg {
+	width: 430px;
+}
+
+#span3spanbackimg {
+	height: 264px;
+}
+
+#span3spanfrontimg {
+	width: 424px;
+}
+
+#span3spanfrontimg {
+	height: 286px;
+}
+
+#span3spanbackimg {
+	width: 424px;
+}
+
+#span3spanbackimg {
+	height: 286px;
+}
+
+#span3spanfrontimg {
+	width: 420px;
+}
+
+#span3spanfrontimg {
+	height: 298px;
+}
+
+#span3spanbackimg {
+	width: 420px;
+}
+
+#span3spanbackimg {
+	height: 298px;
+}
+
+#span3spanfrontimg {
+	height: 300px;
+}
+
+#span3spanbackimg {
+	width: 420px;
+}
+
+#span3spanbackimg {
+	height: 300px;
+}
+
+#span3spanfrontimg {
+	width: 418px;
+}
+
+#span3spanbackimg {
+	width: 418px;
+}
+
+#span3spanbackimg {
+	height: 300px;
+}
+
+#span3spanfrontimg {
+	height: 298px;
+}
+
+#span3spanbackimg {
+	width: 418px;
+}
+
+#span3spanbackimg {
+	height: 298px;
+}
+
+#span3spanfrontimg {
+	width: 422px;
+}
+
+#span3spanfrontimg {
+	height: 296px;
+}
+
+#span3spanbackimg {
+	width: 422px;
+}
+
+#span3spanbackimg {
+	height: 296px;
+}
+
+#span3spanfrontimg {
+	width: 424px;
+}
+
+#span3spanbackimg {
+	width: 424px;
+}
+
+#span3spanbackimg {
+	height: 296px;
+}
+
+#span3spanfrontimg {
+	width: 422px;
+}
+
+#span3spanbackimg {
+	width: 422px;
+}
+
+#span3spanbackimg {
+	height: 296px;
+}
+
+#span3spanfrontimg {
+	width: 416px;
+}
+
+#span3spanbackimg {
+	width: 416px;
+}
+
+#span3spanbackimg {
+	height: 296px;
+}
+
+#span3spanfrontimg {
+	width: 412px;
+}
+
+#span3spanfrontimg {
+	height: 294px;
+}
+
+#span3spanbackimg {
+	width: 412px;
+}
+
+#span3spanbackimg {
+	height: 294px;
+}
+
+#span3spanfrontimg {
+	width: 408px;
+}
+
+#span3spanbackimg {
+	width: 408px;
+}
+
+#span3spanbackimg {
+	height: 294px;
+}
+
+#span3spanfrontimg {
+	width: 388px;
+}
+
+#span3spanfrontimg {
+	height: 300px;
+}
+
+#span3spanbackimg {
+	width: 388px;
+}
+
+#span3spanbackimg {
+	height: 300px;
+}
+
+#span3spanfrontimg {
+	width: 368px;
+}
+
+#span3spanfrontimg {
+	height: 310px;
+}
+
+#span3spanbackimg {
+	width: 368px;
+}
+
+#span3spanbackimg {
+	height: 310px;
+}
+
+#span3spanfrontimg {
+	width: 330px;
+}
+
+#span3spanfrontimg {
+	height: 324px;
+}
+
+#span3spanbackimg {
+	width: 330px;
+}
+
+#span3spanbackimg {
+	height: 324px;
+}
+
+#span3spanfrontimg {
+	width: 314px;
+}
+
+#span3spanfrontimg {
+	height: 326px;
+}
+
+#span3spanbackimg {
+	width: 314px;
+}
+
+#span3spanbackimg {
+	height: 326px;
+}
+
+#span3spanfrontimg {
+	width: 306px;
+}
+
+#span3spanfrontimg {
+	height: 320px;
+}
+
+#span3spanbackimg {
+	width: 306px;
+}
+
+#span3spanbackimg {
+	height: 320px;
+}
+
+#span3spanfrontimg {
+	width: 282px;
+}
+
+#span3spanfrontimg {
+	height: 308px;
+}
+
+#span3spanbackimg {
+	width: 282px;
+}
+
+#span3spanbackimg {
+	height: 308px;
+}
+
+#span3spanfrontimg {
+	width: 280px;
+}
+
+#span3spanbackimg {
+	width: 280px;
+}
+
+#span3spanbackimg {
+	height: 308px;
+}
+
+#span3spanfrontimg {
+	width: 282px;
+}
+
+#span3spanbackimg {
+	width: 282px;
+}
+
+#span3spanbackimg {
+	height: 308px;
+}
+
+#span3spanfrontimg {
+	width: 306px;
+}
+
+#span3spanfrontimg {
+	height: 314px;
+}
+
+#span3spanbackimg {
+	width: 306px;
+}
+
+#span3spanbackimg {
+	height: 314px;
+}
+
+#span3spanfrontimg {
+	width: 322px;
+}
+
+#span3spanfrontimg {
+	height: 324px;
+}
+
+#span3spanbackimg {
+	width: 322px;
+}
+
+#span3spanbackimg {
+	height: 324px;
+}
+
+#span3spanfrontimg {
+	width: 352px;
+}
+
+#span3spanfrontimg {
+	height: 336px;
+}
+
+#span3spanbackimg {
+	width: 352px;
+}
+
+#span3spanbackimg {
+	height: 336px;
+}
+
+#span3spanfrontimg {
+	width: 374px;
+}
+
+#span3spanbackimg {
+	width: 374px;
+}
+
+#span3spanbackimg {
+	height: 336px;
+}
+
+#span3spanfrontimg {
+	width: 400px;
+}
+
+#span3spanbackimg {
+	width: 400px;
+}
+
+#span3spanbackimg {
+	height: 336px;
+}
+
+#span3spanfrontimg {
+	width: 410px;
+}
+
+#span3spanbackimg {
+	width: 410px;
+}
+
+#span3spanbackimg {
+	height: 336px;
+}
+
+#span3spanfrontimg {
+	height: 334px;
+}
+
+#span3spanbackimg {
+	width: 410px;
+}
+
+#span3spanbackimg {
+	height: 334px;
+}
+
+#span3spanfrontimg {
+	height: 332px;
+}
+
+#span3spanbackimg {
+	width: 410px;
+}
+
+#span3spanbackimg {
+	height: 332px;
+}
+
+#span3spanfrontimg {
+	height: 330px;
+}
+
+#span3spanbackimg {
+	width: 410px;
+}
+
+#span3spanbackimg {
+	height: 330px;
+}
+
+#span3spanfrontimg {
+	height: 332px;
+}
+
+#span3spanbackimg {
+	width: 410px;
+}
+
+#span3spanbackimg {
+	height: 332px;
+}
+
+#span3spanfrontimg {
+	height: 334px;
+}
+
+#span3spanbackimg {
+	width: 410px;
+}
+
+#span3spanbackimg {
+	height: 334px;
+}
+
+#span3spanfrontimg {
+	height: 336px;
+}
+
+#span3spanbackimg {
+	width: 410px;
+}
+
+#span3spanbackimg {
+	height: 336px;
+}
+
+#span3spanfrontimg {
+	height: 334px;
+}
+
+#span3spanbackimg {
+	width: 410px;
+}
+
+#span3spanbackimg {
+	height: 334px;
+}
+
+#span3spanfrontimg {
+	width: 410px;
+}
+
+#span3spanfrontimg {
+	height: 332px;
+}
+
+#span3spanbackimg {
+	width: 410px;
+}
+
+#span3spanbackimg {
+	height: 332px;
+}
+
+#span3spanfrontimg {
+	width: 432px;
+}
+
+#span3spanfrontimg {
+	height: 298px;
+}
+
+#span3spanbackimg {
+	width: 432px;
+}
+
+#span3spanbackimg {
+	height: 298px;
+}
+
+#span3spanfrontimg {
+	width: 500px;
+}
+
+#span3spanfrontimg {
+	height: 232px;
+}
+
+#span3spanbackimg {
+	width: 500px;
+}
+
+#span3spanbackimg {
+	height: 232px;
+}
+
+#span3spanfrontimg {
+	width: 524px;
+}
+
+#span3spanfrontimg {
+	height: 210px;
+}
+
+#span3spanbackimg {
+	width: 524px;
+}
+
+#span3spanbackimg {
+	height: 210px;
+}
+
+#span3spanfrontimg {
+	width: 528px;
+}
+
+#span3spanfrontimg {
+	height: 208px;
+}
+
+#span3spanbackimg {
+	width: 528px;
+}
+
+#span3spanbackimg {
+	height: 208px;
+}
+
+#span3spanfrontimg {
+	height: 214px;
+}
+
+#span3spanbackimg {
+	width: 528px;
+}
+
+#span3spanbackimg {
+	height: 214px;
+}
+
+#span3spanfrontimg {
+	width: 524px;
+}
+
+#span3spanfrontimg {
+	height: 246px;
+}
+
+#span3spanbackimg {
+	width: 524px;
+}
+
+#span3spanbackimg {
+	height: 246px;
+}
+
+#span3spanfrontimg {
+	width: 520px;
+}
+
+#span3spanfrontimg {
+	height: 288px;
+}
+
+#span3spanbackimg {
+	width: 520px;
+}
+
+#span3spanbackimg {
+	height: 288px;
+}
+
+#span3spanfrontimg {
+	height: 298px;
+}
+
+#span3spanbackimg {
+	width: 520px;
+}
+
+#span3spanbackimg {
+	height: 298px;
+}
+
+#span3spanfrontimg {
+	height: 304px;
+}
+
+#span3spanbackimg {
+	width: 520px;
+}
+
+#span3spanbackimg {
+	height: 304px;
+}
+
+#span3spanfrontimg {
+	height: 302px;
+}
+
+#span3spanbackimg {
+	width: 520px;
+}
+
+#span3spanbackimg {
+	height: 302px;
+}
+
+#span3spanfrontimg {
+	width: 528px;
+}
+
+#span3spanfrontimg {
+	height: 294px;
+}
+
+#span3spanbackimg {
+	width: 528px;
+}
+
+#span3spanbackimg {
+	height: 294px;
+}
+
+#span3spanfrontimg {
+	width: 538px;
+}
+
+#span3spanfrontimg {
+	height: 290px;
+}
+
+#span3spanbackimg {
+	width: 538px;
+}
+
+#span3spanbackimg {
+	height: 290px;
+}
+
+#span3spanfrontimg {
+	width: 544px;
+}
+
+#span3spanbackimg {
+	width: 544px;
+}
+
+#span3spanbackimg {
+	height: 290px;
+}
+
+#span3spanfrontimg {
+	width: 550px;
+}
+
+#span3spanfrontimg {
+	height: 288px;
+}
+
+#span3spanbackimg {
+	width: 550px;
+}
+
+#span3spanbackimg {
+	height: 288px;
+}
+
+#span3spanfrontimg {
+	width: 562px;
+}
+
+#span3spanbackimg {
+	width: 562px;
+}
+
+#span3spanbackimg {
+	height: 288px;
+}
+
+#span3spanfrontimg {
+	width: 564px;
+}
+
+#span3spanfrontimg {
+	height: 286px;
+}
+
+#span3spanbackimg {
+	width: 564px;
+}
+
+#span3spanbackimg {
+	height: 286px;
+}
+
+#span3spanfrontimg {
+	height: 288px;
+}
+
+#span3spanbackimg {
+	width: 564px;
+}
+
+#span3spanbackimg {
+	height: 288px;
+}
+
+#span3spanfrontimg {
+	height: 290px;
+}
+
+#span3spanbackimg {
+	width: 564px;
+}
+
+#span3spanbackimg {
+	height: 290px;
+}
+
+#span3spanfrontimg {
+	width: 566px;
+}
+
+#span3spanfrontimg {
+	height: 294px;
+}
+
+#span3spanbackimg {
+	width: 566px;
+}
+
+#span3spanbackimg {
+	height: 294px;
+}
+
+#span3spanfrontimg {
+	height: 296px;
+}
+
+#span3spanbackimg {
+	width: 566px;
+}
+
+#span3spanbackimg {
+	height: 296px;
+}
+
+#span3spanfrontimg {
+	width: 568px;
+}
+
+#span3spanbackimg {
+	width: 568px;
+}
+
+#span3spanbackimg {
+	height: 296px;
+}
+
+#span3spanfrontimg {
+	width: 570px;
+}
+
+#span3spanfrontimg {
+	height: 294px;
+}
+
+#span3spanbackimg {
+	width: 570px;
+}
+
+#span3spanbackimg {
+	height: 294px;
+}
+
+#span3spanfrontimg {
+	width: 572px;
+}
+
+#span3spanfrontimg {
+	height: 292px;
+}
+
+#span3spanbackimg {
+	width: 572px;
+}
+
+#span3spanbackimg {
+	height: 292px;
+}
+
+#span3spantext {
+	position: absolute;
+	color: black;
+	font-family: Helvetica Neue;
+	font-size: 10pt;
+	left: 273px;
+	top: 82px;
+}
+
+#span3text {
+	position: absolute;
+	color: black;
+	font-family: Helvetica Neue;
+	top: 19px;
+	left: 22px;
+	font-size: 29px;
+}
+
+#span3backimg {
+	height: 292px;
+}
+
+#span3backimg {
+	width: 572px;
+}
+
+#span3frontimg {
+	height: 292px;
+}
+
+#span3frontimg {
+	width: 572px;
+}
+
+#span3backimg {
+	height: 294px;
+}
+
+#span3backimg {
+	width: 570px;
+}
+
+#span3frontimg {
+	height: 294px;
+}
+
+#span3frontimg {
+	width: 570px;
+}
+
+#span3backimg {
+	height: 296px;
+}
+
+#span3backimg {
+	width: 568px;
+}
+
+#span3frontimg {
+	width: 568px;
+}
+
+#span3backimg {
+	height: 296px;
+}
+
+#span3backimg {
+	width: 566px;
+}
+
+#span3frontimg {
+	height: 296px;
+}
+
+#span3backimg {
+	height: 294px;
+}
+
+#span3backimg {
+	width: 566px;
+}
+
+#span3frontimg {
+	height: 294px;
+}
+
+#span3frontimg {
+	width: 566px;
+}
+
+#span3backimg {
+	height: 290px;
+}
+
+#span3backimg {
+	width: 564px;
+}
+
+#span3frontimg {
+	height: 290px;
+}
+
+#span3backimg {
+	height: 288px;
+}
+
+#span3backimg {
+	width: 564px;
+}
+
+#span3frontimg {
+	height: 288px;
+}
+
+#span3backimg {
+	height: 286px;
+}
+
+#span3backimg {
+	width: 564px;
+}
+
+#span3frontimg {
+	height: 286px;
+}
+
+#span3frontimg {
+	width: 564px;
+}
+
+#span3backimg {
+	height: 288px;
+}
+
+#span3backimg {
+	width: 562px;
+}
+
+#span3frontimg {
+	width: 562px;
+}
+
+#span3backimg {
+	height: 288px;
+}
+
+#span3backimg {
+	width: 550px;
+}
+
+#span3frontimg {
+	height: 288px;
+}
+
+#span3frontimg {
+	width: 550px;
+}
+
+#span3backimg {
+	height: 290px;
+}
+
+#span3backimg {
+	width: 544px;
+}
+
+#span3frontimg {
+	width: 544px;
+}
+
+#span3backimg {
+	height: 290px;
+}
+
+#span3backimg {
+	width: 538px;
+}
+
+#span3frontimg {
+	height: 290px;
+}
+
+#span3frontimg {
+	width: 538px;
+}
+
+#span3backimg {
+	height: 294px;
+}
+
+#span3backimg {
+	width: 528px;
+}
+
+#span3frontimg {
+	height: 294px;
+}
+
+#span3frontimg {
+	width: 528px;
+}
+
+#span3backimg {
+	height: 302px;
+}
+
+#span3backimg {
+	width: 520px;
+}
+
+#span3frontimg {
+	height: 302px;
+}
+
+#span3backimg {
+	height: 304px;
+}
+
+#span3backimg {
+	width: 520px;
+}
+
+#span3frontimg {
+	height: 304px;
+}
+
+#span3backimg {
+	height: 298px;
+}
+
+#span3backimg {
+	width: 520px;
+}
+
+#span3frontimg {
+	height: 298px;
+}
+
+#span3backimg {
+	height: 288px;
+}
+
+#span3backimg {
+	width: 520px;
+}
+
+#span3frontimg {
+	height: 288px;
+}
+
+#span3frontimg {
+	width: 520px;
+}
+
+#span3backimg {
+	height: 246px;
+}
+
+#span3backimg {
+	width: 524px;
+}
+
+#span3frontimg {
+	height: 246px;
+}
+
+#span3frontimg {
+	width: 524px;
+}
+
+#span3backimg {
+	height: 214px;
+}
+
+#span3backimg {
+	width: 528px;
+}
+
+#span3frontimg {
+	height: 214px;
+}
+
+#span3backimg {
+	height: 208px;
+}
+
+#span3backimg {
+	width: 528px;
+}
+
+#span3frontimg {
+	height: 208px;
+}
+
+#span3frontimg {
+	width: 528px;
+}
+
+#span3backimg {
+	height: 210px;
+}
+
+#span3backimg {
+	width: 524px;
+}
+
+#span3frontimg {
+	height: 210px;
+}
+
+#span3frontimg {
+	width: 524px;
+}
+
+#span3backimg {
+	height: 232px;
+}
+
+#span3backimg {
+	width: 500px;
+}
+
+#span3frontimg {
+	height: 232px;
+}
+
+#span3frontimg {
+	width: 500px;
+}
+
+#span3backimg {
+	height: 298px;
+}
+
+#span3backimg {
+	width: 432px;
+}
+
+#span3frontimg {
+	height: 298px;
+}
+
+#span3frontimg {
+	width: 432px;
+}
+
+#span3backimg {
+	height: 332px;
+}
+
+#span3backimg {
+	width: 410px;
+}
+
+#span3frontimg {
+	height: 332px;
+}
+
+#span3frontimg {
+	width: 410px;
+}
+
+#span3backimg {
+	height: 334px;
+}
+
+#span3backimg {
+	width: 410px;
+}
+
+#span3frontimg {
+	height: 334px;
+}
+
+#span3backimg {
+	height: 336px;
+}
+
+#span3backimg {
+	width: 410px;
+}
+
+#span3frontimg {
+	height: 336px;
+}
+
+#span3backimg {
+	height: 334px;
+}
+
+#span3backimg {
+	width: 410px;
+}
+
+#span3frontimg {
+	height: 334px;
+}
+
+#span3backimg {
+	height: 332px;
+}
+
+#span3backimg {
+	width: 410px;
+}
+
+#span3frontimg {
+	height: 332px;
+}
+
+#span3backimg {
+	height: 330px;
+}
+
+#span3backimg {
+	width: 410px;
+}
+
+#span3frontimg {
+	height: 330px;
+}
+
+#span3backimg {
+	height: 332px;
+}
+
+#span3backimg {
+	width: 410px;
+}
+
+#span3frontimg {
+	height: 332px;
+}
+
+#span3backimg {
+	height: 334px;
+}
+
+#span3backimg {
+	width: 410px;
+}
+
+#span3frontimg {
+	height: 334px;
+}
+
+#span3backimg {
+	height: 336px;
+}
+
+#span3backimg {
+	width: 410px;
+}
+
+#span3frontimg {
+	width: 410px;
+}
+
+#span3backimg {
+	height: 336px;
+}
+
+#span3backimg {
+	width: 400px;
+}
+
+#span3frontimg {
+	width: 400px;
+}
+
+#span3backimg {
+	height: 336px;
+}
+
+#span3backimg {
+	width: 374px;
+}
+
+#span3frontimg {
+	width: 374px;
+}
+
+#span3backimg {
+	height: 336px;
+}
+
+#span3backimg {
+	width: 352px;
+}
+
+#span3frontimg {
+	height: 336px;
+}
+
+#span3frontimg {
+	width: 352px;
+}
+
+#span3backimg {
+	height: 324px;
+}
+
+#span3backimg {
+	width: 322px;
+}
+
+#span3frontimg {
+	height: 324px;
+}
+
+#span3frontimg {
+	width: 322px;
+}
+
+#span3backimg {
+	height: 314px;
+}
+
+#span3backimg {
+	width: 306px;
+}
+
+#span3frontimg {
+	height: 314px;
+}
+
+#span3frontimg {
+	width: 306px;
+}
+
+#span3backimg {
+	height: 308px;
+}
+
+#span3backimg {
+	width: 282px;
+}
+
+#span3frontimg {
+	width: 282px;
+}
+
+#span3backimg {
+	height: 308px;
+}
+
+#span3backimg {
+	width: 280px;
+}
+
+#span3frontimg {
+	width: 280px;
+}
+
+#span3backimg {
+	height: 308px;
+}
+
+#span3backimg {
+	width: 282px;
+}
+
+#span3frontimg {
+	height: 308px;
+}
+
+#span3frontimg {
+	width: 282px;
+}
+
+#span3backimg {
+	height: 320px;
+}
+
+#span3backimg {
+	width: 306px;
+}
+
+#span3frontimg {
+	height: 320px;
+}
+
+#span3frontimg {
+	width: 306px;
+}
+
+#span3backimg {
+	height: 326px;
+}
+
+#span3backimg {
+	width: 314px;
+}
+
+#span3frontimg {
+	height: 326px;
+}
+
+#span3frontimg {
+	width: 314px;
+}
+
+#span3backimg {
+	height: 324px;
+}
+
+#span3backimg {
+	width: 330px;
+}
+
+#span3frontimg {
+	height: 324px;
+}
+
+#span3frontimg {
+	width: 330px;
+}
+
+#span3backimg {
+	height: 310px;
+}
+
+#span3backimg {
+	width: 368px;
+}
+
+#span3frontimg {
+	height: 310px;
+}
+
+#span3frontimg {
+	width: 368px;
+}
+
+#span3backimg {
+	height: 300px;
+}
+
+#span3backimg {
+	width: 388px;
+}
+
+#span3frontimg {
+	height: 300px;
+}
+
+#span3frontimg {
+	width: 388px;
+}
+
+#span3backimg {
+	height: 294px;
+}
+
+#span3backimg {
+	width: 408px;
+}
+
+#span3frontimg {
+	width: 408px;
+}
+
+#span3backimg {
+	height: 294px;
+}
+
+#span3backimg {
+	width: 412px;
+}
+
+#span3frontimg {
+	height: 294px;
+}
+
+#span3frontimg {
+	width: 412px;
+}
+
+#span3backimg {
+	height: 296px;
+}
+
+#span3backimg {
+	width: 416px;
+}
+
+#span3frontimg {
+	width: 416px;
+}
+
+#span3backimg {
+	height: 296px;
+}
+
+#span3backimg {
+	width: 422px;
+}
+
+#span3frontimg {
+	width: 422px;
+}
+
+#span3backimg {
+	height: 296px;
+}
+
+#span3backimg {
+	width: 424px;
+}
+
+#span3frontimg {
+	width: 424px;
+}
+
+#span3backimg {
+	height: 296px;
+}
+
+#span3backimg {
+	width: 422px;
+}
+
+#span3frontimg {
+	height: 296px;
+}
+
+#span3frontimg {
+	width: 422px;
+}
+
+#span3backimg {
+	height: 298px;
+}
+
+#span3backimg {
+	width: 418px;
+}
+
+#span3frontimg {
+	height: 298px;
+}
+
+#span3backimg {
+	height: 300px;
+}
+
+#span3backimg {
+	width: 418px;
+}
+
+#span3frontimg {
+	width: 418px;
+}
+
+#span3backimg {
+	height: 300px;
+}
+
+#span3backimg {
+	width: 420px;
+}
+
+#span3frontimg {
+	height: 300px;
+}
+
+#span3backimg {
+	height: 298px;
+}
+
+#span3backimg {
+	width: 420px;
+}
+
+#span3frontimg {
+	height: 298px;
+}
+
+#span3frontimg {
+	width: 420px;
+}
+
+#span3backimg {
+	height: 286px;
+}
+
+#span3backimg {
+	width: 424px;
+}
+
+#span3frontimg {
+	height: 286px;
+}
+
+#span3frontimg {
+	width: 424px;
+}
+
+#span3backimg {
+	height: 264px;
+}
+
+#span3backimg {
+	width: 430px;
+}
+
+#span3frontimg {
+	height: 264px;
+}
+
+#span3backimg {
+	height: 244px;
+}
+
+#span3backimg {
+	width: 430px;
+}
+
+#span3frontimg {
+	height: 244px;
+}
+
+#span3frontimg {
+	width: 430px;
+}
+
+#span3backimg {
+	height: 230px;
+}
+
+#span3backimg {
+	width: 432px;
+}
+
+#span3frontimg {
+	height: 230px;
+}
+
+#span3frontimg {
+	width: 432px;
+}
+
+#span3backimg {
+	height: 210px;
+}
+
+#span3backimg {
+	width: 430px;
+}
+
+#span3frontimg {
+	height: 210px;
+}
+
+#span3frontimg {
+	width: 430px;
+}
+
+#span3backimg {
+	height: 192px;
+}
+
+#span3backimg {
+	width: 428px;
+}
+
+#span3frontimg {
+	height: 192px;
+}
+
+#span3frontimg {
+	width: 428px;
+}
+
+#span3backimg {
+	height: 186px;
+}
+
+#span3backimg {
+	width: 424px;
+}
+
+#span3frontimg {
+	height: 186px;
+}
+
+#span3backimg {
+	height: 182px;
+}
+
+#span3backimg {
+	width: 424px;
+}
+
+#span3frontimg {
+	width: 424px;
+}
+
+#span3backimg {
+	height: 182px;
+}
+
+#span3backimg {
+	width: 416px;
+}
+
+#span3frontimg {
+	width: 416px;
+}
+
+#span3backimg {
+	height: 182px;
+}
+
+#span3backimg {
+	width: 408px;
+}
+
+#span3frontimg {
+	height: 182px;
+}
+
+#span3frontimg {
+	width: 408px;
+}
+
+#span3backimg {
+	height: 184px;
+}
+
+#span3backimg {
+	width: 394px;
+}
+
+#span3frontimg {
+	height: 184px;
+}
+
+#span3frontimg {
+	width: 394px;
+}
+
+#span3backimg {
+	height: 188px;
+}
+
+#span3backimg {
+	width: 374px;
+}
+
+#span3frontimg {
+	height: 188px;
+}
+
+#span3frontimg {
+	width: 374px;
+}
+
+#span3backimg {
+	height: 194px;
+}
+
+#span3backimg {
+	width: 358px;
+}
+
+#span3frontimg {
+	height: 194px;
+}
+
+#span3frontimg {
+	width: 358px;
+}
+
+#span3backimg {
+	height: 200px;
+}
+
+#span3backimg {
+	width: 352px;
+}
+
+#span3frontimg {
+	height: 200px;
+}
+
+#span3frontimg {
+	width: 352px;
+}
+
+#span3backimg {
+	height: 216px;
+}
+
+#span3backimg {
+	width: 336px;
+}
+
+#span3frontimg {
+	height: 216px;
+}
+
+#span3frontimg {
+	width: 336px;
+}
+
+#span3backimg {
+	height: 246px;
+}
+
+#span3backimg {
+	width: 292px;
+}
+
+#span3frontimg {
+	height: 246px;
+}
+
+#span3frontimg {
+	width: 292px;
+}
+
+#span3backimg {
+	height: 264px;
+}
+
+#span3backimg {
+	width: 268px;
+}
+
+#span3frontimg {
+	height: 264px;
+}
+
+#span3frontimg {
+	width: 268px;
+}
+
+#span3backimg {
+	height: 274px;
+}
+
+#span3backimg {
+	width: 254px;
+}
+
+#span3frontimg {
+	width: 254px;
+}
+
+#span3backimg {
+	height: 274px;
+}
+
+#span3backimg {
+	width: 250px;
+}
+
+#span3frontimg {
+	width: 250px;
+}
+
+#span3backimg {
+	height: 274px;
+}
+
+#span3backimg {
+	width: 242px;
+}
+
+#span3frontimg {
+	width: 242px;
+}
+
+#span3backimg {
+	height: 274px;
+}
+
+#span3backimg {
+	width: 238px;
+}
+
+#span3frontimg {
+	width: 238px;
+}
+
+#span3hellotext {
+	position: absolute;
+	left: 73px;
+	top: 55px;
+	right: 73px;
+	width: 91px;
+	color: black;
+	font-family: Helvetica Neue Bold;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+#span3done {
+	position: absolute;
+	right: 18px;
+	bottom: 22px;
+}
+
+#span3backimg {
+	position: absolute;
+	display: block;
+}
+
+#span3back {
+	display: block;
+}
+
+#span3frontimg {
+	position: absolute;
+	display: block;
+}
+
+#text2 {
+	position: absolute;
+	font-family: Helvetica Neue;
+	font-weight: bold;
+	font-size: 23.3333px;
+	text-shadow: rgb(193, 244, 188) 4px 4px 17px;
+	color: rgb(184, 244, 231);
+	top: 44px;
+	left: 30px;
+}
+
+#text3 {
+	position: absolute;
+	font-family: Helvetica Neue;
+	font-size: 23.3333px;
+	left: 25px;
+	color: rgb(211, 198, 252);
+	text-shadow: rgb(122, 255, 237) -4px -4px 27.82px;
+	top: 66px;
+}
+
+#backimg {
+	top: -1px;
+}
+
+#backimg {
+	top: -103px;
+}
+
+#backimg {
+	left: 8px;
+}
+
+#text4 {
+	position: absolute;
+	font-family: Helvetica Neue;
+	font-size: 15.3333px;
+	color: rgb(139, 185, 167);
+	text-shadow: rgb(168, 163, 204) -2px -2px 13.53px;
+	left: 29px;
+	top: 165px;
+}
+
+#text5 {
+	position: absolute;
+	font-family: Helvetica Neue;
+	font-size: 10pt;
+	color: rgb(138, 193, 100);
+	text-shadow: rgb(204, 147, 193) -4px 2px 4px;
+	left: 29px;
+	top: 181px;
+}
+
+#backimg {
+	top: 1px;
+}
+
+#backimg {
+	top: 20px;
+}
+
+#backimg {
+	left: -12px;
+}
+
+#backimg {
+	left: -1px;
+}
+
+#backimg {
+	top: 93px;
+}
+
+#backimg {
+	left: -24px;
+}
+
+#backimg {
+	top: 2px;
+}
+
+#backimg {
+	left: 1px;
+}
+
+#backimg {
+	top: 22px;
+}
+
+#backimg {
+	left: 23px;
+}
+
+#backimg {
+	left: -1px;
+}
+
+#backimg {
+	top: 1px;
+}
+
+#backimg {
+	left: -12px;
+}
+
+#text11 {
+	position: absolute;
+	font-family: Helvetica Neue;
+	color: rgb(126, 190, 216);
+	font-size: 20px;
+	top: 24px;
+	text-shadow: rgb(150, 191, 204) 18px 9px 6px;
+	left: 20px;
+}
+
+#frontimg {
+	top: 10px;
+}
+
+#frontimg {
+	left: 5px;
+}
+
+#frontimg {
+	top: -1px;
+}
+
+#frontimg {
+	left: 11px;
+}
+
+#frontimg {
+	top: -1px;
+}
+
+#frontimg {
+	top: -1px;
+}
+
+#frontimg {
+	top: -5px;
+}
+
+#frontimg {
+	left: -5px;
+}
+
+#frontimg {
+	top: -1px;
+}
+
+#frontimg {
+	top: 19px;
+}
+
+#frontimg {
+	left: 17px;
+}
+
+#frontimg {
+	top: -1px;
+}
+
+#frontimg {
+	width: 570px;
+}
+
+#frontimg {
+	height: 288px;
+}
+
+#backimg {
+	width: 570px;
+}
+
+#backimg {
+	height: 288px;
+}
+
+#frontimg {
+	top: -88px;
+}
+
+#frontimg {
+	left: -37px;
+}
+
+#span {
+	top: 20px;
+	left: -20px;
+}
+
+#frontimg {
+	top: 1px;
+}
+
+#frontimg {
+	left: 3px;
+}
+
+#frontimg {
+	top: 92px;
+}
+
+#frontimg {
+	left: -86px;
+}
+
+#backimg {
+}
+
+#backimg {
+}
+
+#frontimg {
+	height: 286px;
+}
+
+#frontimg {
+	width: 572px;
+}
+
+#frontimg {
+	height: 288px;
+}
+
+#backimg {
+	width: 572px;
+}
+
+#backimg {
+	height: 288px;
+}
+
+#frontimg {
+	top: -1px;
+}
+
+#frontimg {
+	top: -46px;
+}
+
+#frontimg {
+	left: -76px;
+}
+
+#frontimg {
+	left: -3px;
+}
+
+#frontimg {
+	top: -28px;
+}
+
+#frontimg {
+	left: 73px;
+}
+
+#frontimg {
+	top: -33px;
+}
+
+#frontimg {
+	left: 2px;
+}
+
+#frontimg {
+	top: -13px;
+}
+
+#frontimg {
+	left: 8px;
+}
+
+#frontimg {
+	top: 17px;
+}
+
+#frontimg {
+	left: 26px;
+}
+
+#frontimg {
+	top: 1px;
+}
+
+#frontimg {
+	top: 19px;
+}
+
+#frontimg {
+	left: -20px;
+}
+
+#frontimg {
+	height: 286px;
+}
+
+#backimg {
+	width: 572px;
+}
+
+#backimg {
+	height: 286px;
+}
+
+#frontimg {
+	height: 284px;
+}
+
+#backimg {
+	width: 572px;
+}
+
+#backimg {
+	height: 284px;
+}
+
+#frontimg {
+	width: 272px;
+}
+
+#frontimg {
+	height: 114px;
+}
+
+#backimg {
+	width: 272px;
+}
+
+#backimg {
+	height: 114px;
+}
+
+#frontimg {
+	width: 402px;
+}
+
+#frontimg {
+	height: 180px;
+}
+
+#backimg {
+	width: 402px;
+}
+
+#backimg {
+	height: 180px;
+}
+
+#frontimg {
+	height: 182px;
+}
+
+#backimg {
+	width: 402px;
+}
+
+#backimg {
+	height: 182px;
+}
+
+#frontimg {
+	width: 442px;
+}
+
+#frontimg {
+	height: 230px;
+}
+
+#backimg {
+	width: 442px;
+}
+
+#backimg {
+	height: 230px;
+}
+
+#frontimg {
+	height: 228px;
+}
+
+#backimg {
+	width: 442px;
+}
+
+#backimg {
+	height: 228px;
+}
+
+#frontimg {
+	width: 444px;
+}
+
+#frontimg {
+	height: 198px;
+}
+
+#backimg {
+	width: 444px;
+}
+
+#backimg {
+	height: 198px;
+}
+
+#frontimg {
+	height: 200px;
+}
+
+#backimg {
+	width: 444px;
+}
+
+#backimg {
+	height: 200px;
+}
+
+#frontimg {
+	width: 442px;
+}
+
+#frontimg {
+	height: 214px;
+}
+
+#backimg {
+	width: 442px;
+}
+
+#backimg {
+	height: 214px;
+}
+
+#backimg {
+	top: 1px;
+}
+
+#backimg {
+	top: 71px;
+}
+
+#backimg {
+	left: -1px;
+}
+
+#backimg {
+	top: -1px;
+}
+
+#box {
+	position: absolute;
+	border-color: black;
+	border-width: 1px;
+	left: 153px;
+	width: 249px;
+	height: 132px;
+	top: 55px;
+}
+

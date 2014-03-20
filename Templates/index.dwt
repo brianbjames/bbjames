@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Brian B. James</title>
+<!-- TemplateEndEditable -->
+<style type="text/css">
+<!--
+body {
+	background-color: #FFF6EB;
+}
+.style1 {
+	font-size: 36px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style13 {	font-family: "Bauhaus 93";
+	font-size: 36px;
+	color: #FFB46A;
+}
+a:link {
+	color: #6868FF;
+}
+a {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style17 {font-family: Arial, Helvetica, sans-serif}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFB46A;
+}
+a:visited {
+	color: #6699FF;
+}
+.style27 {color: #FBE86D}
+-->
+</style>
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+</head>
+
+<body>
+<p class="style1"><span class="style13">brian b. james</span></p>
+<p><img name="Brian2" width="990" height="91" src="../Brian2.JPG"
+onmouseover="document.Brian2.src='Brian.JPG';"
+onmouseout="document.Brian2.src='Brian2.JPG';" var i = new Image();
+i.src="Brian.JPG"; /><br />
+  <embed src="../Routines.mp3" width="481" height="32"></embed>
+  <br />  
+  <a href="../concerts.html" class="style17">concerts</a><a href="../contact.html"></a><a href="../discography.html"><br />
+  discography</a><br />
+  <a href="../downloads.html">downloads</a> <span class="style27">new!</span><br />
+  <a href="../links.html">links</a><a href="../music.html"><br />
+  music</a><br />
+  <a href="http://www.sfsoundtest.com">soundtest</a><a href="http://www.sfsoundtest.com"><br /> 
+  <br />
+  </a>for more information, to give feedback, or to be added to the email list:<br />
+  <a href="mailto:admin@bbjames.com">admin@bbjames.com</a><br />
+last modified: march 26, 2007. &copy;  brian b. james</p>
+</body>
+</html>
+<!-- Begin Personal Site Search Form -->
+<form method=get action="/.search">
+
+<input type="hidden" name="results_page" value="my_results.html"> 
+<input type="text" name="query" value="" size=18>
+<input type="submit" name="name" value="Search">
+</form>
+<!-- End Personal Site Search Form -->

@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>After Tenney</title>
+<style type="text/css">
+<!--
+.style1 {font-family: Monaco}
+-->
+</style>
+</head>
+
+<body>
+<span class="style1">//after tenney, by brian b. james<br />
+//compile in a rhythmic fashion<br />
+(<br />
+SynthDef(&quot;tone&quot;,{ arg out;<br />
+var ampEnvelopes, freqEnvelopes;<br />
+ampEnvelopes = <br />
+[<br />
+Env.new([0.0001,0.1,0.001],[15.0,15.0],'linear')<br />
+];<br />
+freqEnvelopes = <br />
+[<br />
+Env.new([10,20000,20],[33.0,27.0],[4,4])<br />
+];<br />
+Out.ar(out,<br />
+SinOsc.ar([EnvGen.kr(freqEnvelopes.at(0)), EnvGen.kr(freqEnvelopes.at(0))],<br />
+0,EnvGen.kr(ampEnvelopes.at(0),doneAction: 3)));<br />
+}).play <br />
+)</span>
+</body>
+</html>

@@ -1,0 +1,1879 @@
+body {
+	margin: 0px;
+}
+
+#frontimg {
+	position: absolute;
+	display: block;
+}
+
+.info {
+	position: absolute;
+	right: 15px;
+	bottom: 18px;
+	width: 13px;
+	height: 13px;
+}
+
+#back {
+	top: 1px;
+	left: 1px;
+	display: none;
+}
+
+#backimg {
+	position: absolute;
+	display: block;
+}
+
+#done {
+	position: absolute;
+	right: 18px;
+	bottom: 22px;
+}
+
+#hellotext {
+	position: absolute;
+	left: 73px;
+	top: 55px;
+	right: 73px;
+	width: 91px;
+	color: black;
+	font-family: Helvetica Neue Bold;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.backDevelopedWith {
+	position: absolute;
+	top: 69px;
+	left: 53px;
+	right: 53px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#frontimg {
+	width: 238px;
+}
+
+#frontimg {
+	height: 274px;
+}
+
+#backimg {
+	width: 238px;
+}
+
+#backimg {
+	height: 274px;
+}
+
+#frontimg {
+	height: 272px;
+}
+
+#backimg {
+	width: 238px;
+}
+
+#backimg {
+	height: 272px;
+}
+
+#frontimg {
+	width: 240px;
+}
+
+#backimg {
+	width: 240px;
+}
+
+#backimg {
+	height: 272px;
+}
+
+#frontimg {
+	height: 270px;
+}
+
+#backimg {
+	width: 240px;
+}
+
+#backimg {
+	height: 270px;
+}
+
+#frontimg {
+	width: 242px;
+}
+
+#frontimg {
+	height: 268px;
+}
+
+#backimg {
+	width: 242px;
+}
+
+#backimg {
+	height: 268px;
+}
+
+#frontimg {
+	width: 244px;
+}
+
+#backimg {
+	width: 244px;
+}
+
+#backimg {
+	height: 268px;
+}
+
+#frontimg {
+	width: 246px;
+}
+
+#backimg {
+	width: 246px;
+}
+
+#backimg {
+	height: 268px;
+}
+
+#frontimg {
+	height: 266px;
+}
+
+#backimg {
+	width: 246px;
+}
+
+#backimg {
+	height: 266px;
+}
+
+#frontimg {
+	width: 248px;
+}
+
+#backimg {
+	width: 248px;
+}
+
+#backimg {
+	height: 266px;
+}
+
+#frontimg {
+	height: 264px;
+}
+
+#backimg {
+	width: 248px;
+}
+
+#backimg {
+	height: 264px;
+}
+
+#frontimg {
+	width: 262px;
+}
+
+#frontimg {
+	height: 260px;
+}
+
+#backimg {
+	width: 262px;
+}
+
+#backimg {
+	height: 260px;
+}
+
+#frontimg {
+	width: 264px;
+}
+
+#backimg {
+	width: 264px;
+}
+
+#backimg {
+	height: 260px;
+}
+
+#frontimg {
+	width: 266px;
+}
+
+#frontimg {
+	height: 258px;
+}
+
+#backimg {
+	width: 266px;
+}
+
+#backimg {
+	height: 258px;
+}
+
+#frontimg {
+	width: 268px;
+}
+
+#backimg {
+	width: 268px;
+}
+
+#backimg {
+	height: 258px;
+}
+
+#frontimg {
+	width: 280px;
+}
+
+#frontimg {
+	height: 256px;
+}
+
+#backimg {
+	width: 280px;
+}
+
+#backimg {
+	height: 256px;
+}
+
+#frontimg {
+	width: 290px;
+}
+
+#frontimg {
+	height: 252px;
+}
+
+#backimg {
+	width: 290px;
+}
+
+#backimg {
+	height: 252px;
+}
+
+#frontimg {
+	width: 302px;
+}
+
+#frontimg {
+	height: 248px;
+}
+
+#backimg {
+	width: 302px;
+}
+
+#backimg {
+	height: 248px;
+}
+
+#frontimg {
+	width: 340px;
+}
+
+#frontimg {
+	height: 230px;
+}
+
+#backimg {
+	width: 340px;
+}
+
+#backimg {
+	height: 230px;
+}
+
+#frontimg {
+	width: 342px;
+}
+
+#frontimg {
+	height: 226px;
+}
+
+#backimg {
+	width: 342px;
+}
+
+#backimg {
+	height: 226px;
+}
+
+#frontimg {
+	width: 346px;
+}
+
+#frontimg {
+	height: 222px;
+}
+
+#backimg {
+	width: 346px;
+}
+
+#backimg {
+	height: 222px;
+}
+
+#frontimg {
+	height: 218px;
+}
+
+#backimg {
+	width: 346px;
+}
+
+#backimg {
+	height: 218px;
+}
+
+#frontimg {
+	width: 324px;
+}
+
+#frontimg {
+	height: 208px;
+}
+
+#backimg {
+	width: 324px;
+}
+
+#backimg {
+	height: 208px;
+}
+
+#frontimg {
+	width: 260px;
+}
+
+#frontimg {
+	height: 184px;
+}
+
+#backimg {
+	width: 260px;
+}
+
+#backimg {
+	height: 184px;
+}
+
+#frontimg {
+	height: 182px;
+}
+
+#backimg {
+	width: 260px;
+}
+
+#backimg {
+	height: 182px;
+}
+
+#frontimg {
+	height: 180px;
+}
+
+#backimg {
+	width: 260px;
+}
+
+#backimg {
+	height: 180px;
+}
+
+#frontimg {
+	width: 262px;
+}
+
+#backimg {
+	width: 262px;
+}
+
+#backimg {
+	height: 180px;
+}
+
+#frontimg {
+	width: 264px;
+}
+
+#backimg {
+	width: 264px;
+}
+
+#backimg {
+	height: 180px;
+}
+
+#frontimg {
+	width: 282px;
+}
+
+#frontimg {
+	height: 176px;
+}
+
+#backimg {
+	width: 282px;
+}
+
+#backimg {
+	height: 176px;
+}
+
+#frontimg {
+	width: 290px;
+}
+
+#backimg {
+	width: 290px;
+}
+
+#backimg {
+	height: 176px;
+}
+
+#frontimg {
+	width: 298px;
+}
+
+#frontimg {
+	height: 174px;
+}
+
+#backimg {
+	width: 298px;
+}
+
+#backimg {
+	height: 174px;
+}
+
+#frontimg {
+	width: 302px;
+}
+
+#backimg {
+	width: 302px;
+}
+
+#backimg {
+	height: 174px;
+}
+
+#frontimg {
+	width: 312px;
+}
+
+#backimg {
+	width: 312px;
+}
+
+#backimg {
+	height: 174px;
+}
+
+#frontimg {
+	width: 316px;
+}
+
+#backimg {
+	width: 316px;
+}
+
+#backimg {
+	height: 174px;
+}
+
+#frontimg {
+	width: 352px;
+}
+
+#frontimg {
+	height: 186px;
+}
+
+#backimg {
+	width: 352px;
+}
+
+#backimg {
+	height: 186px;
+}
+
+#frontimg {
+	width: 374px;
+}
+
+#frontimg {
+	height: 194px;
+}
+
+#backimg {
+	width: 374px;
+}
+
+#backimg {
+	height: 194px;
+}
+
+#frontimg {
+	height: 204px;
+}
+
+#backimg {
+	width: 374px;
+}
+
+#backimg {
+	height: 204px;
+}
+
+#frontimg {
+	width: 380px;
+}
+
+#frontimg {
+	height: 212px;
+}
+
+#backimg {
+	width: 380px;
+}
+
+#backimg {
+	height: 212px;
+}
+
+#frontimg {
+	width: 382px;
+}
+
+#backimg {
+	width: 382px;
+}
+
+#backimg {
+	height: 212px;
+}
+
+#frontimg {
+	width: 384px;
+}
+
+#frontimg {
+	height: 214px;
+}
+
+#backimg {
+	width: 384px;
+}
+
+#backimg {
+	height: 214px;
+}
+
+#frontimg {
+	height: 212px;
+}
+
+#backimg {
+	width: 384px;
+}
+
+#backimg {
+	height: 212px;
+}
+
+#frontimg {
+	width: 392px;
+}
+
+#frontimg {
+	height: 206px;
+}
+
+#backimg {
+	width: 392px;
+}
+
+#backimg {
+	height: 206px;
+}
+
+#frontimg {
+	width: 394px;
+}
+
+#backimg {
+	width: 394px;
+}
+
+#backimg {
+	height: 206px;
+}
+
+#frontimg {
+	height: 208px;
+}
+
+#backimg {
+	width: 394px;
+}
+
+#backimg {
+	height: 208px;
+}
+
+#frontimg {
+	width: 392px;
+}
+
+#backimg {
+	width: 392px;
+}
+
+#backimg {
+	height: 208px;
+}
+
+#frontimg {
+	width: 390px;
+}
+
+#frontimg {
+	height: 210px;
+}
+
+#backimg {
+	width: 390px;
+}
+
+#backimg {
+	height: 210px;
+}
+
+#frontimg {
+	width: 384px;
+}
+
+#frontimg {
+	height: 216px;
+}
+
+#backimg {
+	width: 384px;
+}
+
+#backimg {
+	height: 216px;
+}
+
+#frontimg {
+	width: 374px;
+}
+
+#frontimg {
+	height: 220px;
+}
+
+#backimg {
+	width: 374px;
+}
+
+#backimg {
+	height: 220px;
+}
+
+#frontimg {
+	width: 370px;
+}
+
+#backimg {
+	width: 370px;
+}
+
+#backimg {
+	height: 220px;
+}
+
+#frontimg {
+	width: 368px;
+}
+
+#backimg {
+	width: 368px;
+}
+
+#backimg {
+	height: 220px;
+}
+
+#frontimg {
+	height: 224px;
+}
+
+#backimg {
+	width: 368px;
+}
+
+#backimg {
+	height: 224px;
+}
+
+#frontimg {
+	width: 366px;
+}
+
+#backimg {
+	width: 366px;
+}
+
+#backimg {
+	height: 224px;
+}
+
+#frontimg {
+	width: 354px;
+}
+
+#backimg {
+	width: 354px;
+}
+
+#backimg {
+	height: 224px;
+}
+
+#frontimg {
+	width: 336px;
+}
+
+#frontimg {
+	height: 228px;
+}
+
+#backimg {
+	width: 336px;
+}
+
+#backimg {
+	height: 228px;
+}
+
+#frontimg {
+	width: 330px;
+}
+
+#backimg {
+	width: 330px;
+}
+
+#backimg {
+	height: 228px;
+}
+
+#frontimg {
+	width: 326px;
+}
+
+#backimg {
+	width: 326px;
+}
+
+#backimg {
+	height: 228px;
+}
+
+#frontimg {
+	width: 322px;
+}
+
+#backimg {
+	width: 322px;
+}
+
+#backimg {
+	height: 228px;
+}
+
+#frontimg {
+	height: 230px;
+}
+
+#backimg {
+	width: 322px;
+}
+
+#backimg {
+	height: 230px;
+}
+
+#frontimg {
+	height: 232px;
+}
+
+#backimg {
+	width: 322px;
+}
+
+#backimg {
+	height: 232px;
+}
+
+#frontimg {
+	height: 234px;
+}
+
+#backimg {
+	width: 322px;
+}
+
+#backimg {
+	height: 234px;
+}
+
+#frontimg {
+	width: 316px;
+}
+
+#backimg {
+	width: 316px;
+}
+
+#backimg {
+	height: 234px;
+}
+
+#frontimg {
+	width: 314px;
+}
+
+#backimg {
+	width: 314px;
+}
+
+#backimg {
+	height: 234px;
+}
+
+#frontimg {
+	width: 312px;
+}
+
+#backimg {
+	width: 312px;
+}
+
+#backimg {
+	height: 234px;
+}
+
+#frontimg {
+	width: 310px;
+}
+
+#backimg {
+	width: 310px;
+}
+
+#backimg {
+	height: 234px;
+}
+
+#frontimg {
+	width: 308px;
+}
+
+#backimg {
+	width: 308px;
+}
+
+#backimg {
+	height: 234px;
+}
+
+#frontimg {
+	width: 306px;
+}
+
+#backimg {
+	width: 306px;
+}
+
+#backimg {
+	height: 234px;
+}
+
+#frontimg {
+	height: 228px;
+}
+
+#backimg {
+	width: 306px;
+}
+
+#backimg {
+	height: 228px;
+}
+
+#frontimg {
+	width: 308px;
+}
+
+#frontimg {
+	height: 224px;
+}
+
+#backimg {
+	width: 308px;
+}
+
+#backimg {
+	height: 224px;
+}
+
+#frontimg {
+	height: 222px;
+}
+
+#backimg {
+	width: 308px;
+}
+
+#backimg {
+	height: 222px;
+}
+
+#box {
+	position: absolute;
+	border-color: black;
+	border-width: 1px;
+	width: 207px;
+	left: 102px;
+	height: 111px;
+	top: 60px;
+}
+
+#frontimg {
+	height: 220px;
+}
+
+#backimg {
+	width: 308px;
+}
+
+#backimg {
+	height: 220px;
+}
+
+#frontimg {
+	width: 308px;
+}
+
+#frontimg {
+	height: 208px;
+}
+
+#backimg {
+	width: 308px;
+}
+
+#backimg {
+	height: 208px;
+}
+
+#frontimg {
+	height: 206px;
+}
+
+#backimg {
+	width: 308px;
+}
+
+#backimg {
+	height: 206px;
+}
+
+#frontimg {
+	height: 202px;
+}
+
+#backimg {
+	width: 308px;
+}
+
+#backimg {
+	height: 202px;
+}
+
+#frontimg {
+	height: 200px;
+}
+
+#backimg {
+	width: 308px;
+}
+
+#backimg {
+	height: 200px;
+}
+
+#frontimg {
+	width: 310px;
+}
+
+#frontimg {
+	height: 198px;
+}
+
+#backimg {
+	width: 310px;
+}
+
+#backimg {
+	height: 198px;
+}
+
+#frontimg {
+	width: 314px;
+}
+
+#backimg {
+	width: 314px;
+}
+
+#backimg {
+	height: 198px;
+}
+
+#frontimg {
+	width: 320px;
+}
+
+#backimg {
+	width: 320px;
+}
+
+#backimg {
+	height: 198px;
+}
+
+#frontimg {
+	width: 322px;
+}
+
+#backimg {
+	width: 322px;
+}
+
+#backimg {
+	height: 198px;
+}
+
+#frontimg {
+	width: 324px;
+}
+
+#backimg {
+	width: 324px;
+}
+
+#backimg {
+	height: 198px;
+}
+
+#frontimg {
+	width: 326px;
+}
+
+#backimg {
+	width: 326px;
+}
+
+#backimg {
+	height: 198px;
+}
+
+#frontimg {
+	height: 202px;
+}
+
+#backimg {
+	width: 326px;
+}
+
+#backimg {
+	height: 202px;
+}
+
+#frontimg {
+	width: 328px;
+}
+
+#frontimg {
+	height: 206px;
+}
+
+#backimg {
+	width: 328px;
+}
+
+#backimg {
+	height: 206px;
+}
+
+#frontimg {
+	width: 332px;
+}
+
+#frontimg {
+	height: 210px;
+}
+
+#backimg {
+	width: 332px;
+}
+
+#backimg {
+	height: 210px;
+}
+
+#frontimg {
+	width: 334px;
+}
+
+#frontimg {
+	height: 214px;
+}
+
+#backimg {
+	width: 334px;
+}
+
+#backimg {
+	height: 214px;
+}
+
+#frontimg {
+	width: 338px;
+}
+
+#frontimg {
+	height: 218px;
+}
+
+#backimg {
+	width: 338px;
+}
+
+#backimg {
+	height: 218px;
+}
+
+#frontimg {
+	width: 342px;
+}
+
+#frontimg {
+	height: 220px;
+}
+
+#backimg {
+	width: 342px;
+}
+
+#backimg {
+	height: 220px;
+}
+
+#frontimg {
+	height: 224px;
+}
+
+#backimg {
+	width: 342px;
+}
+
+#backimg {
+	height: 224px;
+}
+
+#frontimg {
+	height: 226px;
+}
+
+#backimg {
+	width: 342px;
+}
+
+#backimg {
+	height: 226px;
+}
+
+#frontimg {
+	height: 230px;
+}
+
+#backimg {
+	width: 342px;
+}
+
+#backimg {
+	height: 230px;
+}
+
+#frontimg {
+	height: 232px;
+}
+
+#backimg {
+	width: 342px;
+}
+
+#backimg {
+	height: 232px;
+}
+
+#frontimg {
+	width: 340px;
+}
+
+#frontimg {
+	height: 236px;
+}
+
+#backimg {
+	width: 340px;
+}
+
+#backimg {
+	height: 236px;
+}
+
+#frontimg {
+	width: 338px;
+}
+
+#frontimg {
+	height: 238px;
+}
+
+#backimg {
+	width: 338px;
+}
+
+#backimg {
+	height: 238px;
+}
+
+#frontimg {
+	width: 336px;
+}
+
+#frontimg {
+	height: 240px;
+}
+
+#backimg {
+	width: 336px;
+}
+
+#backimg {
+	height: 240px;
+}
+
+#frontimg {
+	height: 238px;
+}
+
+#backimg {
+	width: 336px;
+}
+
+#backimg {
+	height: 238px;
+}
+
+#frontimg {
+	width: 338px;
+}
+
+#frontimg {
+	height: 226px;
+}
+
+#backimg {
+	width: 338px;
+}
+
+#backimg {
+	height: 226px;
+}
+
+#frontimg {
+	height: 216px;
+}
+
+#backimg {
+	width: 338px;
+}
+
+#backimg {
+	height: 216px;
+}
+
+#frontimg {
+	height: 212px;
+}
+
+#backimg {
+	width: 338px;
+}
+
+#backimg {
+	height: 212px;
+}
+
+#frontimg {
+	height: 214px;
+}
+
+#backimg {
+	width: 338px;
+}
+
+#backimg {
+	height: 214px;
+}
+
+#frontimg {
+	height: 218px;
+}
+
+#backimg {
+	width: 338px;
+}
+
+#backimg {
+	height: 218px;
+}
+
+#frontimg {
+	height: 220px;
+}
+
+#backimg {
+	width: 338px;
+}
+
+#backimg {
+	height: 220px;
+}
+
+#frontimg {
+	height: 222px;
+}
+
+#backimg {
+	width: 338px;
+}
+
+#backimg {
+	height: 222px;
+}
+
+#frontimg {
+	width: 334px;
+}
+
+#frontimg {
+	height: 226px;
+}
+
+#backimg {
+	width: 334px;
+}
+
+#backimg {
+	height: 226px;
+}
+
+#frontimg {
+	width: 326px;
+}
+
+#frontimg {
+	height: 232px;
+}
+
+#backimg {
+	width: 326px;
+}
+
+#backimg {
+	height: 232px;
+}
+
+#frontimg {
+	width: 324px;
+}
+
+#frontimg {
+	height: 234px;
+}
+
+#backimg {
+	width: 324px;
+}
+
+#backimg {
+	height: 234px;
+}
+
+#frontimg {
+	width: 326px;
+}
+
+#backimg {
+	width: 326px;
+}
+
+#backimg {
+	height: 234px;
+}
+
+#frontimg {
+	width: 330px;
+}
+
+#backimg {
+	width: 330px;
+}
+
+#backimg {
+	height: 234px;
+}
+
+#frontimg {
+	width: 332px;
+}
+
+#backimg {
+	width: 332px;
+}
+
+#backimg {
+	height: 234px;
+}
+
+#frontimg {
+	width: 338px;
+}
+
+#backimg {
+	width: 338px;
+}
+
+#backimg {
+	height: 234px;
+}
+
+#frontimg {
+	width: 340px;
+}
+
+#backimg {
+	width: 340px;
+}
+
+#backimg {
+	height: 234px;
+}
+
+#frontimg {
+	width: 342px;
+}
+
+#backimg {
+	width: 342px;
+}
+
+#backimg {
+	height: 234px;
+}
+
+#front {
+	left: -1px;
+	top: -1px;
+	display: block;
+}
+
+#frontimg {
+	top: -2px;
+}
+
+#frontimg {
+	top: -12px;
+}
+
+#frontimg {
+	top: -6px;
+}
+
+#frontimg {
+	top: -6px;
+}
+
+#frontimg {
+	top: -5px;
+}
+
+#frontimg {
+	top: -5px;
+}
+
+#frontimg {
+	top: -6px;
+}
+
+#frontimg {
+	top: -3px;
+}
+
+#frontimg {
+	left: -1px;
+}
+
+#frontimg {
+	top: 3px;
+}
+
+#frontimg {
+	top: 4px;
+}
+
+#frontimg {
+	top: 1px;
+}
+
+#frontimg {
+	top: -1px;
+}
+
+#frontimg {
+	top: -1px;
+}
+
+#frontimg {
+	height: 232px;
+}
+
+#backimg {
+	width: 342px;
+}
+
+#backimg {
+	height: 232px;
+}
+
+#frontimg {
+	height: 220px;
+}
+
+#backimg {
+	width: 342px;
+}
+
+#backimg {
+	height: 220px;
+}
+
+#frontimg {
+	height: 210px;
+}
+
+#backimg {
+	width: 342px;
+}
+
+#backimg {
+	height: 210px;
+}
+
+#frontimg {
+	height: 200px;
+}
+
+#backimg {
+	width: 342px;
+}
+
+#backimg {
+	height: 200px;
+}
+
+#frontimg {
+	height: 198px;
+}
+
+#backimg {
+	width: 342px;
+}
+
+#backimg {
+	height: 198px;
+}
+
+#text156 {
+	position: absolute;
+	font-family: Helvetica Neue;
+	font-size: 10pt;
+	left: 30px;
+	top: 56px;
+	color: rgb(0, 0, 0);
+	text-shadow: rgb(104, 43, 77) 2px 2px 0px;
+}
+
+#text3 {
+	position: absolute;
+	font-family: Helvetica Neue;
+	font-size: 10pt;
+	top: 72px;
+	left: 30px;
+	color: rgb(0, 0, 0);
+	text-shadow: rgb(104, 43, 77) 2px 2px 0px;
+}
+
+#text1568 {
+	position: absolute;
+	font-family: Helvetica Neue;
+	font-size: 10pt;
+	left: 30px;
+	top: 146px;
+	color: rgb(0, 0, 0);
+	text-shadow: rgb(141, 79, 115) 2px 2px 0px;
+}
+
+#text1 {
+	position: absolute;
+	font-family: Helvetica Neue;
+	font-size: 10pt;
+	left: 30px;
+	top: 161px;
+	color: rgb(0, 0, 0);
+	text-shadow: rgb(107, 56, 55) 2px 2px 0px;
+}
+
+#text2 {
+	position: absolute;
+	font-family: Helvetica Neue;
+	font-size: 23.3333px;
+	top: 29px;
+	left: 30px;
+	color: rgb(0, 0, 0);
+	text-shadow: rgb(108, 38, 52) 2px 2px 0px;
+}
+
+#backimg {
+	top: 1px;
+}
+
+#backimg {
+	top: 16px;
+}
+
+#backimg {
+	top: 8px;
+}
+
+#backimg {
+	left: 2px;
+}
+
+#backimg {
+	top: 7px;
+}
+
+#backimg {
+	top: 2px;
+}
+
+#backimg {
+	top: 1px;
+}
+
+#backimg {
+	top: 1px;
+}
+
+#backimg {
+	top: 3px;
+}
+
+#backimg {
+	top: 1px;
+}
+
+#backimg {
+	left: -1px;
+}
+
+#backimg {
+	top: 2px;
+}
+
+#backimg {
+	top: 1px;
+}
+
+#backimg {
+	top: 1px;
+}
+
+#backimg {
+	left: 1px;
+}
+
+#backimg {
+	left: 2px;
+}
+
+#backimg {
+	top: -2px;
+}
+
+#backimg {
+	left: 1px;
+}
+
+#backimg {
+	top: -1px;
+}
+
+#backimg {
+	top: 1px;
+}
+
+#backimg {
+	top: 6px;
+}
+
+#backimg {
+	top: 5px;
+}
+
+#backimg {
+	top: 4px;
+}
+
+#backimg {
+	top: 2px;
+}
+
+#backimg {
+	top: 5px;
+}
+
+#backimg {
+	left: 1px;
+}
+
+#backimg {
+	top: 1px;
+}
+
+#backimg {
+	top: 3px;
+}
+
+#backimg {
+	top: 4px;
+}
+
+#backimg {
+	left: -1px;
+}
+
+#backimg {
+	top: 4px;
+}
+
+#backimg {
+	left: -1px;
+}
+
+#backimg {
+	top: 1px;
+}
+
+#backimg {
+	left: -1px;
+}
+
+#backimg {
+	top: 1px;
+}
+
+#backimg {
+	top: 1px;
+}
+
+#backimg {
+	top: 1px;
+}
+
+#backimg {
+	left: -2px;
+}
+
+#backimg {
+	left: -2px;
+}
+
+#backimg {
+	left: -1px;
+}
+
+#backimg {
+	left: 1px;
+}
+
+#backimg {
+	left: 2px;
+}
+
+#backimg {
+	left: 1px;
+}
+
+#text21 {
+	position: absolute;
+	font-family: Helvetica Neue;
+	font-size: 23.3333px;
+	color: rgb(0, 0, 0);
+	text-shadow: rgb(108, 38, 52) 2px 2px 0px;
+	top: 25px;
+	left: 25px;
+}
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>leftBounce</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: Monaco;
+	font-size: 9px;
+}
+.style2 {font-size: 36px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+-->
+</style>
+</head>
+
+<body>
+<p class="style1"><span class="style2"><img src="SuperCollider.png" alt="SuperCollider" width="128" height="128" /></span><br />
+  <embed src="leftBounce.mp3" width="404" height="32"></embed>
+</p>
+<p class="style1">// leftBounce, brian b. james</p>
+<p class="style1">Routine { arg inval;<br />
+  loop { <br />
+  { EnvGen.kr(Env.perc, 1.0, doneAction: 2) * <br />
+  Blip.ar(XLine.kr(500,200,6),100,0.1) }.play;<br />
+  1.0.yield;<br />
+  { EnvGen.kr(Env.perc, 2.0, doneAction: 2) * <br />
+  RLPF.ar(Saw.ar([100,250],0.005), XLine.kr(500,200,6), 0.05) }.play;<br />
+  2.0.yield;<br />
+  }<br />
+  }.play;</p>
+<p class="style1">Routine { arg inval;<br />
+  loop { <br />
+  { EnvGen.kr(Env.perc, 1.0, doneAction: 2) * <br />
+  Blip.ar(XLine.kr(250,200,6),100,0.1) }.play;<br />
+  1.5.yield;<br />
+  { EnvGen.kr(Env.perc, 2.0, doneAction: 2) * <br />
+  RLPF.ar(Saw.ar([200, 500],0.005), XLine.kr(8000,400,5), 0.05) }.play;<br />
+  4.0.yield;<br />
+  }<br />
+  }.play;</p>
+<p class="style1">Routine { <br />
+  loop { <br />
+  { EnvGen.kr(Env.perc, 2.0, doneAction: 2) * <br />
+  Resonz.ar(WhiteNoise.ar(0.5), 1000, XLine.kr(0.001, 1, 8)) }.play;<br />
+  3.0.yield;<br />
+  { EnvGen.kr(Env.perc, 2.0, doneAction: 2) * <br />
+  Resonz.ar(WhiteNoise.ar(0.5), 2000, XLine.kr(0.001, 1, 8)) }.play;<br />
+  3.0.yield;<br />
+  }<br />
+  }.play;</p>
+<p class="style1">Routine { <br />
+  loop { <br />
+  { EnvGen.kr(Env.perc, 1.0, doneAction: 2) * <br />
+  Saw.ar(XLine.kr(10,4000,6),0.1) }.play;<br />
+  1.0.yield;<br />
+  { EnvGen.kr(Env.perc, 1.0, doneAction: 2) * <br />
+  Saw.ar(XLine.kr(40,2000,12),0.1) }.play;<br />
+  1.0.yield;<br />
+  }<br />
+  }.play;</p>
+</body>
+</html>

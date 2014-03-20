@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <style type="text/css" title="AppleStyle">
+        @import "SarteSpeak.css";
+    </style>
+    <script type="text/javascript" src="AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleScrollbar.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleScrollArea.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleSlider.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/ApplePrivate.js" charset="utf-8"></script>
+    <script type="text/javascript" src="SarteSpeak.js" charset="utf-8"></script>
+    <script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
+</head>
+<body onload="load();">
+	<div id="front">
+		<img id="frontImg" src="Images/front.png" alt="">
+		<div class="info" id="info" apple-default-image-visibility="hidden" onclick="event.stopPropagation(); event.preventDefault();">
+			<script type="text/javascript">AppleCreateInfoButton('info', 'front', 'white', 'black', 'showBack');</script>
+		</div>
+        
+    <div id="box" onclick="getQuote();" ondblclick="getQuote();"></div>
+	<img src="Images/thumb_sartre1.jpg" style="width: 71px; height: 100px; position: absolute; left: 25px; top: 66px; ">
+	
+	<div id="text21" onclick="connectDownloads();" ondblclick="connectDownloads();">SartreSpeak</div>
+	</div>
+    <div id="back">
+	   <img id="backImg" src="Images/back.png" alt="">
+    	
+        <div id="done">
+    	
+        	<script type="text/javascript">AppleCreateGlassButton('done', 'Done', true, 'showFront');</script>
+    	
+        </div>
+    <div id="text156" onclick="connectDownloads();" ondblclick="connectDownloads();">Version 1.1, sp031</div>
+    <div id="text3" onclick="connectDownloads();" ondblclick="connectDownloads();">Daily Quotes by Jean-Paul Sartre</div>
+    <div id="text1568" onclick="connect();" ondblclick="connect();">By Brian B. James</div>
+    <div id="text1" onclick="connect();" ondblclick="connect();">www.bbjames.com</div>
+    <div id="text2" onclick="connectDownloads();" ondblclick="connectDownloads();">SartreSpeak</div>
+    <img src="Images/SartrefACE1.tiff" style="width: 63px; height: 76px; position: absolute; left: 249px; top: 29px; ">
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<title>reverberatedsinepercussion</title><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Reverberatedsinepercussion</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: Monaco;
+	font-size: 9px;
+}
+-->
+</style>
+</head>
+
+<body>
+<p class="style1">// reverberatedsinepercussion, by brian b. james, based on code in SC3 examples<br />
+  (<br />
+  var w, f3, d3, values3, server, id3, isOn3 = false, b5, b6;</p>
+<p class="style1">SynthDef(&quot;reverberatedsinepercussion&quot;, // reverberatedsinepercussion</p>
+<p class="style1">{<br />
+  d = 3; // number of percolators<br />
+  c = 5; // number of comb delays<br />
+  a = 4; // number of allpass delays<br />
+  // sine percolation sound:<br />
+  s = Mix.ar(Array.fill(d, { Resonz.ar(Dust.ar(2/d, 10), 2000 + 3000.0.rand, 0.003)}) );<br />
+  <br />
+  // reverb predelay time:<br />
+  b = DelayN.ar(s, 0.048);<br />
+  <br />
+  // length modulated comb delays in parallel:<br />
+  y = Mix.ar(CombL.ar(b, 0.1, LFNoise1.kr(Array.fill(c,{0.1.rand}), 0.04, 0.05), 15)); <br />
+  <br />
+  // chain of allpass delays on each of two channels:<br />
+  a.do({ y = AllpassN.ar(y, 0.050, [0.050.rand,0.050.rand], 1) });<br />
+  <br />
+  // add original sound to reverb and play it:<br />
+  s+(0.1*y);<br />
+  Out.ar(0, y);<br />
+  }).writeDefFile;<br />
+  Server.local.sendMsg(&quot;/d_load&quot;, &quot;synthdefs/reverberatedsinepercussion.scsyndef&quot;);</p>
+<p class="style1">values3 = IdentityDictionary.new;<br />
+  server = Server.local;</p>
+<p class="style1">id3 = 2001;<br />
+  w = SCWindow(&quot;reverberatedsinepercussion&quot;, Rect(512, 164, 300, 80));<br />
+  w.view.decorator = d = FlowLayout(w.view.bounds);</p>
+<p class="style1">b5 = SCButton(w, Rect(210,0, 50, 50));<br />
+  b5.states = [[&quot;Load&quot;, Color.black, Color.green]];<br />
+  b5.action = { arg view; <br />
+  server.sendMsg(&quot;/d_load&quot;, &quot;synthdefs/reverberatedsinepercussion.scsyndef&quot;);<br />
+  };<br />
+  b5.enabled = server.serverRunning;</p>
+<p class="style1">b6 = SCButton(w, Rect(210,0, 200, 50));<br />
+  b6.states = [<br />
+  [&quot;reverberatedsinepercussion&quot;, Color.black, Color.green],<br />
+  [&quot;reverberatedsinepercussion stop&quot;, Color.white, Color.red],<br />
+  ];<br />
+  b6.action = { arg view; <br />
+  var msg;<br />
+  if (view.value == 1, {<br />
+  isOn3 = true;<br />
+  msg = [&quot;/s_new&quot;, &quot;reverberatedsinepercussion&quot;, 2001, 1, 0];<br />
+  values3.keysValuesDo({ arg key, value; <br />
+  msg = msg.addAll([key, value]); <br />
+  });<br />
+  server.performList(\sendMsg, msg); <br />
+  },{<br />
+  isOn3 = false;<br />
+  server.sendMsg(&quot;/n_free&quot;, 2001); <br />
+  });<br />
+  };<br />
+  b6.enabled = server.serverRunning;<br />
+  d.nextLine;</p>
+<p class="style1">a = SimpleController(server);<br />
+  f = { arg server; <br />
+  b5.enabled = server.serverRunning;<br />
+  b6.enabled = server.serverRunning;<br />
+  if (server.serverRunning.not, { b6.value = 0 });<br />
+  };<br />
+  a.put(\serverRunning, f);<br />
+  w.onClose = { <br />
+  if (isOn3, { server.sendMsg(&quot;/n_free&quot;, 2001) });<br />
+  a.remove;<br />
+  };<br />
+  w.front;<br />
+  )</p>
+</body>
+</html>

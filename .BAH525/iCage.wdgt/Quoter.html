@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <style type="text/css" title="AppleStyle">
+        @import "Quoter.css";
+    </style>
+    <script type="text/javascript" src="AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleScrollbar.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleScrollArea.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleSlider.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/ApplePrivate.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Quoter.js" charset="utf-8"></script>
+    <script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
+</head>
+<body onload="load();">
+	<div id="front">
+		<img id="frontImg" src="Images/front.png" alt="" onclick="getQuote();">
+		<div class="info" id="info" apple-default-image-visibility="hidden" onclick="event.stopPropagation(); event.preventDefault();">
+			<script type="text/javascript">AppleCreateInfoButton('info', 'front', 'white', 'black', 'showBack');</script>
+		<div style="position: absolute; top: 0px; left: 0px; width: 13px; height: 13px; opacity: 0.25; visibility: hidden; background-image: url(Images/black_rollie.png); background-repeat: no-repeat; background-attachment: initial; background-position-x: 0%; background-position-y: 0%; background-color: initial; "></div>
+		<img width="13" height="13" alt="Info" style="position: absolute; top: 0px; left: 0px; opacity: 0; " src="file:///System/Library/WidgetResources/ibutton/white_i.png">
+		<div style="position: absolute; top: 0px; left: 0px; width: 13px; height: 13px; opacity: 0.25; visibility: hidden; background-image: url(Images/black_rollie.png); background-repeat: no-repeat; background-attachment: initial; background-position-x: 0%; background-position-y: 0%; background-color: initial; "></div>
+		<img width="13" height="13" alt="Info" style="position: absolute; top: 0px; left: 0px; opacity: 0; " src="file:///System/Library/WidgetResources/ibutton/white_i.png">
+		<div style="position: absolute; top: 0px; left: 0px; width: 13px; height: 13px; opacity: 0.25; visibility: hidden; background-image: url(Images/black_rollie.png); background-repeat: no-repeat; background-attachment: initial; background-position-x: 0%; background-position-y: 0%; background-color: initial; "></div>
+		<img width="13" height="13" alt="Info" style="position: absolute; top: 0px; left: 0px; opacity: 0; " src="file:///System/Library/WidgetResources/ibutton/white_i.png">
+		<div style="position: absolute; top: 0px; left: 0px; width: 13px; height: 13px; opacity: 0.25; visibility: hidden; background-image: url(Images/black_rollie.png); background-repeat: no-repeat; background-attachment: initial; background-position-x: 0%; background-position-y: 0%; background-color: initial; "></div>
+		<img width="13" height="13" alt="Info" style="position: absolute; top: 0px; left: 0px; opacity: 0; " src="file:///System/Library/WidgetResources/ibutton/white_i.png">
+		<div style="position: absolute; top: 0px; left: 0px; width: 13px; height: 13px; opacity: 0.25; visibility: hidden; background-image: url(Images/black_rollie.png); background-repeat: no-repeat; background-attachment: initial; background-position-x: 0%; background-position-y: 0%; background-color: initial; "></div>
+		<img width="13" height="13" alt="Info" style="position: absolute; top: 0px; left: 0px; opacity: 0; " src="file:///System/Library/WidgetResources/ibutton/white_i.png">
+		<div style="position: absolute; top: 0px; left: 0px; width: 13px; height: 13px; opacity: 0.25; visibility: hidden; background-image: url(Images/black_rollie.png); background-repeat: no-repeat; background-attachment: initial; background-position-x: 0%; background-position-y: 0%; background-color: initial; "></div>
+		<img width="13" height="13" alt="Info" style="position: absolute; top: 0px; left: 0px; opacity: 0; " src="file:///System/Library/WidgetResources/ibutton/white_i.png">
+		
+		
+		<div style="position: absolute; top: 0px; left: 0px; width: 13px; height: 13px; opacity: 0.25; visibility: hidden; background-image: url(Images/black_rollie.png); background-repeat: no-repeat; background-attachment: initial; background-position-x: 0%; background-position-y: 0%; background-color: initial; "></div>
+		<img width="13" height="13" alt="Info" style="position: absolute; top: 0px; left: 0px; opacity: 0; " src="file:///System/Library/WidgetResources/ibutton/white_i.png">
+		
+		
+		</div>
+	<img src="Images/CageFace1.tiff" style="width: 62px; height: 68px; position: absolute; left: 24px; top: 54px; ">
+	
+	<div id="text21" onclick="connectDownloads();">iCage</div>
+	
+	<div id="box" onclick="getQuote();" ondblclick="getQuote();"></div>
+	</div>
+    <div id="back">
+	   <img id="backImg" src="Images/back.png" alt="">
+    <div id="text1" onclick="connect();">www.bbjames.com</div>
+    
+    <div id="text2" onclick="connectDownloads();">iCage</div>
+    <div id="text156" onclick="connectDownloads();">Version 1.2 sp10</div>
+    
+    <div id="text1568" onclick="connect();">By Brian B. James</div>
+    <div id="done">
+    	<script type="text/javascript">AppleCreateGlassButton('done', 'Done', true, 'showFront');</script>
+    </div>
+    
+    
+    <div id="text3" onclick="connectDownloads();">Daily Quotes by John Cage</div>
+    </div>
+	   
+</body>
+</html>

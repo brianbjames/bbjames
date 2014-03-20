@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Algor</title>
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.style1 {font-family: Monaco}
+-->
+</style></head>
+
+<body>
+<p class="style1">//algor, by brian b. james,  from code in the examples folder of SC3</p>
+<p class="style1">(<br />
+  {<br />
+  // cymbalism<br />
+  var p, a, c, d, s, b, y, i, j, k;<br />
+  var z, f1, f2;<br />
+  p = 15;	// number of partia5ls per channel per 'cymbal'.<br />
+  f1 = 250;<br />
+  f2 = 500;<br />
+  z = Array.fill(2, {<br />
+  `[	// sine oscil bank specification:<br />
+  y = Array.fill(p, { f1 + f2.rand} ), // frequencies<br />
+  nil, <br />
+  Array.fill(p, { 1.0 + 4.0 })	// ring times<br />
+  ]<br />
+  });<br />
+  Klank.ar(z, Decay.ar(Impulse.ar(0.00009 + 0.1), 0.004, WhiteNoise.ar(0.0003)));<br />
+  }.play;</p>
+<p class="style1">// analog bubbles<br />
+  {<br />
+  f = LFSaw.kr(0.004, 0, 24, LFSaw.kr([1,3.23], 0, 3, 60)).midicps; // glissando function<br />
+  CombN.ar(SinOsc.ar(f, 0, 0.0004), 2.2, 2.2, 0.04) // echoing sine wave<br />
+  }.play;</p>
+<p class="style1">// reverberated sine percussion<br />
+  d = 3; // number of percolators<br />
+  c = 5; // number of comb delays<br />
+  a = 4; // number of allpass delays</p>
+<p class="style1">play({<br />
+  // sine percolation sound:<br />
+  s = Mix.ar(Array.fill(d, { Resonz.ar(Dust.ar(2/d, 10), 2000 + 3000.0.rand, 0.003)}) );<br />
+  <br />
+  // reverb predelay time:<br />
+  b = DelayN.ar(s, 0.048);<br />
+  <br />
+  // length modulated comb delays in parallel:<br />
+  y = Mix.ar(CombL.ar(b, 0.1, LFNoise1.kr(Array.fill(c,{0.1.rand}), 0.04, 0.05), 15)); <br />
+  <br />
+  // chain of allpass delays on each of two channels:<br />
+  a.do({ y = AllpassN.ar(y, 0.050, [0.050.rand,0.050.rand], 1) });<br />
+  <br />
+  // add original sound to reverb and play it:<br />
+  s+(0.1*y)<br />
+  });</p>
+<p class="style1">{			// wind metals<br />
+  var trig, s, p, n, exc, x, base, range;<br />
+  n = 6;<br />
+  base = exprand(60,70);<br />
+  range = rrand(500.0,8000.0);<br />
+  exc = BrownNoise.ar([0.007,0.007]) * max(0, LFNoise1.kr(exprand(0.03,0.04), 0.05, 0.05));<br />
+  s = (Klank.ar(`[Array.fill(n, {linrand(range)+base}),nil,Array.fill(n, {rrand(0.1,2.0)})], exc) * 0.03).softclip;<br />
+  }.play;</p>
+<p class="style1">play({<br />
+  // pink noise percussion sound :<br />
+  i = Decay.ar(Dust.ar(0.2, 0.1), 0.05, PinkNoise.ar);<br />
+  <br />
+  // reverb predelay time :<br />
+  j = DelayN.ar(i, 0.048);<br />
+  <br />
+  // modulated comb delays in parallel :<br />
+  k = Mix.ar(CombL.ar(j, 0.1, LFNoise1.kr(Array.fill(6,{0.001.rand}), 0.0004, 0.05), 5)); <br />
+  <br />
+  // chain of allpass delays on each of two channels:<br />
+  4.do({ k = AllpassN.ar(k, 0.050, [0.050.rand,0.050.rand], 1) });<br />
+  <br />
+  // add original sound to reverb and play it:<br />
+  i+k<br />
+  });</p>
+<p class="style1">{			// wind metals<br />
+  var trig, s, p, n, exc, x, base, range;<br />
+  n = 6;<br />
+  base = exprand(180,200);<br />
+  range = rrand(500.0,8000.0);<br />
+  exc = BrownNoise.ar([0.007,0.007]) * max(0, LFNoise1.kr(exprand(0.03,0.04), 0.05, 0.05));<br />
+  s = (Klank.ar(`[Array.fill(n, {linrand(range)+base}),nil,Array.fill(n, {rrand(0.1,2.0)})], exc) * 0.005).softclip;<br />
+  }.play;</p>
+<p class="style1">{<br />
+  Pan2.ar(<br />
+  Resonz.ar(LFPulse.ar(exprand(20,40), 2pi.rand, 0.05,<br />
+  <br />
+  Mix.ar(SinOsc.ar(exprand(0.3,8) * [rrand(0.07,0.09),1], [2pi.rand,2pi.rand], 0.1)).max(0)<br />
+  * Mix.ar(SinOsc.ar(exprand(6,24) * [rrand(0.7,1.3),1], [2pi.rand,2pi.rand])).abs<br />
+  ), exprand(100,110), 0.2), 1.0.rand2); <br />
+  }.play;<br />
+)</p>
+</body>
+</html>

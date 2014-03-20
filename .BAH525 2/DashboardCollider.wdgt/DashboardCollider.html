@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <style type="text/css" title="AppleStyle">
+        @import "DashboardCollider.css";
+    </style>
+    <script type="text/javascript" src="AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleScrollbar.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleScrollArea.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleSlider.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/ApplePrivate.js" charset="utf-8"></script>
+    <script type="text/javascript" src="DashboardCollider.js" charset="utf-8"></script>
+    <script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
+</head>
+<body onload="load();">
+	<div id="front">
+		<img id="frontImg" src="Images/front.png" alt="">
+		<div class="info" id="info" apple-default-image-visibility="hidden" onclick="event.stopPropagation(); event.preventDefault();">
+			<script type="text/javascript">AppleCreateInfoButton('info', 'front', 'white', 'black', 'showBack');</script>
+		</div>
+        
+    <img src="Images/SCcube1.icns" style="position: absolute; width: 101px; height: 96px; left: 121px; top: 115px; " id="SCcube" ondblclick="openSC();">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div id="text35" onclick="connectAS();">SC audioSynth</div>
+	<div id="text36" onclick="connectSwiki();">SC swiki</div>
+	<div id="text37" onclick="connectUA();">SC user's archives</div>
+	<div id="text38" onclick="connectSF();">SC sourceForge</div>
+	<div id="text39" onclick="connectRM();">SC reference manual</div>
+	<div id="text40" onclick="connectF();">SC forum</div>
+	<div id="text41" onclick="connectUML();">SC users mailing list</div>
+	
+	<div id="text6" onclick="connectDownloads();">DashboardCollider</div>
+	<div id="button">
+		<script type="text/javascript">AppleCreateButton('button', 'SC Help', true, 'openSCHelp');</script>
+	</div>
+	
+	<div id="button1">
+	
+		<script type="text/javascript">AppleCreateButton('button1', 'Open SC', true, 'openSC');</script>
+	
+	</div>
+	</div>
+    <div id="back" apple-default-image-visibility="hidden">
+	   <img id="backImg" src="Images/back.png" alt="" apple-default-image-visibility="hidden">
+    	
+        
+    <div id="text" onclick="connectDownloads();">DashboardCollider</div>
+    <div id="text1" onclick="connect();">By Brian B. James</div>
+    <div id="text2" onclick="connect();" http://www.bbjames.com");"="">www.bbjames.com</div>
+    <div id="text3" onclick="connectDownloads();">Version 1.1</div>
+    <div id="glassbutton">
+    	<script type="text/javascript">AppleCreateGlassButton('glassbutton', 'Done', true, 'showFront');</script>
+    </div>
+    
+    
+    
+    
+    
+    <div id="text4" ondblclick="term();">To be able to drag your widgets onto the desktop, double click here. </div>
+    
+    
+    
+    
+    <div id="text33">A handy little helper for SuperCollider users</div>
+    
+    <img src="Images/SCcube2.icns" style="position: absolute; height: 56px; width: 55px; top: 140px; left: 144px; ">
+    </div>
+</body>
+</html>
